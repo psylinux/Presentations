@@ -180,7 +180,8 @@
 
 %%% SLIDE %%%
 \begin{frame}
-\frametitle{Goianês ou Criptografia?}
+\frametitle{Goianês, Codificação ou Criptografia?}
+\framesubtitle{Introdução}
 	\begin{itemize}
 		\justifying
 		\item<+->{\textbf{Dinheiro pra sapecar porco}: Muito dinheiro.}
@@ -190,23 +191,55 @@
 		\item<+->{\textbf{Pizêro}: Bagunça.}
 		\item<+->{\textbf{Pulá o corguim}: Passar dos limites.}
 		\item<+->{\textbf{Apiar}: Descer.}
+		\item<+->{\textbf{Rudeia/Rudiá}: Dar a volta.}
 	\end{itemize}
 \end{frame}
 
 %%% SLIDE %%%
 \begin{frame}
-\frametitle{O que é Criptografia?}
-\framesubtitle{Visão Geral}
-\begin{figure}[h]
-	\includegraphics[width=\textwidth]{pics/cripto_1}
-\end{figure}
+\frametitle{Antes de Começar o Assunto}
+\framesubtitle{Criptografia vs Codificação}
+\centering 
+\textbf{\Huge Criptografia vs Codificação}\\
+{\Huge Tem diferença?}
 \end{frame}
 
 %%% SLIDE %%%
 \begin{frame}
+\frametitle{Criptografia vs Codificação}
+\framesubtitle{Codificação}
+	\begin{enumerate}
+		\justifying
+		\item<+->{\textbf{Objetivo da Codificação:} transformar os dados para que ele possa ser adequadamente utilizado por um diferente tipo de sistema, por exemplo, caracteres especiais de uma página web. Não serve para manter em segredo as informações, mas sim garantir que o sistema interprete de outra forma os dados contidos na mensagem.}
+		\item<+->{\textbf{Exemplos:} ASCII, Unicode, URL Encoding, Base64.}
+	\end{enumerate}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Criptografia vs Codificação}
+\framesubtitle{Criptografia}
+	\begin{enumerate}
+		\justifying
+		\item<+->{\textbf{Objetivo da Criptografia:} transformar os dados, afim de manter uma “mensagem” em segredo e garantir que os dados sejam inteligíveis apenas para o destinatário com a chave para reverter a criptografia.}
+	\end{enumerate}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Visão Geral}
+\framesubtitle{O que é Criptografia?}
+	\begin{figure}[h]
+		\includegraphics[width=\textwidth]{pics/cripto_1}
+	\end{figure}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Qual a relevância desse tema?}
 	\centering
-	\textbf{"Criptografia"}\\
-	\textbf{Qual a relevância desse tema?}
+	\textbf{\LARGE "Criptografia"}\\
+	\textbf{\LARGE Qual a relevância desse tema?}
 \end{frame}
 
 %%% SLIDE %%%
@@ -230,23 +263,35 @@
 
 %%% SLIDE %%%		
 \begin{frame}
-\frametitle{Tipos de Algoritmos}
+\frametitle{Tipos de Criptografia}
 \begin{enumerate}
 	\justifying
-	\item<+->{\textbf{Criptografia Clássica:} Sustenta-se em leis matemáticas.}
-	\item<+->{\textbf{Criptografia Quântica:} Utiliza-se de elementos físicos, tal com fótons, para gerar chaves quânticas inquebráveis.}
+	\item<+->{\textbf{Criptografia Clássica:} Sustenta-se em leis matemáticas. Já era utilizado nos hieróglifos de monumentos do Antigo Egito (cerca de 4500 anos atrás).}
+	\item<+->{\textbf{Criptografia Moderna:} Utiliza basicamente os mesmos princípios da Criptografia Clássica, mas faz uso de computadores para processar os dados. Consideramos seu inicio em 1949 com Matemático Americano Claude Shannon.}
+	\item<+->{\textbf{Criptografia Quântica:} Utiliza-se de elementos físicos, tal com fótons, para gerar chaves quânticas \emph{inquebráveis}.}
 \end{enumerate}
 \end{frame}
 
 %%% SLIDE %%%		
 \begin{frame}
-\frametitle{Tipos de Algoritmos}
-\framesubtitle{Criptografia Clássica}
+\frametitle{Criptografia Moderna}
+\framesubtitle{Algoritmos Criptográficos}
 \begin{enumerate}
 	\justifying
 	\item<+->{\textbf{Algoritmo de transposição:} rearranja a ordem dos caracteres de uma mensagem. Um exemplo simples é a transformação de \textbf{“muito obrigado”} em \textbf{“omtui oobdraig”}. Esta categoria de algoritmo criptográfico é composta por uma função bijetora	para efetuar encriptações e sua	inversa faz a mensagem voltar à forma original;}
 	\item<+->{\textbf{Algoritmo de substituição:} substitui caracteres ou grupos de caracteres por outros caracteres ou grupos de caracteres. Um exemplo simples: \textbf{“muito obrigado”} é transformado em \textbf{“nvjup pcsjhbep”}, substituindo cada letra pela próxima na sequência alfabética.}
 \end{enumerate}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Alguns algoritmos da Criptografia Moderna}
+	\begin{enumerate}
+		\justifying
+		\item \textbf{Algoritmo de Euclides:} Ele é um elemento-chave dos algoritmos RSA (Criptografia de Chaves Assimétricas).
+		\item \textbf{Transformada de Fourier:} Utilizada em esteganografia.
+		\item \textbf{Algoritmos de Aritmética Modular:} Também conhecida como aritmética do relógio, aplicado a números inteiros. Utilizada em Criptografia de Chave Simétrica, CPF, Código de Barras.
+	\end{enumerate}
 \end{frame}
 
 %%% SLIDE %%%
@@ -361,7 +406,16 @@ CORR3R4M P3L4 PR41A, FUG1ND0 DA 4GU4, R1NDO D3 M405 D4D4S 3 C0M3C4R4M 4 C0NS7RU1
 \frametitle{Introdução à Criptografia}
 \framesubtitle{Definições e terminologias | Simetria}
 \justifying
-	\textbf{Simetria:} conformidade, em medida, forma e posição relativa, entre as partes dispostas em cada lado de uma linha divisória, um plano médio, um centro ou um eixo
+	\textbf{Simetria:} conformidade, em medida, forma e posição relativa, entre as partes dispostas em cada lado de uma linha divisória, um plano médio, um centro ou um eixo.
+\end{frame}
+
+%%% SLIDE %%%		
+\begin{frame}
+\frametitle{Introdução à Criptografia}
+\framesubtitle{Definições e terminologias | Simetria}
+\begin{figure}[h]
+	\includegraphics[height=7cm]{pics/simetria-bilateral}
+\end{figure}
 \end{frame}
 
 %%% SLIDE %%%		
@@ -369,8 +423,18 @@ CORR3R4M P3L4 PR41A, FUG1ND0 DA 4GU4, R1NDO D3 M405 D4D4S 3 C0M3C4R4M 4 C0NS7RU1
 \frametitle{Introdução à Criptografia}
 \framesubtitle{Definições e terminologias | Assimetria}
 \justifying
-	\textbf{Assimetria:} 1. ausência de simetria. 2. grande diferença; disparidade, discrepância
+	\textbf{Assimetria:} 1. ausência de simetria. 2. grande diferença; disparidade, discrepância. 
 \end{frame}
+
+%%% SLIDE %%%		
+\begin{frame}
+\frametitle{Introdução à Criptografia}
+\framesubtitle{Definições e terminologias | Assimetria}
+\begin{figure}[h]
+	\includegraphics[height=7cm]{pics/assimetria}
+\end{figure}
+\end{frame}
+
 
 %%% SLIDE %%%		
 \begin{frame}
@@ -404,6 +468,19 @@ CORR3R4M P3L4 PR41A, FUG1ND0 DA 4GU4, R1NDO D3 M405 D4D4S 3 C0M3C4R4M 4 C0NS7RU1
 	\textbf{Algoritmo:} 1. mat sequência finita de regras, raciocínios ou operações que, aplicada a um número finito de dados, permite solucionar classes semelhantes de problemas. 2. inf conjunto das regras e procedimentos lógicos perfeitamente definidos que levam à solução de um problema em um número finito de etapas.
 \end{frame}
 
+%%% SLIDE %%%		
+\begin{frame}
+\frametitle{Introdução à Criptografia}
+\framesubtitle{Funções Hash}
+\justifying
+O processo é unidirecional e impossibilita descobrir o conteúdo original a partir do Hash. O valor de conferência ("Soma de verificação") muda se um único bit for alterado, acrescentado ou retirado da mensagem.
+	\begin{itemize}
+		\justifying
+		\item<+->{\textbf{Objetivo das funções de HASH:} Sua única finalidade é fazer um "resumo" representado em base hexadecimal que permite  visualização em letras (A a F) e números (0 a 9). O conceito teórico diz que "hash" é a transformação de uma grande quantidade de dados em uma pequena quantidade de informações".}
+		\item<+->{\textbf{Exemplos:} MD4, MD5, SHA-1, SHA-512.}
+	\end{itemize}	
+\end{frame}
+
 %%% SLIDE %%%
 \begin{frame}
 \frametitle{O Princípio de Kerckhoff}
@@ -416,35 +493,87 @@ CORR3R4M P3L4 PR41A, FUG1ND0 DA 4GU4, R1NDO D3 M405 D4D4S 3 C0M3C4R4M 4 C0NS7RU1
 \begin{frame}
 \frametitle{Algoritmos Cifradores}
 \justifying
-\begin{enumerate}
-	\item<+->{\textbf{Cifradores de blocos:} divide a mensagem
-		em blocos de tamanho fixo (ex: 256 bits). Por exemplo, DES, AES, 3DES}
-	\item<+->{\textbf{Cifradores de fluxo:} cifra cada digito do texto plano por vez. Por exemplo, o RC4}
-\end{enumerate}
+	\begin{enumerate}
+		\item<+->{\textbf{Cifradores de blocos:} divide a mensagem em blocos de tamanho fixo (ex: 256 bits). Por exemplo, DES, AES, 3DES}
+		\item<+->{\textbf{Cifradores de fluxo:} cifra cada digito do texto plano por vez. Por exemplo, o RC4}
+	\end{enumerate}
 \end{frame}
 
+
 %%% SLIDE %%%
-\begin{frame}{Alguns tipos de Chaves Criptograficas}
+\begin{frame}
+\frametitle{Alguns tipos de Chaves Criptográficas}
 		\begin{enumerate}
-			\item<+->{Criptografia Simétrica}
-			\item<+->{Criptografia Assimétrica}
+			\item<+->{Criptografia de Chave Simétrica}
+			\item<+->{Criptografia de Chaves Assimétricas}
+			\item<+->{Esquemas Híbridos}
 		\end{enumerate}
 \end{frame}
 
 %%% SLIDE %%%
 \begin{frame}
-\frametitle{Criptografia Simétrica}
+\frametitle{Criptografia de Chave Simétrica}
 \begin{enumerate}
-	\item<+->{Também conhecido como: criptografia de chave única, criptografia de chave secreta.}
+	\item<+->{Todos os esquemas de encriptação desde a antiguidade até 1976 eram simétricos.}
+	\item<+->{Também conhecido como: criptografia de chave única ou criptografia de chave secreta.}
 	\item<+->{A chave precisa ser transmitida através de um canal seguro.}
-	\item<+->{Transmissão Wireless utilizam esse modelo criptográfico.}
+	\item<+->{Transmissão Wireless com protocolo \textbf{WPA (Wi-Fi Protected Access)} \footnote{Em 16 de Outubro de 2017, foi divulgado uma vulnerabilidade crítica (KRACK) que afeta milhões de dispositivos.} utilizam esse modelo criptográfico.}
 \end{enumerate}
 \end{frame}
 
 %%% SLIDE %%%
 \begin{frame}
-\frametitle{Criptografia Assimétrica}
+\frametitle{Criptografia de Chave Simétrica}
+\framesubtitle{Criptografando}
+	\begin{figure}[h]
+		\includegraphics[width=\textwidth]{pics/chave_simetrica_1}
+		\caption{Criptografando com chave simétricas\footnote{Imagem extraída de: https://www.gta.ufrj.br}}		
+	\end{figure}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Criptografia de Chave Simétrica}
+\framesubtitle{Descriptografando}
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{pics/chave_simetrica_2}
+	\caption{Descriptografando com chaves simétricas\footnote{Imagem extraída de: https://www.gta.ufrj.br}}		
+\end{figure}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Criptografia de Chave Simétrica}
+\justifying Exemplos de algoritmos simétricos populares:
+	\begin{enumerate}
+	\item AES
+	\item Twofish
+	\item Serpent
+	\item Blowfish
+	\item CAST5
+	\item RC4
+	\item 3DES (baseado no DES)
+	\item IDEA
+	\end{enumerate}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Criptografia de Chaves Simétricas}
+\framesubtitle{Problemas com as Chaves Simétricas}
+	\begin{itemize}
+		\item<+->{Como distribuir as chaves de maneira segura?}
+		\item<+->{Como verificar se a mensagem não foi modificada?}
+		\item<+->{Como ter certeza que a mensagem foi realmente enviada por quem diz ter enviado?}
+	\end{itemize}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Criptografia de Chaves Assimétricas}
+\framesubtitle{Visão Geral}
 \begin{enumerate}
+	\item<+->{Em 1976, Diffie, Hellman e Merkle propuseram a criptografia de chave pública, também conhecida como assimétrica.}
 	\item<+->{Baseado no par de chaves: \textbf{pública e privada}}
 	\begin{itemize}
 		\item<+->{Chaves públicas são divulgadas abertamente.}
@@ -461,12 +590,87 @@ CORR3R4M P3L4 PR41A, FUG1ND0 DA 4GU4, R1NDO D3 M405 D4D4S 3 C0M3C4R4M 4 C0NS7RU1
 \end{enumerate}
 \end{frame}
 
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Criptografia de Chave Assimétrica}
+	\begin{figure}[h]
+		\includegraphics[width=\textwidth]{pics/chave_assimetrica_1}
+		\caption{Criptografando com chaves assimétricas\footnote{Imagem extraída de: http://www.rtell.com.br}}
+	\end{figure}
+\end{frame}
+
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Criptografia de Chaves Assimétricas}
+\framesubtitle{Exemplos de Algoritmos}
+\justifying Exemplos de algoritmos assimétricos populares:
+	\begin{enumerate}
+		\item {Protocolo Diffie-Hellman}
+		\item {RSA (PKCS\#1)}
+		\item {DSS (Digital Signature Standard), o qual incorpora o Algoritmo de Assinatura Digital}
+		\item {ElGamal}
+		\item {Criptosistema de Paillier}		
+		\item {Criptosistema de Cramer–Shoup}
+		\item {Protocolo de acordo de chave autenticada YAK}
+		\item {Criptosistema NTRUEncrypt}
+		\item {Criptosistema de McEliece}
+	\end{enumerate}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Criptografia de Chaves Assimétricas}
+\framesubtitle{Exemplos de Protocolos}
+\justifying Exemplos de protocolos que usam algoritmos de chaves assimétricas:
+	\begin{enumerate}
+		\item {S/MIME (Secure/Multipurpose Internet Mail Extension)\footnote{Em 14 de Maio de 2018, pesquisadores anunciaram o EFAIL. Vulnerabilidade nas tecnologias de criptografia de ponta a ponta OpenPGP e S/MIME que vazam o texto puro de e-mails criptografados.} }
+		\item {PGP (Pretty Good Privacy)}
+		\item {GPG/GnuPG (GNU Privacy Guard é uma alternativa GPL ao aplicativo PGP)}
+		\item {ZRTP, um protocolo seguro VoIP}
+		\item {SSL (Secure Socket Layer)}
+		\item {TLS (Transport Layer Security)}
+		\item {SSH (Secure Shell)}
+		\item {Bitcoin} 
+		\item {SILC (Secure Internet Live Conferencing)}
+		\item {OTR (Off-the-Record Messaging)}	 
+	\end{enumerate}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Esquemas Híbridos}
+A maioria dos protocolos de hoje são esquemas híbridos, ou seja, usam os dois esquemas:
+	\begin{itemize}
+		\item<+->{\textbf{Chaves Simétricas:} Usada, por exemplo, para encriptação e autenticação da mensagem.}
+		\item<+->{\textbf{Chaves Assimétricas:} Usada, por exemplo, para a troca de chaves e assinatura digital.}
+	\end{itemize}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Assinatura Digital}
+  \justifying É um método de autenticação de informação digital tipicamente tratada como substituta à assinatura física, já que elimina a necessidade de ter uma versão em papel do documento que necessita ser assinado.\\
+  \textbf<+->{Propriedades da Assinatura Digital:}
+  	\begin{itemize}
+		\item<+->{\textbf{Autenticidade:} o receptor deve poder confirmar que a assinatura foi feita pelo emissor.}
+		\item<+->{\textbf{Integridade:} qualquer alteração da mensagem faz com que a assinatura não corresponda mais ao documento.}
+		\item<+->{\textbf{Irretratabilidade ou não-repúdio:} o emissor não pode negar a autenticidade da mensagem.}
+	\end{itemize}
+\end{frame}
+
+%%% SLIDE %%%
+\begin{frame}
+\frametitle{Vamos para a Prática}
+	\begin{figure}[h]
+		\includegraphics[width=\textwidth]{pics/pratica}
+	\end{figure}
+\end{frame}
 
 %%% SLIDE %%%		
 \begin{frame}
 \frametitle{Ferramentas para usar no dia-a-dia (Linux e Windows)}
 		\begin{enumerate}
-			\item<+->{GPG e PGP}
 			\item<+->{Assinatura de Arquivo}
 			\item<+->{Criptografia de Arquivos}
 			\item<+->{Assinatura de E-mail}
@@ -483,6 +687,7 @@ CORR3R4M P3L4 PR41A, FUG1ND0 DA 4GU4, R1NDO D3 M405 D4D4S 3 C0M3C4R4M 4 C0NS7RU1
 		\item<+->{Nunca, jamais, desenvolva o seu próprio algoritmo de criptografia, a menos que você tenha uma equipe de experientes criptoanalistas verificando o seu projeto.}
 		\item<+->{Não utilize algoritmos de criptografia não comprovados ou protocolos não comprovados.}
 		\item<+->{Os atacantes vão sempre olhar para o ponto mais fraco de um sistema de criptografia. Por exemplo, um grande espaço de chaves por si só não é garantia de uma cifra segura; a cifra ainda pode estar vulnerável contra ataques analíticos.}
+		\item<+->{Os algoritmos criptográficos podem ser fortes, mas as implementações sempre terão falhas. Mantenha seu software atualizado.}
 	\end{enumerate}
 \end{frame}
 
@@ -491,13 +696,12 @@ CORR3R4M P3L4 PR41A, FUG1ND0 DA 4GU4, R1NDO D3 M405 D4D4S 3 C0M3C4R4M 4 C0NS7RU1
 \frametitle{Lições Aprendidas}
 \justifying
 	\begin{enumerate}
-		\setcounter{enumi}{3}
+		\setcounter{enumi}{4}
 		\item<+->{Comprimentos de chave de algoritmos simétricos, a fim de frustrar ataques de busca exaustiva da chave:}
 		\begin{itemize}
 			\item<+->{64 bits: inseguro exceto para dados cujo uso se dará num prazo muito curto.}
 			\item<+->{128 bits: segurança de longo prazo para várias décadas, a menos que os computadores quânticos se tornem disponíveis (computadores quânticos não existem e talvez nunca existam).}
 			\item<+->{256 bits: como acima, mas provavelmente seguros até contra ataques por computadores quânticos.}
-			\item<+->{Aritmética modular é uma ferramenta para exprimir os esquemas de encriptação históricos, tais como a Cifra Afim, de uma maneira matematicamente elegante.}
 		\end{itemize}
 	\end{enumerate}
 \end{frame}
