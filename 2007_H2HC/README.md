@@ -1,0 +1,3 @@
+# Hackers 2 Hackers Conference - 2007
+Presentation: Hacking iPod Touch and iPhone
+The details of a TIFF rendering security exploit for the iPhone - which has been used to unlock the device and "jailbreak." it so that the file system can be read and written to. Have been published by hacker HD Moore, along with a revised, more robust version of the exploit. The vulnerability affects the iPhone's Safari browser, its e-mail program, as well as by the iTunes software and can be sent via e-mail or embedded in a Web page. It works on OS's 1.0, 1.0.1, 1.0.2 and 1.1.1.
