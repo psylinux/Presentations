@@ -1,0 +1,52 @@
+\chapter{Considerações Finais}\label{sec:consideracoes_finais}
+
+\subsection{Contribuições do Fênix Firewall System}\label{sub:contribuicoes}
+
+Como principal contribuição podemos citar os objetivos do Fênix Firewall System, que são:
+
+\begin{enumerate}
+ \item Proporcionar aos usuários de dispositovos móveis um nível maior de segurança contra os ataques vindo da rede de comunicação;
+
+ \item Controlar o acesso aos recursos do dispositivo móvel e as informações;
+
+ \item Proporcionar ao usuário uma maior comodidade através do recurso de localização:
+	O Fênix trás consigo um conceito não muito comum aos firewall's de um modo geral que é atuação de forma diferenciada baseado na localização do dispositivo móvel. A necessidade de uma aplicação como esta fica muito evidente quando nos atentamos ao detalhe de que um dispositivo móvel, ao contrário de um desktop, não está fixo em um único ambiente e sim circulando por vários durante todo o dia e, por conseqüência, sendo exposto a diversas situações distintas com diferentes tipos de vulnerabilidades de segurança.
+
+ \item Flexibilidade para que o usuário execute, crie e edite suas preferências e políticas de segurança:
+	O Fênix trabalha com o conceito de Preferências e Políticas de Segurança, onde o usuário pode definir diferentes esquemas de segurança para serem utilizados conforme o ambiente de uso do dispositivo (uma idéia ligada a sensibilidade ao contexto que este sistema possui). A localização do usuário pode ser definido de duas formas:
+	\begin{itemize}
+	  \item Utilizando o recurso GPS\footnote{Sistema de Posicionamento Global (GPS).} do dispositivo, casa haja um;
+	  \item Manualmente, com o usuário selecionando sua localização a partir de uma lista por ele editada.
+	\end{itemize}
+
+ \item Nível de Interatividade controlada pelo usuário:
+	Por final, porém não menos importante, o Fênix Firewall System ainda trás ao usuário a opção de vários níveis de interação. Assim um usuário que esteja interessado em ter o conhecimento de todas as ações do firewall poderá solicitar um nível de interação mais detalhado, enquanto um outro que não esteja interessado nos detalhes de segurança poderá solicitar uma interação de mais alto nível, onde apenas atividades críticas serão mostradas.
+
+ \item Meta-políticas exportáveis:
+	As políticas de segurança criadas pelo usuário, são armazenadas no Banco de Dados do Fênix na forma de meta-políticas, que se caracterizam por serem independentes de sistema operacional e plataforma de hardware. Essas meta-políticas são transcrições em alto nível que podem ser convertidas, obedescendo a sintaxe exigida pelo um firewall quer este esteja em execuçaão em um dispositivo móvel ou desktop. Dessa forma, as mesmas políticas de segurança criadas por um usuário podem ser reutilizadas não só em dispositovos móveis diferentes, mas também em ambientes computacionais diferentes, como por exemplo tablet's, desktop's SmartPhone's, PDA's etc.
+
+ ??? \textit{\textbf{Melhorar essa idéia e o convencimento da mesma.}} ???
+ \item Arquitetura distribuída para detecção de intrusão;
+	Outra novidade que o Fênix tras consigo é a adoção de um serviço distribuído (opcional) para detectar possíveis intrusões. O Monitor Inteligente e de Risco submete os relatórios das conexões suspeitas para um serviço remoto disponível na arquitetura distribuida do Fênix Firewall System que irá analizar os padrões dos dados contidos nos pacotes e procurar por alguma assinatura de ataque.
+
+ \item Arquitetura distribuída para detecção de riscos e falhas de segurança:
+	O componente Monitor de Conteto, através do Coletor de Informações de Serviços (módulo deste componente), cataloga todas as conexões, portas de serviço que estejam abertas ou aguardando conexão, versões dos servidores que estão em execusão no dispositivo móvel e submete tais informações para o Agente de Risco (Serviço disponível na arquitetura distribuido do Fênix). O Agente de Risco, emposso das informações submetidas pelo dispositívo móvel, faz um análise, conflitando os dados coletatos contra uma base de vulnerabilidades e riscos conhecidos. Se um determinado serviço, ou servidor que esteja em execusão no dispositivo móvel apresentar alguma vulnerabilidade ou risco, o Agente de Riscos dispara uma mensagem a ser enviada para o usuário do dispositivo móvel em questão, e o mesmo é notificado através de SMS ou E-mail quanto a vulnerabilidade e o grau de risco que apresenta ao sistema.
+
+
+ \item Serviço de notificação do usuário:
+	Este serviço disponível na arquitetura distribuida do Fênix é mantido pelo Agente de Notificação, que realiza seu papel enviando mensagens de texto formato via SMS e/ou EMAIL para os usuários dos dispositivos móveis que fazem uso do Fênix. O Agente de Notificação recebe as informações dos serviços distribuidos, no formado: Destinatário / Mensagem / Prioridade, formata conforme a opção de notificação (SMS ou E-MAIL) selecionada pelo usuário e que se encontra-se gravada no Banco de Dados então notifica o(s) destinatário(s) informado(s).
+
+
+\end{enumerate}
+
+%----------------------------------------------------------------
+
+\subsection{Garantia da segurança}\label{sub:garantia_seguranca}
+
+\begin{itemize}
+\item Discutir com o leitor quanto a interferências de fatores externos;
+\item Discutir a interferência humana na segurança do dispositivo;
+\item O uso outras ferramentas e políticas para garantir a segurança.
+\end{itemize}
+
+%----------------------------------------------------------------

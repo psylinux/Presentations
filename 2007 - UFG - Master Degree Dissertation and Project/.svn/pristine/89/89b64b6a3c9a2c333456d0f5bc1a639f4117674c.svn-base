@@ -1,0 +1,10 @@
+
+[Anjuta]
+Maximized=1
+Geometry=1440x825+0+25
+
+[File Loader]
+Files=file:///home/marcos/fenix-firewall.sources/editrule.h#1
+
+[Execution]
+Run in terminal=2

@@ -1,0 +1,9 @@
+Package: fenix-firewall
+Section: base
+Priority: optional
+Version: VERSION
+Architecture: i386
+Maintainer: Marcos Azevedo <marcos@digitalsec.com.br>
+Depends: libgpewidget1 (>= 0.40), iptables 
+Description: Fenix Firewall for mobile devices.
+Source: http://www.digitalsec.com.br/projects/fenix/fenix-firewall-VERSION.tar.gz

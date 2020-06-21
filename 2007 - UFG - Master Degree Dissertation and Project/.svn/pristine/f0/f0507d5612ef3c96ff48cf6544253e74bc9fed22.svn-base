@@ -1,0 +1,38 @@
+## Cenários:
+
+	Cenário 1) Atuação padrão do Fenix Firewall System.
+	
+	** O usuário entra em uma dada localização e tem suas Políticas e Preferêncas carregadas.
+		
+	1.1. O Monitor de Contexto, instalado no dispositivo móvel, infere a localização do usuário a partir do Monitor de Localização;
+	1.2. O Monitor de Localização:
+		1.2.1. Caso 1)	O dispositivo possui recurso de GPS embarcado:
+				- Dá-se prioridade para o recurso GPS local;
+		//1.2.2. Caso 2) Está marcado como preferência do usuário dar prioridade a Serviços Remotos:
+		//		- Baseado nas Preferências do Usuário, é utilizado, se disponível um Agente de Localização (Arquitetura Distribuída);
+		1.2.2. Caso 3)	O dispositivo não possue GPS:
+				- O usuário pode selecionar manualmente sua localização;
+	1.3. O App Kernel por sua vez, consulta o Gerente de Preferências usando como premissa a localização fornecida pelo Agente de Contexto;
+	1.4. O Gerente de Preferências então, consulta as Políticas e Preferências, no Banco de Dados, associadas à localização estimada e as disponibiliza para o App Kernel.
+	1.5. O App Kernel carrega as Políticas de Segurança no componente Firewall para aquela Localização;
+	1.6. O App Kernel baseado no nível de Notificação (DEBUG, INFO, WARNING ou ERROR) armazenados no Banco de Dados Local;
+	1.7. O App Kernel então notifica ou não o usuário, através do componente Notificador de Usuário, que interage com o Sistema Operacional e cria as interfaces de notificação personalizada para cada situação;
+	
+	
+	Caso 2)
+	2.1. O Coletor de Informações de Serviçõs de Rede, notifica o App Kernel sobre quais portas e serviços locais estão em execução.
+	2.2. O App Kernel novamente consulta o Agente de Risco, que se conecta a um serviço externo (CVSS[4]) e retorna um "Fator de Periculosidade";
+	2.3. Baseado no "Fator de Periculosidade" o App Kernel Consulta o Agente Inteligente para decidir se deve notificar o usuário;
+	2.4. O Agente Inteligente, baseado na Base de Conhecimento, retorna uma resposta ao App Kernel;
+	2.5. O App Kernel, resolve alertar ou não o usuário dos potenciais perigos oferecidos pelo serviço em execução ou porta aberta.
+
+
+	Caso 3)
+	3.1. O Coletor de Informações da Bateria o usuário, informa o App Kernal quanto a carga de bateria;
+	3.2. O App Kernel consulta o Coletor de Informações de Serviços de Rede quanto a conexões ativas;
+	3.3. O App Kernel, o Agente Inteligente quanto possibilidade de notificar o não.
+	3.4. O Agente Inteligente, baseado em um Base de Conhecimento e os Nívels de Notificação estabelecido pelo usuário (DEBUG, INFO, WARNING ou ERROR), retorna uma resposta ao App Kernel;
+	3.4. O App Kernel recebe a resposta do Agente Inteligente e notifica ou não o usuário a partir do Notificador de Usuários;
+	3.2. O usuário pode ser aconselhado a desabilitar alguns recursos/interfaces ociosas afim de economizar a bateria;
+	
+

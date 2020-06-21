@@ -1,0 +1,5 @@
+\keys{\textless Keyword 1, keyword 2, etc.\textgreater}
+
+\begin{abstract}{\textless Work title\textgreater}
+A sketchy summary of the main points of the text.
+\end{abstract}

@@ -1,0 +1,512 @@
+% This file was created with JabRef 2.4.2.
+% Encoding: Cp1252
+
+@ARTICLE{envirotrac:2004,
+  author = {Abdelzaher, T. and Blum, B. and Evans, D. and George, J. and George,
+	S. and Gu, L. and He, T. and Huang, C. and Nagaraddi, P. and Son,
+	S. and Sorokin, P. and Stankovic, J. and Wood, A.},
+  title = {EnviroTrack: Towards an Environmental Computing Paradigm for Distributed
+	Sensor Networks},
+  journal = {EEE ICDCS},
+  year = {March, 2004},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{soap:2004,
+  author = {Baker, M. and Nottingham, M.},
+  title = {The "application/soap+xml" media type},
+  booktitle = {RFC 3902},
+  publisher = {Network Working Group Request for Comments},
+  year = {2004},
+  owner = {Marcos Azevedo},
+  timestamp = {2009.02.25}
+}
+
+@ARTICLE{rpc:1984,
+  author = {Birrel, A. D. and Nelson, B. J.},
+  title = {Implementing remote procedure calls},
+  journal = {ACM Trans},
+  year = {February, 1984},
+  volume = {2},
+  pages = {39-59},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{blair:2004,
+  author = {Blair, G. and Campbell, A. and Schmidt, D.},
+  title = {Middleware Technologies for Future Communication Networks},
+  journal = {IEEE Network},
+  year = {January, 2004},
+  volume = {18},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{blair-smith:1965,
+  author = {Hugh Blair-Smith},
+  title = {AGC4 MEMO \# 9 - Block II Instructions},
+  publisher = {http://authors.library.caltech.edu/5456/1/hrst.mit.edu/hrs/apollo/public/archive/1689.pdf},
+  year = {1965},
+  owner = {Marcos},
+  timestamp = {2009.03.16}
+}
+
+@INPROCEEDINGS{carvalho:2003,
+  author = {Carvalho, H. and Heinzelman, W. and Murphy, A. and Coelho C.},
+  title = {Network-Based Distributed Systems Middleware},
+  booktitle = {1st International Workshop on Middleware for Pervasive and Ad-Hoc
+	Computing},
+  year = {June, 2003b},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{chaokai:2007,
+  author = {He Chaokai},
+  title = {Design and implementation of a personal firewall Based on NDIS
+	
+	Intermediate Drivers},
+  journal = {Eighth ACIS International Conference on Software Engineering, Artificial
+	Intelligence, Networking, and Parallel/Distributed Computing},
+  year = {2007},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{costa:2002,
+  author = {Costa, F. and Kon, F. and Campbell, R. and Blair, G.},
+  title = {The Case for Reflective Middleware},
+  journal = {Communications of the ACM},
+  year = {June, 2002},
+  volume = {45},
+  pages = {33-38},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{coulson:2000,
+  author = {Coulson, G.},
+  title = {What is a reflective Midddlewar},
+  journal = {IEEE Distributed Systems on-line},
+  year = {2000},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{coulson:2004,
+  author = {Coulson, G. and Blair, G. S. and Grace, P.},
+  title = {On the Performance of Reflective Systems Software},
+  journal = {International Workshop on Middleware Performance (IWMP 2004)},
+  year = {Phoenix, Arizona, April 2004},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{credant:2009,
+  author = {{Credant Technologies}},
+  title = {UK Businesses Left Vulnerable By Naïve Mobile Phone Users},
+  booktitle = {http://www.credant.com/uk-businesses-left-vulnerable-by-mobile-phone-users.html},
+  year = {2009},
+  owner = {Marcos},
+  timestamp = {2009.03.20}
+}
+
+@ARTICLE{cremonini:2004,
+  author = {Marco Cremonini and Ernesto Damiani and Sabrina De Capitani di Vimercati
+	and Pierangela Samarati},
+  title = {An XML-based Approach to Combine Firewalls and
+	
+	Web Services Security Specifications},
+  journal = {Universit\'a di Milano - Italy},
+  year = {2004},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{flynn:1972,
+  author = {Flynn, M. J.},
+  title = {Some Computer organization and their effectiveness},
+  journal = {IEEE Trans. On Computers},
+  year = {September, 1972},
+  volume = {C-21},
+  pages = {948-960},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{hager:2004,
+  author = {Creighton T. R. Hager},
+  title = {Context Aware and Adaptive Security for Wireless Networks},
+  journal = {Virginia Polytechnic Institute and State University},
+  year = {November, 2004},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{autosec:2001,
+  author = {Han, Q. and Venkatasubramanian, N.},
+  title = {AutoSeC: An Integrated Middleware Framework for Dynamic Service Brokering},
+  journal = {IEEE Distributed Systems Online},
+  year = {2001},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{sms:2003,
+  author = {Ian Harris},
+  title = {Technical realization of the Short Message Service (SMS)},
+  publisher = {http://www.3gpp.org/ftp/Specs/html-info/0340.htm},
+  year = {2003},
+  institution = {GSM 03.40},
+  key = {sms:2003},
+  url = {http://www.3gpp.org/ftp/Specs/html-info/0340.htm}
+}
+
+@ARTICLE{iwata:2004,
+  author = {Makoto Iwata and Daichi Morikawa and Ruhui Zhang and Wenjun Su and
+	
+	Youquan Zheng and LingJie Kong and Hiroaki Terada},
+  title = {Design Concept of An Embedded Data-Driven
+	
+	Firewall Processor},
+  journal = {IEEE Communications Magazine},
+  year = {2004},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{kiczales:1996,
+  author = {Kiczales, G.},
+  title = {Beyond the black box: Open implementation},
+  journal = {IEEE Software},
+  year = {January, 1996},
+  volume = {13},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{kiczales:2003,
+  author = {Kiczales, G. and Coady, Y.},
+  title = {Back to the Future: A Retroactive Study of Aspect Evolution in Operating
+	System Code},
+  journal = {International Conference on Aspect-Oriented Software Development},
+  year = {2003},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{kiczales:2001,
+  author = {Kiczales, G. and Coady, Y. and Feeley, N. and Suan, J. and Gudmundson,
+	S.},
+  title = {Position Summary: Aspect-Oriented System Structure},
+  journal = {The 8th Workshop on Hot Topics in Operating Systems (HotOS)},
+  year = {May 2001},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INPROCEEDINGS{kiczales:1997,
+  author = {Kiczales, G. and Lamping, J. and Mendhekar, A. and Maeda, C. and
+	Videira Lopes, C. and Loingtier, J.M. and Irwin, J.},
+  title = {Aspect-Oriented Programming},
+  booktitle = {ECOOP, Springer-Verlag},
+  year = {1997},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ELECTRONIC{hibernate:2009,
+  author = {Gavin King},
+  year = {2009},
+  title = {Hibernate Framework},
+  howpublished = {http://www.hibernate.org/},
+  organization = {Red Hat},
+  booktitle = {http://www.hibernate.org},
+  owner = {Marcos},
+  timestamp = {2009.03.17}
+}
+
+@INCOLLECTION{endler:2006,
+  author = {Bruno Paulo Usiglio Kovacs and Vanesa de Freitas Monteiro and Markus
+	Endler},
+  title = {Um estudo prático das ameças de segurança em dispositivos
+	
+	portáteis com Windows Mobile},
+  publisher = {Pontifícia Universidade Católica - Rio de Janeiro},
+  year = {2006},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{placelab:2008,
+  author = {LaMarca, Anthony and Chawathe, Yatin and Smith, Ian},
+  title = {Experimental location technology relies on Wi-Fi and cellphone signals
+	instead of orbiting satellites},
+  publisher = {http://www.placelab.org/publications/pubs/location-spectrum2004.pdf},
+  year = {2006},
+  abstract = {The Global Positioning System has spawned a wealth of locationbased
+	consumer applications that would have been unthinkable a few years
+	ago--cars that can give drivers door-to-door directions and, soon,
+	cellphones that can tell you where the nearest shoe sale is happening.
+	But these applications currently require a line of sight to three
+	or four orbiting satellites simultaneously--something that can be
+	a tall order in the dense, built-up urban areas that, ironically,
+	are the areas most likely to produce lost drivers or shoe sales.
+	Leveraging that very density to give location-based applications
+	an alternative to GPS is the goal of a new research project being
+	conducted by our Place Lab, a collaboration between Intel Research
+	Seattle, Intel Research Cambridge, in England, and the University
+	of Washington, in Seattle.},
+  howpublished = {http://www.placelab.org/publications/pubs/location-spectrum2004.pdf},
+  institution = {Placelab},
+  key = {placelab:2008},
+  url = {http://www.placelab.org/publications/pubs/location-spectrum2004.pdf}
+}
+
+@INCOLLECTION{idc:2007,
+  author = {IDC Latin},
+  title = {Brazil IT Investment Trends Insurance 2007},
+  booktitle = {http://www.idclatin.com/},
+  year = {2007},
+  institution = {Instituto de Pesquisa IDC},
+  key = {idc:2007},
+  url = {http://www.idclatin.com/}
+}
+
+@ARTICLE{leschke:2004,
+  author = {Leschke, T.},
+  title = {Achieving speed and flexibility by separating management from protection: embracing
+	the Exokernel operating system},
+  journal = {ACM SIGOPS Operating Systems Review},
+  year = {October, 2004},
+  volume = {38},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{maes:1987,
+  author = {Maes, P.},
+  title = {Concepts and Experiments in Computational Reflection},
+  journal = {OOPSLA\' \ 87},
+  year = {1987},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{malykhina:2007,
+  author = {Elena Malykhina},
+  title = {Analysis: How Smartphone Platforms Compare},
+  booktitle = {Information Week},
+  year = {January, 2007},
+  owner = {Marcos},
+  timestamp = {2009.03.16},
+  url = {http://www.informationweek.com/news/personal\_tech/showArticle.jhtml?articleID=196902226}
+}
+
+@INCOLLECTION{mcafee:2008,
+  author = {McAfee},
+  title = {Informa Telecoms \& Media},
+  booktitle = {http://www.mcafee.com.br},
+  year = {2008},
+  institution = {McAfee Inc},
+  key = {mcafee:2008},
+  url = {www.mcafee.com.br}
+}
+
+@INCOLLECTION{sage:2008,
+  author = {McAfee},
+  title = {Relatório Semestral de Segurança da McAfee},
+  booktitle = {http://www.mcafee.com/us/local\_content/reports/sage\_2008.pdf},
+  year = {2008},
+  institution = {McAfee Inc},
+  key = {sage:2008},
+  url = {http://www.mcafee.com/us/local_content/reports/sage_2008.pdf}
+}
+
+@INCOLLECTION{mccluskey:2004,
+  author = {McCluskey, G.},
+  title = {Using Java Reflection},
+  booktitle = {\href{http://java.sun.com/developer/technicalArticles/ALT/Reflection/}},
+  publisher = {Sun Microsystems},
+  year = {November, 2004},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@BOOK{muller:2000,
+  title = {Bluetooth Demystified},
+  publisher = {ISBN: 0071363238, McGraw-Hill Professional},
+  year = {2000},
+  author = {Muller, N.},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{lime:2001,
+  author = {Murphy, A. L. and Picco, G. P. and Roman, G.C.},
+  title = {LIME: A Middleware for Physical and Logical Mobility},
+  journal = {21st International Conference on Distributed Computing Systems},
+  year = {April 2001},
+  pages = {524-533},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{celullar:2006,
+  author = {Cellular Online},
+  title = {Latest Mobile, GSM, Global, Handset, Base Station, \& Regional Cellular
+	Statistics},
+  booktitle = {http://www.cellular.co.za/stats/stats-main.htm},
+  publisher = {Cellular Online},
+  year = {2006},
+  owner = {Marcos Azevedo},
+  timestamp = {2009.02.27},
+  url = {http://www.cellular.co.za/stats/stats-main.htm}
+}
+
+@INCOLLECTION{durlacher:2001,
+  author = {{Panmure Gordon \& Co}},
+  title = {Mobile Commerce Report},
+  publisher = {http://www.durlacher.com/research/res-reports.asp},
+  year = {2001},
+  institution = {Durlacher Researchs Ltd},
+  key = {durlacher:99},
+  url = {www.durlacher.com/research/res-reports.asp},
+  version = {6.2.2001}
+}
+
+@ARTICLE{qiu:2004,
+  author = {Ying Qiu and Jianying, Zhou and Feng Bao},
+  title = {Design and Optimize Firewall for Mobile Networks},
+  journal = {IEEE Vehicular Technology Conference},
+  year = {2004},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{ssl:2000,
+  author = {Rescorla, E.},
+  title = {HTTP Over TLS},
+  booktitle = {RFC 2818},
+  publisher = {Network Working Group Request for Comments},
+  year = {2000},
+  owner = {Marcos Azevedo},
+  timestamp = {2009.02.25},
+  url = {http://www.ietf.org/rfc/rfc2818.txt}
+}
+
+@INCOLLECTION{moca:2008,
+  author = {Sacramento, Vagner.},
+  title = {Mobile Collaboration Architecture},
+  year = {2008},
+  institution = {Pontifícia Universidade do Rio De Janeiro},
+  key = {moca:2008},
+  url = {http://www.lac.inf.puc-rio.br/moca/}
+}
+
+@BOOK{silberschatz:2005,
+  title = {Operating system concepts. 7.ed.},
+  publisher = {Hoboken: Wiley.},
+  year = {2005},
+  author = {Silberschatz, Avi and Galvin, Peter B. and Gagne, Greg.},
+  owner = {Marcos},
+  timestamp = {2009.03.16}
+}
+
+@ARTICLE{sinha:2001,
+  author = {Sinha, A. and Chandrakasan, A.},
+  title = {Energy Efficient Real-Time Scheduling},
+  journal = {International Conference on Computer Aided Design (ICCAD)},
+  year = {San Jose, November, 2001.},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{snekkenes:2001,
+  author = {Einar Snekkenes},
+  title = {Concepts for Personal Location Privacy Polices},
+  journal = {Norwegian Computing Center},
+  pages = {2001},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{scylla:2000,
+  author = {Stanley-Marbell, P. and Iftode, L.},
+  title = {Scylla: A Smart Virtual Machine for Mobile Embedded Systems},
+  journal = {3rd IEEE Workshop on Mobile Computing Systems and Applications},
+  year = {2000},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@ARTICLE{han:2007,
+  author = {Han Chiang Tan and Jianying Zhou and Ying Qiu},
+  title = {A Mobile Firewall Framework - Design and Implementation},
+  journal = {WCNC 2007 - IEEE Communications},
+  year = {2007},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{tomayko:1988,
+  author = {James E. Tomayko},
+  title = {Computers in Spaceflight: The NASA Experience},
+  publisher = {Wichita State University},
+  year = {March, 1988},
+  owner = {Marcos},
+  timestamp = {2009.03.16}
+}
+
+@BOOK{bellovin:1994,
+  title = {Network firewalls.},
+  year = {1994},
+  author = {W.R. Bellovin, S.M.and Cheswick},
+  volume = {32},
+  journal = {IEEE Communications Magazine},
+  key = {Bellovin}
+}
+
+@INCOLLECTION{weiser:1993,
+  author = {Mark Weiser},
+  title = {Hot Topics: Ubiquitous Computing},
+  publisher = {IEEE Computer},
+  year = {1993},
+  owner = {Marcos Azevedo},
+  timestamp = {2009.02.27},
+  url = {http://sandbox.xerox.com/weiser/}
+}
+
+@ARTICLE{welsh:2004,
+  author = {Welsh, M. et al.},
+  title = {A Portable, Low-Power, Wireless Two-Lead EKG System},
+  journal = {26th IEEE EMBS Annual International Conference},
+  year = {San Francisco, September 2004},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+
+@INCOLLECTION{ldap:1993,
+  author = {Yeong, W. and Howes, T. and Kille, S.},
+  title = {X.500 Lightweight Directory Access Protocol},
+  booktitle = {RFC 1487},
+  publisher = {Network Working Group Request for Comments},
+  year = {1993},
+  owner = {Marcos Azevedo},
+  timestamp = {2009.02.25},
+  url = {http://www.ietf.org/rfc/rfc1487.txt?number=1777}
+}
+
+@ARTICLE{zhang:2003,
+  author = {Yongguang Zhang and Wenke Lee and Yi-an Huang},
+  title = {Intrusion Detection Techniques for MobileWireless Networks},
+  journal = {Wireless Networks},
+  year = {2003},
+  volume = {9},
+  pages = {545 - 556},
+  owner = {Marcos},
+  timestamp = {2009.03.11}
+}
+

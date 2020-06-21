@@ -1,0 +1,101 @@
+\chapter{Introdução}\label{cap:introducao}
+
+Em meados dos século XXI assistimos a uma nova revolução: a dos \textit{Personal Digital Assistants} (Assistentes Pessoais Digitais) ou dos \textit{Handheld Computers} (Computadores de Mão), como são chamados os pequenos computadores pessoais que cabem na palma da mão. Os PDAs, fabricados por empresas como 3Com, HP, Compaq, Casio e Philips só neste inicio de século começam a fazer parte do cotidiano das pessoas. 
+
+O próprio \textit{Mark Wiser, 1994}, cunhador do termo Computação Ubíqua, previu o crescimento na proporção computador por homem neste novo século.
+
+Atualmente existe aproximadamente 2 bilhões\footnote{http://www.cellular.co.za/stats/stats-main.htm} de telefones móveis no mundo, conseqüentemente muitos desses são alvos desprotegidos conectados à internet. Em outra pesquisa, realizada pelo \textit{Instituto de Pesquisa IDC Brasil} \cite{idc:2007}, os dados apontam que até 2011, pelo menos 5 bilhões de trabalhadores usarão o telefone móvel como instrumento de produtividade.
+
+Paralelamente ao crescimento no uso dos dispositivos móveis, cresceram também as ameaças virtuais, cada vez mais engenhosas. Do ano passado para este surgiram 350 tipos de malware para dispositivos móveis, aponta o \textit{SAGE} \cite{sage:2008}, relatório semestral de segurança  da \textit{McAfee} \cite{mcafee:2008}. De acordo com pesquisa \textit{Informa Telecoms \& Media (ITM)}, encomendada pela \textit{McAfee}, 83\% das operadoras de telefonia móvel no mundo foram vítimas de infecções em seus dispositivos. O número de incidentes de segurança no ano passado foi cinco vezes maior que em 2005.
+
+A expansão dos serviços mundiais de comunicação móvel, somado ao aumento da conectividade e aos novos recursos dos dispositivos fez crescer o número de ameaças para o segmento móvel. O computador deixou de ser o único alvo de ataques e golpes virtuais.
+
+Um princípio básico de segurança é garantir que todo dispositivo conectado a Internet precisa estar protegido. Em um ambiente tão pervasivo como o propiciado pelos dispositivos móveis a segurança de rede é critica, para proteger os dispositivos e os dados sigilosos que eles armazenam.
+
+O uso de um firewall como uma primeira linha de defesa é bastante comum, e em um cenário como esse passa a ser imprescindível para bloquear acessos indevidos ou indesejados à partir do, ou para o dispositivo móvel.
+
+O objetivo deste trabalho é investigar e discutir as questões referentes a arquitetura necessária para a implementação de um firewall para dispositivos móveis, levando em consideração suas limitações e cenários de aplicação.
+
+Diferente dos firewalls tradicionais o Fênix Firewall System\footnote{A fênix é um pássaro da mitologia grega que quando morria entrava em auto-combustão e passado algum tempo renascia das próprias cinzas. Outra característica da fênix é sua força que a faz transportar em vôo cargas muito pesadas, portanto achamos esse nome apropriado para descrever a arquitetura de firewall aqui proposta.} é uma arquitetura distribuída de firewall, que lança mão da inferência da localização afim de definir regras, políticas e perfis de usuário de forma assertiva.
+
+Por se tratar de uma arquitetura distribuída mecanismos externos, que são detalhados na seção \ref{sub:componentes_funcionalidades}, tais como \textit{Agente de Risco, Agente de Notificação, Agente Inteligente e Banco de Dados} são utilizados como parte opcional e que interagem para proporcionar maior comodidade e segurança ao usuário, acrescentando juntamente com essa comodidade e segurança uma maior complexidade à plataforma.
+
+As políticas, regras, preferências de usuário e conectividade por meio de diferentes interfaces de comunicação serão ativadas ou desativadas dinamicamente baseado na localização no qual o usuário do dispositivo móvel se encontra. O fato das políticas, regras e preferências serem carregadas dinamicamente ao ser inferida a localização do usuário, ação esta melhor visualizada com a ilustração de um cenário hipotético disposto na seção \ref{sec:cenarios}, em nada impede com que o usuário carregue novas preferências ou ative novas políticas de forma manual.
+
+O desenvolvimento de um Firewall para dispositivos móveis enfrenta vários desafios. No campo dos desafios técnicos, um dos principais é a capacidade de armazenamento de energia, ainda pequena nos equipamentos disponíveis hoje, outros desafios relevantes são a largura de banda e baixa capacidade de processamento das CPU's embarcadas. 
+Outro importante desafio está no custo da comunicação, e nos referimos aqui literalmente ao valor a ser pago ao se estabelecer uma comunicação do tipo \textbf{GPRS}\nomenclature{$GPRS$}{General Packet Radio Service é um serviço de dados orientado a pacotes para dispositivos móveis disponível para usuários do Global System for Mobile Communications (GSM).} ou \textbf{EDGE}\nomenclature{$EDGE$}{Enhanced Data rates for GSM Evolution ou Enhanced GPRS (EGPRS) é uma tecnologia digital para telefonia celular que permite melhorar a transmissão de dados e aumentar a confiabilidade da transmissão de dados. Foi desenvolvida para capacitar a transmissão de uma grande quantidade de dados a altas taxas de velocidade (384 kbit/s).}.
+
+Existe ainda um outro desafio importante, relacionado a segurança, já que as informações são transmitidas pelo ar, através de ondas eletro-magnéticas, a confiabilidade da utilização da computação sem fio em operações que requerem elevado grau de segurança é questionada.
+
+
+%----------------------------------------------------------------
+
+\section{Desafios e requisitos relacionados ao desenvolvimento e uso de firewall para dispositivos móveis.}
+\label{sec:desafios}
+
+\subsection{Recursos de hardware e software}\label{sub:recursos_hardware_software}
+\begin{itemize}
+\item Apresentar os principais desafios que iremos enfrentar;
+\item Consumo dos recursos de hardware;
+\end{itemize}
+
+
+\subsection{Interatividade com o usuário}\label{sub:interatividade_usuario}
+\begin{itemize}
+ \item Tratar algumas questões inerentes ao grau de interação com o usuário e níveis de notificação;
+ \item Demonstrar a necessidade de um componente inteligente para ajustar os níveis de notificação, satisfazendo os riscos de falso positivo e falso negativo ao adotar um padrão de comportamento;
+ \item Conscientizar o leitor quanto as possíveis imprecisões na tomada de decisão de um Agente Inteligente;
+ \item Descrever que na maioria das vezes o usuário opta por sim para não ser mais questionado.
+\end{itemize}
+
+
+\subsection{Sensibilidade ao contexto}\label{sub:sensibilidade_contexto}
+\begin{itemize}
+ \item Demonstrar o benefício que as informações de contexto trazem para o ajuste de regras, políticas e preferências do usuário.
+ \item Demonstrar o impacto que as informações de contexto terão no Fênix Firewall System;
+\end{itemize}
+
+
+%----------------------------------------------------------------
+
+
+\subsection{Objetivos e Contribuições do Fênix Firewall System}\label{sub:contribuicoes}
+
+Como principal contribuição podemos citar os objetivos do Fênix Firewall System, que são:
+
+\begin{enumerate}
+ \item Proporcionar aos usuários de dispositovos móveis um nível maior de segurança contra os ataques vindo da rede de comunicação;
+
+ \item Controlar o acesso aos recursos do dispositivo móvel e as informações;
+
+ \item Proporcionar ao usuário uma maior comodidade através do recurso de localização:
+	O Fênix trás consigo um conceito não muito comum aos firewall's de um modo geral que é atuação de forma diferenciada baseado na localização do dispositivo móvel. A necessidade de uma aplicação como esta fica muito evidente quando nos atentamos ao detalhe de que um dispositivo móvel, ao contrário de um desktop, não está fixo em um único ambiente e sim circulando por vários durante todo o dia e, por conseqüência, sendo exposto a diversas situações distintas com diferentes tipos de vulnerabilidades de segurança.
+
+ \item Flexibilidade para que o usuário execute, crie e edite suas preferências e políticas de segurança:
+	O Fênix trabalha com o conceito de Preferências e Políticas de Segurança, onde o usuário pode definir diferentes esquemas de segurança para serem utilizados conforme o ambiente de uso do dispositivo (uma idéia ligada a sensibilidade ao contexto que este sistema possui). A localização do usuário pode ser definido de duas formas:
+	\begin{itemize}
+	  \item Utilizando o recurso GPS\nomenclature{$GPS$}{Sistema de Posicionamento Global.} do dispositivo, casa haja um;
+	  \item Manualmente, com o usuário selecionando sua localização a partir de uma lista por ele editada.
+	\end{itemize}
+
+ \item Nível de Interatividade controlada pelo usuário:
+	Por final, porém não menos importante, o Fênix Firewall System ainda trás ao usuário a opção de vários níveis de interação. Assim um usuário que esteja interessado em ter o conhecimento de todas as ações do firewall poderá solicitar um nível de interação mais detalhado, enquanto um outro que não esteja interessado nos detalhes de segurança poderá solicitar uma interação de mais alto nível, onde apenas atividades críticas serão mostradas.
+
+ \item Meta-políticas exportáveis:
+	As políticas de segurança criadas pelo usuário, são armazenadas no Banco de Dados do Fênix na forma de meta-políticas, que se caracterizam por serem independentes de sistema operacional e plataforma de hardware. Essas meta-políticas são transcrições em alto nível que podem ser convertidas, obedescendo a sintaxe exigida pelo um firewall quer este esteja em execuçaão em um dispositivo móvel ou desktop. Dessa forma, as mesmas políticas de segurança criadas por um usuário podem ser reutilizadas não só em dispositovos móveis diferentes, mas também em ambientes computacionais diferentes, como por exemplo tablet's, desktop's SmartPhone's, PDA's etc.
+
+ ??? \textit{\textbf{Melhorar essa idéia e o convencimento da mesma.}} ???
+ \item Arquitetura distribuída para detecção de intrusão;
+	Outra novidade que o Fênix tras consigo é a adoção de um serviço distribuído (opcional) para detectar possíveis intrusões. O Monitor Inteligente e de Risco submete os relatórios das conexões suspeitas para um serviço remoto disponível na arquitetura distribuida do Fênix Firewall System que irá analizar os padrões dos dados contidos nos pacotes e procurar por alguma assinatura de ataque.
+
+ \item Arquitetura distribuída para detecção de riscos e falhas de segurança:
+	O componente Monitor de Conteto, através do Coletor de Informações de Serviços (módulo deste componente), cataloga todas as conexões, portas de serviço que estejam abertas ou aguardando conexão, versões dos servidores que estão em execusão no dispositivo móvel e submete tais informações para o Agente de Risco (Serviço disponível na arquitetura distribuido do Fênix). O Agente de Risco, emposso das informações submetidas pelo dispositívo móvel, faz um análise, conflitando os dados coletatos contra uma base de vulnerabilidades e riscos conhecidos. Se um determinado serviço, ou servidor que esteja em execusão no dispositivo móvel apresentar alguma vulnerabilidade ou risco, o Agente de Riscos dispara uma mensagem a ser enviada para o usuário do dispositivo móvel em questão, e o mesmo é notificado através de SMS ou E-mail quanto a vulnerabilidade e o grau de risco que apresenta ao sistema.
+
+
+ \item Serviço de notificação do usuário:
+	Este serviço disponível na arquitetura distribuida do Fênix é mantido pelo Agente de Notificação, que realiza seu papel enviando mensagens de texto formato via SMS e/ou EMAIL para os usuários dos dispositivos móveis que fazem uso do Fênix. O Agente de Notificação recebe as informações dos serviços distribuidos, no formado: Destinatário / Mensagem / Prioridade, formata conforme a opção de notificação (SMS ou E-MAIL) selecionada pelo usuário e que se encontra-se gravada no Banco de Dados então notifica o(s) destinatário(s) informado(s).
+
+
+\end{enumerate}
+
+%----------------------------------------------------------------

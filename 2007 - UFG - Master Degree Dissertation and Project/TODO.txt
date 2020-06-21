@@ -1,0 +1,5 @@
+1. Modificar Fluxograma
+	- Gravar em Preferências do Usuário > Gravar em Mapeamento de Localizações;
+
+2. Banco de Mapeamentos Map_Adm apenas na Plat. Distribuida
+	- a justificativa está porque o Map_Adm só irá ser consultado em ambientes indoor cuja comunicação com a Plat.Distribuida já está estabelecida;

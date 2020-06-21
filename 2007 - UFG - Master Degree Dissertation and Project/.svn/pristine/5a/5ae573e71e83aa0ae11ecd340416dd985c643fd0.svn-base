@@ -1,0 +1,51 @@
+\begin{thebibliography}{}
+
+\bibitem[Chaokai 2007]{chaokai:2007}
+Chaokai, H. (2007).
+\newblock Design and implementation of a personal firewall based on ndis
+  intermediate drivers.
+\newblock {\em Eighth ACIS International Conference on Software Engineering,
+  Artificial Intelligence, Networking, and Parallel/Distributed Computing}.
+
+\bibitem[Cremonini et~al. 2004]{cremonini:2004}
+Cremonini, M., Damiani, E., di~Vimercati, S. D.~C., and Samarati, P. (2004).
+\newblock An xml-based approach to combine firewalls and web services security
+  specifications.
+\newblock {\em Universit\'a di Milano - Italy}.
+
+\bibitem[Hager 2004]{hager:2004}
+Hager, C. T.~R. (November, 2004).
+\newblock Context aware and adaptive security for wireless networks.
+\newblock {\em Virginia Polytechnic Institute and State University}.
+
+\bibitem[Qiu et~al. 2004]{qiu:2004}
+Qiu, Y., Zhou, J., and Bao, F. (2004).
+\newblock Design and optimize firewall for mobile networks.
+\newblock {\em IEEE Vehicular Technology Conference}.
+
+\bibitem[Silberschatz et~al. 2005]{silberschatz:2005}
+Silberschatz, A., Galvin, P.~B., and Gagne, G. (2005).
+\newblock {\em Operating system concepts. 7.ed.}
+\newblock Hoboken: Wiley.
+
+\bibitem[Sinha and Chandrakasan 2001]{sinha:2001}
+Sinha, A. and Chandrakasan, A. (San Jose, November, 2001.).
+\newblock Energy efficient real-time scheduling.
+\newblock {\em International Conference on Computer Aided Design (ICCAD)}.
+
+\bibitem[Snekkenes 2001]{snekkenes:2001}
+Snekkenes, E. (2001).
+\newblock Concepts for personal location privacy polices.
+\newblock {\em Norwegian Computing Center}.
+
+\bibitem[Tan et~al. 2007]{han:2007}
+Tan, H.~C., Zhou, J., and Qiu, Y. (2007).
+\newblock A mobile firewall framework - design and implementation.
+\newblock {\em WCNC 2007 - IEEE Communications}.
+
+\bibitem[Weiser 1993]{weiser:1993}
+Weiser, M. (1993).
+\newblock Hot topics: Ubiquitous computing.
+\newblock IEEE Computer.
+
+\end{thebibliography}

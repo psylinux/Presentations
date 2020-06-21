@@ -1,0 +1,59 @@
+#! /bin/sh
+#
+# Startup script for Fenix Firewall engine. 
+# Based on debian skeleton.
+#	
+
+set -e
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+FENIX_FIREWALL=/usr/bin/fenix-firewall
+IPTABLES=/usr/sbin/iptables
+NAME=fenix-firewall
+DESC="Fenix Firewall"
+
+SCRIPTNAME=/etc/init.d/$NAME
+
+# Gracefully exit if the package has been removed.
+test -x $DAEMON || exit 0
+
+# Read config file if it is present.
+#if [ -r /etc/default/$NAME ]
+#then
+#	. /etc/default/$NAME
+#fi
+
+case "$1" in
+  start)
+	echo -n "Starting $DESC: $NAME"
+	if [ -f /etc/gpe/fenix-firewall-load ]
+	then
+		$FENIX_FIREWALL --activate
+		echo " OK"
+	else
+		echo " deactivated"
+	fi
+	echo "."
+	;;
+  stop)
+	echo -n "Stopping $DESC: $NAME"
+	$IPTABLES --flush
+	$IPTABLES -P INPUT ACCEPT
+	echo "."
+	;;
+  restart|force-reload)
+	#
+	#	If the "reload" option is implemented, move the "force-reload"
+	#	option to the "reload" entry above. If not, "force-reload" is
+	#	just the same as "restart".
+	#
+	echo -n "Restarting $DESC: $NAME"
+	echo "."
+	;;
+  *)
+	echo "Usage: $SCRIPTNAME {start|stop|restart|force-reload}" >&2
+	exit 1
+	;;
+esac
+
+exit 0

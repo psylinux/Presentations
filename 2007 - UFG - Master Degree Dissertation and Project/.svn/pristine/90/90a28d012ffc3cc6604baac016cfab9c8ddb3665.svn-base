@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>fenix-firewall help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+<h1>Using fenix-firewall</h1>
+<p>
+<h2>What is fenix-firewall?</h2>
+Fenix Firewal is a context-aware frontend for the Ipables netwrk packet filter.
+</p>
+</body>
+</html>

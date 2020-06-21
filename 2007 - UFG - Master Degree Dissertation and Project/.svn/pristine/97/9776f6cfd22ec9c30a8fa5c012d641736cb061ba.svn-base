@@ -1,0 +1,16 @@
+\chapter{Arquitetura do Fênix Firewall System}
+
+Neste capítulo será apresentado o Fênix Firewall System. Será apresentada uma introdução ao Fênix Firewall System na seção \ref{sec:introducao}. Na seção \ref{sec:visao_geral} será apresentada uma visão geral da arquitetura do Fênix, em seguida, na seção \ref{sec:arquitetura_embarcada} será apresentada a arquitetura embarcada e cada um de seus componentes e por fim, na seção \ref{arquitetura_distribuida} arquitetura distribuída e também cada um de seus componentes.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introdução} \label{sec:introducao}
+
+\input{./tex/VisaoGeral.tex}
+\input{./tex/ArqEmbarcada.tex}
+\input{./tex/ArqDistribuida.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Considerações do Capítulo}

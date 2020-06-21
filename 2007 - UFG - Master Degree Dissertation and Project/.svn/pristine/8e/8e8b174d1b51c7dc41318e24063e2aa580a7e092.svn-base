@@ -1,0 +1,64 @@
+\BOOKMARK [0][-]{pretexto.0}{Elementos Pr\351-Textuais}{}
+\BOOKMARK [1][-]{pretexto.1.1}{Capa}{pretexto.0}
+\BOOKMARK [1][-]{pretexto.2.1}{Folha de Rosto}{pretexto.0}
+\BOOKMARK [1][-]{pretexto.3.1}{Aprova\347\343o}{pretexto.0}
+\BOOKMARK [1][-]{pretexto.4.1}{Direitos Autorais}{pretexto.0}
+\BOOKMARK [1][-]{pretexto.7.1}{Resumo}{pretexto.0}
+\BOOKMARK [0][-]{sumario.0}{Sum\341rio}{}
+\BOOKMARK [0][-]{section*.1}{Lista de Figuras}{}
+\BOOKMARK [0][-]{section*.2}{Lista de Tabelas}{}
+\BOOKMARK [0][-]{section*.3}{Lista de Algoritmos}{}
+\BOOKMARK [0][-]{section*.3}{Lista de C\363digos de Programas}{}
+\BOOKMARK [0][-]{chapter.4}{1 Introdu\347\343o}{}
+\BOOKMARK [1][-]{section.5}{1.1 Motiva\347\343o}{chapter.4}
+\BOOKMARK [1][-]{section.6}{1.2 Justificativa}{chapter.4}
+\BOOKMARK [1][-]{section.7}{1.3 Objetivos do Trabalho}{chapter.4}
+\BOOKMARK [1][-]{section.8}{1.4 Estrutura da Disserta\347\343o}{chapter.4}
+\BOOKMARK [0][-]{chapter.9}{2 Firewall}{}
+\BOOKMARK [1][-]{section.10}{2.1 Sistemas de Firewall}{chapter.9}
+\BOOKMARK [1][-]{section.11}{2.2 Firewall Pessoal}{chapter.9}
+\BOOKMARK [1][-]{section.12}{2.3 Computa\347\343o Ub\355qua}{chapter.9}
+\BOOKMARK [1][-]{section.13}{2.4 Contexto Computacional}{chapter.9}
+\BOOKMARK [1][-]{section.14}{2.5 Considera\347\365es do Cap\355tulo}{chapter.9}
+\BOOKMARK [0][-]{chapter.15}{3 Arquitetura do F\352nix Firewall System}{}
+\BOOKMARK [1][-]{section.16}{3.1 Introdu\347\343o}{chapter.15}
+\BOOKMARK [1][-]{section.17}{3.2 Vis\343o Geral da Arquitetura}{chapter.15}
+\BOOKMARK [1][-]{section.18}{3.3 Arquitetura Embarcada}{chapter.15}
+\BOOKMARK [2][-]{subsection.19}{3.3.1 Sistema Operacional}{section.18}
+\BOOKMARK [2][-]{subsection.21}{3.3.2 App Kernel}{section.18}
+\BOOKMARK [2][-]{subsection.24}{3.3.3 Gerente de Regras de Firewall}{section.18}
+\BOOKMARK [2][-]{subsection.28}{3.3.4 Gerente de Prefer\352ncias}{section.18}
+\BOOKMARK [2][-]{subsection.32}{3.3.5 Monitor de Contexto}{section.18}
+\BOOKMARK [3][-]{section*.35}{Monitor de Localiza\347\343o}{subsection.32}
+\BOOKMARK [3][-]{section*.38}{Monitor de Contexto Computacional}{subsection.32}
+\BOOKMARK [3][-]{section*.41}{Coletor de Informa\347\365es de Servi\347os}{subsection.32}
+\BOOKMARK [2][-]{subsection.44}{3.3.6 Gerente de Interface com o Usu\341rio}{section.18}
+\BOOKMARK [1][-]{section.47}{3.4 Arquitetura Distribu\355da}{chapter.15}
+\BOOKMARK [2][-]{subsection.48}{3.4.1 Controle de Acesso}{section.47}
+\BOOKMARK [2][-]{subsection.49}{3.4.2 Servidor WebService}{section.47}
+\BOOKMARK [2][-]{subsection.50}{3.4.3 Servidor de Reposit\363rio}{section.47}
+\BOOKMARK [2][-]{subsection.51}{3.4.4 Servidor de Notifica\347\343o}{section.47}
+\BOOKMARK [1][-]{section.52}{3.5 Considera\347\365es do Cap\355tulo}{chapter.15}
+\BOOKMARK [0][-]{chapter.53}{4 Pol\355ticas de Seguran\347a Baseada em Localiza\347\343o}{}
+\BOOKMARK [1][-]{section.54}{4.1 Infer\352ncia de Localiza\347\343o}{chapter.53}
+\BOOKMARK [1][-]{section.55}{4.2 Paradigma do Ambiente}{chapter.53}
+\BOOKMARK [1][-]{section.56}{4.3 Identificando a Localiza\347\343o do Usu\341rio}{chapter.53}
+\BOOKMARK [1][-]{section.57}{4.4 Mapeando \301reas}{chapter.53}
+\BOOKMARK [1][-]{section.58}{4.5 Carregando Pol\355ticas de Seguran\347a Baseada na Localiza\347\343o do Usu\341rio}{chapter.53}
+\BOOKMARK [1][-]{section.59}{4.6 Considera\347\365es do Cap\355tulo}{chapter.53}
+\BOOKMARK [0][-]{chapter.60}{5 Cen\341rio de Uso dos Componentes da Arquitetura}{}
+\BOOKMARK [1][-]{section.61}{5.1 Carregando Meta-Pol\355ticas e Meta-Prefer\352ncias}{chapter.60}
+\BOOKMARK [1][-]{section.62}{5.2 Controlando Interfaces de Rede}{chapter.60}
+\BOOKMARK [1][-]{section.63}{5.3 Restringindo Acessos}{chapter.60}
+\BOOKMARK [0][-]{chapter.64}{6 Implementa\347\343o}{}
+\BOOKMARK [1][-]{section.65}{6.1 Implementa\347\343o dos Componentes e Funcionalidades da Arquitetura}{chapter.64}
+\BOOKMARK [1][-]{section.66}{6.2 Avalia\347\343o}{chapter.64}
+\BOOKMARK [2][-]{subsection.67}{6.2.1 Avalia\347\343o Qualitativa}{section.66}
+\BOOKMARK [2][-]{subsection.68}{6.2.2 Avalia\347\343o Quantitativa}{section.66}
+\BOOKMARK [3][-]{section*.69}{Descri\347\343o do Ambiente Experimental}{subsection.68}
+\BOOKMARK [3][-]{section*.70}{M\351tricas}{subsection.68}
+\BOOKMARK [0][-]{chapter.71}{7 Trabalhos Correlatos}{}
+\BOOKMARK [0][-]{chapter.72}{8 Considera\347\365es Finais}{}
+\BOOKMARK [1][-]{section.73}{8.1 Contribui\347\365es do F\352nix Firewall System}{chapter.72}
+\BOOKMARK [1][-]{section.74}{8.2 Diferencial}{chapter.72}
+\BOOKMARK [1][-]{section.75}{8.3 Trabalho Futuros}{chapter.72}

@@ -1,0 +1,33 @@
+\relax 
+\catcode`"\active
+\citation{weiser:1993}
+\select@language{brazilian}
+\@writefile{toc}{\select@language{brazilian}}
+\@writefile{lof}{\select@language{brazilian}}
+\@writefile{lot}{\select@language{brazilian}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introdução}{1}}
+\newlabel{sec:introducao}{{1}{1}}
+\citation{*}
+\bibstyle{sbc}
+\bibdata{bibliografia}
+\bibcite{chaokai:2007}{Chaokai 2007}
+\bibcite{cremonini:2004}{Cremonini et~al. 2004}
+\bibcite{hager:2004}{Hager 2004}
+\bibcite{qiu:2004}{Qiu et~al. 2004}
+\bibcite{silberschatz:2005}{Silberschatz et~al. 2005}
+\bibcite{sinha:2001}{Sinha and Chandrakasan 2001}
+\bibcite{snekkenes:2001}{Snekkenes 2001}
+\bibcite{han:2007}{Tan et~al. 2007}
+\bibcite{weiser:1993}{Weiser 1993}
+\@writefile{toc}{\contentsline {section}{\numberline {2}A Arquitetura do Fênix Firewall}{2}}
+\newlabel{sec:Arquitetura}{{2}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}O Projeto da Plataforma Embarcada}{2}}
+\newlabel{sec:PlataformaEmbarcada}{{3}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Implementação}{2}}
+\newlabel{sec:Implementacao}{{4}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Estudo de Caso}{2}}
+\newlabel{sec:EstudoCaso}{{5}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Projetos Relacionados}{2}}
+\newlabel{sec:Projetos_Relacionados}{{6}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusões e Trabalhos Futuros}{2}}
+\newlabel{sec:Conclusao}{{7}{2}}

@@ -1,0 +1,74 @@
+
+\subsection{Política de Segurança Baseada em Localização}
+\begin{frame}
+  \frametitle{Política de Segurança Baseada em Localização}
+  \framesubtitle{Visão Geral}
+
+	Colocar aqui um slide com uma visão Geral sobre Políticas de Segurança Baseada em Localização.
+\\
+\begin{itemize}
+ \item Identificar a Localização do Usuário;
+ \item Mapear Áreas;
+\end{itemize}
+
+	
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Identificando uma Localização}
+  \framesubtitle{Seleção Manual}
+  
+				\begin{itemize}
+						\item \textbf{Forma Padrão:}
+								\begin{enumerate}
+									\item Selecionar manualmente a Localização.
+								\end{enumerate}
+				\end{itemize}
+								
+				\newpage												
+				\begin{figure}[htbp]
+						\centering
+						\includegraphics[width=0.60\textwidth]{../Pictures/Baixa/Localizacao.png}
+						\label{fig:Localizacao}
+				\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Identificando uma Localização}
+  \framesubtitle{Mapeamento de áreas.}
+			
+			\begin{itemize}
+					\item Com a plataforma distribuída o grupo \alert{Administrador} é capaz de mapear áreas comuns aos usuários.	
+			\end{itemize}
+
+			\begin{block}{Tipos de Mapeamento}					
+					\begin{enumerate}
+							\item As áreas comuns são definidas \textbf{exclusivamente} pelos administradores, e poderão ser utilizadas por todos os usuários, \textit{ex.: Laboratório de Redes, Secretaria, Almoxarifado.}
+				
+							\item As áreas pessoais serão mapeadas pelo próprio usuário, e as mesmas não são visíveis ou compartilhadas para os outros usuários  da plataforma.
+					\end{enumerate}
+  		\end{block}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Identificando uma Localização}
+  \framesubtitle{Seleção Automática \alert{(Opcional)}}								
+			
+	\begin{enumerate}
+			\item \alert{\textbf{Ambientes Outdoor:}}
+					\begin{itemize}
+							\item Usando o recurso \textbf{GPS} presente no dispositivo, caso exista.
+					\end{itemize}	
+		
+			\item \alert{\textbf{Ambientes Indoor:}}
+					\begin{itemize}
+							\item Usando os recursos de \textbf{Localização} oferecido pela \textbf{Arquitetura Distribuída}.
+					\end{itemize}
+	\end{enumerate}
+								
+\end{frame}

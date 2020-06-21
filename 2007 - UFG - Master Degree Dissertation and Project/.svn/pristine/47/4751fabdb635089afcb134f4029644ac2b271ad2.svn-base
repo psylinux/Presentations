@@ -1,0 +1,426 @@
+\relax 
+\ifx\hyper@anchor\@undefined
+\global \let \oldcontentsline\contentsline
+\gdef \contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global \let \oldnewlabel\newlabel
+\gdef \newlabel#1#2{\newlabelxx{#1}#2}
+\gdef \newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\let \contentsline\oldcontentsline
+\let \newlabel\oldnewlabel}
+\else
+\global \let \hyper@last\relax 
+\fi
+
+\@writefile{toc}{\beamer@endinputifotherversion {3.07pt}}
+\@writefile{nav}{\beamer@endinputifotherversion {3.07pt}}
+\select@language{english}
+\@writefile{toc}{\select@language{english}}
+\@writefile{lof}{\select@language{english}}
+\@writefile{lot}{\select@language{english}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {1}{1}}}
+\@writefile{nav}{\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {2}{2}}}
+\@writefile{toc}{\beamer@sectionintoc {1}{Introdu\c c\~ao}{3}{0}{1}}
+\@writefile{nav}{\headcommand {\sectionentry {1}{Introdu\c c\~ao}{3}{Introdu\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {1}{2}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {1}{2}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{0}{3}{3/6}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {3}{6}}}
+\@writefile{toc}{\beamer@subsectionintoc {1}{1}{Motiva\c c\~ao}{7}{0}{1}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{1}{1}{7}{Motiva\c c\~ao}}\headcommand {\beamer@subsectionpages {3}{6}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{1}{1}{7/7}{Motiva\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {7}{7}}}
+\newlabel{fig:Estatistica_Problemas}{{2}{8}{Motivação\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Estatistica_Problemas}{8}}
+\@writefile{nav}{\headcommand {\slideentry {1}{1}{2}{8/8}{Motiva\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {8}{8}}}
+\@writefile{toc}{\beamer@subsectionintoc {1}{2}{Justificativa}{9}{0}{1}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{Justificativa}}\headcommand {\beamer@subsectionpages {7}{8}}}
+\newlabel{fig:Grafico_Weiser}{{1}{9}{Justificativa\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Grafico_Weiser}{9}}
+\@writefile{nav}{\headcommand {\slideentry {1}{2}{1}{9/9}{Justificativa}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {9}{9}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{2}{2}{10/10}{Justificativa}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {10}{10}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{2}{3}{11/11}{Justificativa}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {11}{11}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{2}{4}{12/12}{Justificativa}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {12}{12}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{2}{5}{13/13}{Justificativa}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {13}{13}}}
+\@writefile{nav}{\headcommand {\slideentry {1}{2}{6}{14/14}{Justificativa}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {14}{14}}}
+\@writefile{toc}{\beamer@subsectionintoc {1}{3}{Objetivos do Trabalho}{15}{0}{1}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{1}{3}{15}{Objetivos do Trabalho}}\headcommand {\beamer@subsectionpages {9}{14}}}
+\newlabel{fig:Ciclo_Fenix}{{1}{15}{Objetivos do Trabalho\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Ciclo_Fenix}{15}}
+\@writefile{nav}{\headcommand {\slideentry {1}{3}{1}{15/15}{Objetivos do Trabalho}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {15}{15}}}
+\@writefile{toc}{\beamer@sectionintoc {2}{F\^enix Firewall System}{16}{0}{2}}
+\@writefile{nav}{\headcommand {\sectionentry {2}{F\^enix Firewall System}{16}{F\^enix Firewall System}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {3}{15}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {15}{15}}}
+\newlabel{fig:Fenix_Picture}{{2}{16}{Fênix Firewall System\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Fenix_Picture}{16}}
+\@writefile{nav}{\headcommand {\slideentry {2}{0}{2}{16/16}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {16}{16}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{0}{3}{17/17}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {17}{17}}}
+\@writefile{toc}{\beamer@subsectionintoc {2}{1}{Vis\~ao Geral da Arquitetura}{18}{0}{2}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{2}{1}{18}{Vis\~ao Geral da Arquitetura}}\headcommand {\beamer@subsectionpages {16}{17}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{1}{18/18}{Vis\~ao Geral da Arquitetura}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {18}{18}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{2}{19/19}{Vis\~ao Geral da Arquitetura}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {19}{19}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{1}{3}{20/20}{Vis\~ao Geral da Arquitetura}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {20}{20}}}
+\@writefile{toc}{\beamer@subsectionintoc {2}{2}{Arquitetura Embarcada}{21}{0}{2}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{2}{2}{21}{Arquitetura Embarcada}}\headcommand {\beamer@subsectionpages {18}{20}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{1}{21/21}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {21}{21}}}
+\newlabel{fig:Arquitetura_Embarcada}{{2}{22}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Arquitetura_Embarcada}{22}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{2}{22/22}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {22}{22}}}
+\newlabel{fig:SistemaOperacional}{{3}{23}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:SistemaOperacional}{23}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{3}{23/23}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {23}{23}}}
+\newlabel{fig:AppKernel}{{4}{24}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:AppKernel}{24}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{4}{24/24}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {24}{24}}}
+\newlabel{fig:GerentePreferencias}{{5}{25}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:GerentePreferencias}{25}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{5}{25/25}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {25}{25}}}
+\newlabel{fig:BancoDados}{{6}{26}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:BancoDados}{26}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{6}{26/26}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {26}{26}}}
+\newlabel{fig:GerenteRegrasFirewall}{{7}{27}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:GerenteRegrasFirewall}{27}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{7}{27/27}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {27}{27}}}
+\newlabel{fig:MonitorContexto}{{8}{28}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:MonitorContexto}{28}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{8}{28/28}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {28}{28}}}
+\newlabel{fig:MonitorLocalizacao}{{9}{29}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:MonitorLocalizacao}{29}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{9}{29/29}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {29}{29}}}
+\newlabel{fig:ColetorContextoComputacional}{{10}{30}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:ColetorContextoComputacional}{30}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{10}{30/30}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {30}{30}}}
+\newlabel{fig:ColetorInformacoesServico}{{11}{31}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:ColetorInformacoesServico}{31}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{11}{31/31}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {31}{31}}}
+\newlabel{fig:GerenteInterface}{{12}{32}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:GerenteInterface}{32}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{12}{32/32}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {32}{32}}}
+\newlabel{fig:Arquitetura_Embarcada}{{13}{33}{Arquitetura Embarcada\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Arquitetura_Embarcada}{33}}
+\@writefile{nav}{\headcommand {\slideentry {2}{2}{13}{33/33}{Arquitetura Embarcada}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {33}{33}}}
+\@writefile{toc}{\beamer@subsectionintoc {2}{3}{Arquitetura Distribu\IeC {\'\i }da}{34}{0}{2}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{2}{3}{34}{Arquitetura Distribu\IeC {\'\i }da}}\headcommand {\beamer@subsectionpages {21}{33}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{1}{34/34}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {34}{34}}}
+\newlabel{fig:Arquitetura_Distribuida}{{2}{35}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Arquitetura_Distribuida}{35}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{2}{35/35}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {35}{35}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{3}{36/36}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {36}{36}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{3}{36/37}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {36}{37}}}
+\newlabel{fig:DispositivoMovel}{{4}{38}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:DispositivoMovel}{38}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{4}{38/38}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {38}{38}}}
+\newlabel{fig:Internet}{{5}{39}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Internet}{39}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{5}{39/39}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {39}{39}}}
+\newlabel{fig:WebService}{{6}{40}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:WebService}{40}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{6}{40/40}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {40}{40}}}
+\newlabel{fig:ConexaoWebService}{{7}{41}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:ConexaoWebService}{41}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{7}{41/41}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {41}{41}}}
+\newlabel{fig:ServidorRepositorio}{{8}{42}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:ServidorRepositorio}{42}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{8}{42/42}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {42}{42}}}
+\newlabel{fig:ServidorNotificacao}{{9}{43}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:ServidorNotificacao}{43}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{9}{43/43}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {43}{43}}}
+\newlabel{fig:Conexao_Servidores}{{10}{44}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Conexao_Servidores}{44}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{10}{44/44}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {44}{44}}}
+\newlabel{fig:Conexao_WebService_BancoDados}{{11}{45}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Conexao_WebService_BancoDados}{45}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{11}{45/45}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {45}{45}}}
+\newlabel{fig:Conexao_WebService_Notificacao}{{12}{46}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Conexao_WebService_Notificacao}{46}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{12}{46/46}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {46}{46}}}
+\newlabel{fig:Conexao_Notificacao_Movel}{{13}{47}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Conexao_Notificacao_Movel}{47}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{13}{47/47}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {47}{47}}}
+\newlabel{fig:Arquitetura_Distribuida}{{14}{48}{Arquitetura Distribuída\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Arquitetura_Distribuida}{48}}
+\@writefile{nav}{\headcommand {\slideentry {2}{3}{14}{48/48}{Arquitetura Distribu\IeC {\'\i }da}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {48}{48}}}
+\@writefile{toc}{\beamer@subsectionintoc {2}{4}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{49}{0}{2}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{2}{4}{49}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}}\headcommand {\beamer@subsectionpages {34}{48}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{1}{49/51}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {49}{51}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{2}{52/52}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {52}{52}}}
+\newlabel{fig:SelecaoManual}{{3}{53}{Política de Segurança Baseada em Localização\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:SelecaoManual}{53}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{3}{53/53}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {53}{53}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{4}{54/54}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {54}{54}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{5}{55/55}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {55}{55}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{6}{56/56}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {56}{56}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{7}{57/61}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {57}{61}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{8}{62/62}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {62}{62}}}
+\newlabel{fig:AlgoritmoGPS}{{9}{63}{Política de Segurança Baseada em Localização\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:AlgoritmoGPS}{63}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{9}{63/63}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {63}{63}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{10}{64/64}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {64}{64}}}
+\newlabel{fig:Fluxograma}{{11}{65}{Política de Segurança Baseada em Localização\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:Fluxograma}{65}}
+\@writefile{nav}{\headcommand {\slideentry {2}{4}{11}{65/65}{Pol\IeC {\'\i }tica de Seguran\c ca Baseada em Localiza\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {65}{65}}}
+\@writefile{toc}{\beamer@subsectionintoc {2}{5}{Ilustrando o Funcionamento}{66}{0}{2}}
+\@writefile{nav}{\headcommand {\beamer@subsectionentry {0}{2}{5}{66}{Ilustrando o Funcionamento}}\headcommand {\beamer@subsectionpages {49}{65}}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{1}{66/66}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {66}{66}}}
+\newlabel{fig:c1-1}{{2}{67}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c1-1}{67}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{2}{67/67}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {67}{67}}}
+\newlabel{fig:c1-2}{{3}{68}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c1-2}{68}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{3}{68/68}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {68}{68}}}
+\newlabel{fig:c1-3}{{4}{69}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c1-3}{69}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{4}{69/69}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {69}{69}}}
+\newlabel{fig:c1-4}{{5}{70}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c1-4}{70}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{5}{70/70}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {70}{70}}}
+\newlabel{fig:c1-5}{{6}{71}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c1-5}{71}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{6}{71/71}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {71}{71}}}
+\newlabel{fig:c1-6}{{7}{72}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c1-6}{72}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{7}{72/72}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {72}{72}}}
+\newlabel{fig:c1-7}{{8}{73}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c1-7}{73}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{8}{73/73}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {73}{73}}}
+\newlabel{fig:c1-8}{{9}{74}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c1-8}{74}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{9}{74/74}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {74}{74}}}
+\newlabel{fig:c1-9}{{10}{75}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c1-9}{75}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{10}{75/75}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {75}{75}}}
+\newlabel{fig:c2-1}{{11}{76}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-1}{76}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{11}{76/76}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {76}{76}}}
+\newlabel{fig:c2-2}{{12}{77}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-2}{77}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{12}{77/77}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {77}{77}}}
+\newlabel{fig:c2-3}{{13}{78}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-3}{78}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{13}{78/78}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {78}{78}}}
+\newlabel{fig:c2-4}{{14}{79}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-4}{79}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{14}{79/79}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {79}{79}}}
+\newlabel{fig:c2-5}{{15}{80}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-5}{80}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{15}{80/80}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {80}{80}}}
+\newlabel{fig:c2-6}{{16}{81}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-6}{81}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{16}{81/81}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {81}{81}}}
+\newlabel{fig:c2-7}{{17}{82}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-7}{82}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{17}{82/82}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {82}{82}}}
+\newlabel{fig:c2-8}{{18}{83}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-8}{83}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{18}{83/83}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {83}{83}}}
+\newlabel{fig:c2-9}{{19}{84}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-9}{84}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{19}{84/84}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {84}{84}}}
+\newlabel{fig:c2-10}{{20}{85}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c2-10}{85}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{20}{85/85}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {85}{85}}}
+\newlabel{fig:c3-1}{{21}{86}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-1}{86}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{21}{86/86}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {86}{86}}}
+\newlabel{fig:c3-2}{{22}{87}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-2}{87}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{22}{87/87}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {87}{87}}}
+\newlabel{fig:c3-3}{{23}{88}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-3}{88}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{23}{88/88}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {88}{88}}}
+\newlabel{fig:c3-4}{{24}{89}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-4}{89}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{24}{89/89}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {89}{89}}}
+\newlabel{fig:c3-5}{{25}{90}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-5}{90}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{25}{90/90}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {90}{90}}}
+\newlabel{fig:c3-6}{{26}{91}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-6}{91}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{26}{91/91}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {91}{91}}}
+\newlabel{fig:c3-7}{{27}{92}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-7}{92}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{27}{92/92}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {92}{92}}}
+\newlabel{fig:c3-8}{{28}{93}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-8}{93}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{28}{93/93}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {93}{93}}}
+\newlabel{fig:c3-9}{{29}{94}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-9}{94}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{29}{94/94}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {94}{94}}}
+\newlabel{fig:c3-10}{{30}{95}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-10}{95}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{30}{95/95}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {95}{95}}}
+\newlabel{fig:c3-11}{{31}{96}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-11}{96}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{31}{96/96}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {96}{96}}}
+\newlabel{fig:c3-12}{{32}{97}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c3-12}{97}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{32}{97/97}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {97}{97}}}
+\newlabel{fig:c4-1}{{33}{98}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c4-1}{98}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{33}{98/98}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {98}{98}}}
+\newlabel{fig:c4-2}{{34}{99}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c4-2}{99}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{34}{99/99}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {99}{99}}}
+\newlabel{fig:c4-3}{{35}{100}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c4-3}{100}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{35}{100/100}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {100}{100}}}
+\newlabel{fig:c4-4}{{36}{101}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c4-4}{101}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{36}{101/101}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {101}{101}}}
+\newlabel{fig:c4-5}{{37}{102}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c4-5}{102}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{37}{102/102}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {102}{102}}}
+\newlabel{fig:c4-6}{{38}{103}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c4-6}{103}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{38}{103/103}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {103}{103}}}
+\newlabel{fig:c4-7}{{39}{104}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c4-7}{104}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{39}{104/104}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {104}{104}}}
+\newlabel{fig:c4-8}{{40}{105}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c4-8}{105}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{40}{105/105}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {105}{105}}}
+\newlabel{fig:c4-9}{{41}{106}{Ilustrando o Funcionamento\relax }{}{}}
+\@writefile{snm}{\beamer@slide {fig:c4-9}{106}}
+\@writefile{nav}{\headcommand {\slideentry {2}{5}{41}{106/106}{Ilustrando o Funcionamento}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {106}{106}}}
+\@writefile{toc}{\beamer@sectionintoc {3}{Nossa Contribui\c c\~ao}{107}{0}{3}}
+\@writefile{nav}{\headcommand {\sectionentry {3}{Nossa Contribui\c c\~ao}{107}{Nossa Contribui\c c\~ao}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {16}{106}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {66}{106}}}
+\@writefile{nav}{\headcommand {\slideentry {3}{0}{42}{107/107}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {107}{107}}}
+\@writefile{nav}{\headcommand {\slideentry {3}{0}{43}{108/108}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {108}{108}}}
+\@writefile{nav}{\headcommand {\slideentry {3}{0}{44}{109/109}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {109}{109}}}
+\@writefile{toc}{\beamer@sectionintoc {4}{Trabalhos Futuros}{110}{0}{4}}
+\@writefile{nav}{\headcommand {\sectionentry {4}{Trabalhos Futuros}{110}{Trabalhos Futuros}{0}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {107}{109}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {107}{109}}}
+\@writefile{nav}{\headcommand {\slideentry {4}{0}{45}{110/110}{}{0}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {110}{110}}}
+\bibcite{bellovin:1994}{\hyperlink {beamerbibbellovin:1994}{1}}
+\bibcite{cvss:2008}{\hyperlink {beamerbibcvss:2008}{2}}
+\bibcite{sage:2008}{\hyperlink {beamerbibsage:2008}{3}}
+\bibcite{idc:2007}{\hyperlink {beamerbibidc:2007}{4}}
+\bibcite{sms:2003}{\hyperlink {beamerbibsms:2003}{5}}
+\bibcite{durlacher:1999}{\hyperlink {beamerbibdurlacher:1999}{6}}
+\bibcite{snort:2008}{\hyperlink {beamerbibsnort:2008}{7}}
+\bibcite{placelab:2008}{\hyperlink {beamerbibplacelab:2008}{8}}
+\bibcite{moca:2008}{\hyperlink {beamerbibmoca:2008}{9}}
+\bibcite{iPhone:2008}{\hyperlink {beamerbibiPhone:2008}{10}}
+\@writefile{nav}{\headcommand {\partentry {Appendix}{1}}}
+\@writefile{nav}{\headcommand {\beamer@partpages {1}{110}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {110}{110}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {110}{110}}}
+\@writefile{nav}{\headcommand {\beamer@appendixpages {111}}}
+\@writefile{nav}{\headcommand {\sectionentry {5}{Bibliografia}{111}{Bibliografia}{1}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {111}{110}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {111}{110}}}
+\@writefile{nav}{\headcommand {\slideentry {5}{0}{46}{111/111}{}{1}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {111}{111}}}
+\@writefile{nav}{\headcommand {\slideentry {5}{0}{46}{111/112}{}{1}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {111}{112}}}
+\@writefile{nav}{\headcommand {\slideentry {5}{0}{46}{111/113}{}{1}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {111}{113}}}
+\@writefile{nav}{\headcommand {\slideentry {5}{0}{46}{111/114}{}{1}}}
+\@writefile{nav}{\headcommand {\beamer@framepages {111}{114}}}
+\@writefile{nav}{\headcommand {\beamer@partpages {111}{114}}}
+\@writefile{nav}{\headcommand {\beamer@subsectionpages {111}{114}}}
+\@writefile{nav}{\headcommand {\beamer@sectionpages {111}{114}}}
+\@writefile{nav}{\headcommand {\beamer@documentpages {114}}}
+\@writefile{nav}{\headcommand {\def \inserttotalframenumber {105}}}

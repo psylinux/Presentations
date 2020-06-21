@@ -1,0 +1,205 @@
+[General]
+img_extIsRegExp=false
+img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
+kileprversion=2
+kileversion=2.0
+lastDocument=tex/Funcionamento.tex
+masterDocument=
+name=MarcosAzevedo
+pkg_extIsRegExp=false
+pkg_extensions=.cls .sty
+src_extIsRegExp=false
+src_extensions=.tex .ltx .latex .dtx .ins
+
+[Tools]
+MakeIndex=
+QuickBuild=
+
+[item:MarcosAzevedo.tex]
+archive=true
+column=7
+encoding=ISO 8859-1
+highlight=LaTeX
+line=62
+open=true
+order=0
+
+[item:bib/bibliografia.bib]
+archive=true
+column=42
+encoding=ISO 8859-1
+highlight=BibTeX
+line=0
+open=false
+order=-1
+
+[item:marcosazevedo.kilepr]
+archive=true
+column=0
+encoding=
+highlight=
+line=0
+open=false
+order=-1
+
+[item:pos/apend_I.tex]
+archive=true
+column=32
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=false
+order=-1
+
+[item:pos/apend_II.tex]
+archive=true
+column=35
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=false
+order=-1
+
+[item:pre/pre_abstract.tex]
+archive=true
+column=55
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=false
+order=-1
+
+[item:pre/pre_agradecimentos.tex]
+archive=true
+column=0
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=false
+order=-1
+
+[item:pre/pre_aprovacao.tex]
+archive=true
+column=17
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=false
+order=-1
+
+[item:pre/pre_dedicatoria.tex]
+archive=true
+column=19
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=false
+order=-1
+
+[item:pre/pre_direitos.tex]
+archive=true
+column=585
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=false
+order=-1
+
+[item:pre/pre_epigrafe.tex]
+archive=true
+column=89
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=false
+order=-1
+
+[item:pre/pre_resumo.tex]
+archive=true
+column=92
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=false
+order=-1
+
+[item:tex/ArqDistribuida.tex]
+archive=true
+column=0
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=true
+order=1
+
+[item:tex/ArqEmbarcada.tex]
+archive=true
+column=31
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=true
+order=2
+
+[item:tex/Consideracoes.tex]
+archive=true
+column=30
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=true
+order=3
+
+[item:tex/Correlatos.tex]
+archive=true
+column=30
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=true
+order=4
+
+[item:tex/Funcionamento.tex]
+archive=true
+column=0
+encoding=ISO 8859-1
+highlight=LaTeX
+line=7
+open=true
+order=5
+
+[item:tex/Implementacao.tex]
+archive=true
+column=23
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=true
+order=6
+
+[item:tex/Introducao.tex]
+archive=true
+column=20
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=true
+order=7
+
+[item:tex/Localizacao.tex]
+archive=true
+column=38
+encoding=ISO 8859-1
+highlight=LaTeX
+line=5
+open=true
+order=8
+
+[item:tex/VisaoGeral.tex]
+archive=true
+column=36
+encoding=ISO 8859-1
+highlight=LaTeX
+line=0
+open=true
+order=9

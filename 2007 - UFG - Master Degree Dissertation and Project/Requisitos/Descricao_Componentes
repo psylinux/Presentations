@@ -1,0 +1,121 @@
+++++++++++++++++++++++++++++++++++ 
+++				++
+++  Descrição dos Componentes	++
+++				++
+++++++++++++++++++++++++++++++++++ 
+
+
+** Monitor = Cliente leve implementado para ser executado dentro do dispositivo móvel;
+** Agente = Sistema computacional distribuido que processa as informações solicitadas e/ou provenientes dos Monitores;
+
+
+************** Sistema Distribuído **************
+
+# Agente de Contexto
+	* Sistema externo, que faz uso de diversas técnicas e tecnologias de localização, e ao ser consultado retorna um contexto baseado na localização
+	  do usuário naquele instante[1][2].
+
+
+# Agente Inteligente
+	* Sistema externo, que processa (Consute/Persiste) as informações armazenadas na Base de Conhecimento (Banco de Dados).
+	* Resposável por gerar árvore de decisões e armazená-las no Banco de Dados;
+	* Notifica o Monitor Inteligente quanto a atualizações de:
+		1. Novas decisões;
+		2. Estatísticas de Uso;
+		3. Atualizações de Políticas;
+		4. Atualizações de Preferências;
+
+
+# Agente de Riscos
+	* Sistema externo, responsável por analisar os riscos dos softwares instalados e assinatura de ataques;
+	* Notifica o Usuário quanto a Atualizações de Sofwares;
+	* O Monitor de Risco consulta o Agente de Riscos quanto ao nível de risco de uma aplicação;
+	* O Monitor de Risco consulta o Agente de Riscos quanto ao nível de risco de um conexão envolvida.
+
+		
+# Banco de Dados
+	* Responsável por armazenar a Base de Conhecimento:
+		1. Estatísticas de uso:
+			1.1. Software comumen	te usados;
+			1.2. Interfaces comumente ativadas;
+			1.3. Horários de uso;
+		2. Decisões do usuário;
+		3. Informações de Contexto Computacional:
+			6.1. Fabricante;
+			6.2. Modelo;
+			6.3. Processador;
+			6.4. Quantidade de memória (RAM e ROM);
+			6.5. Softwares instalados;
+			6.6. Sistema Operacional;
+			6.7. Usuários que possuem tal dispositivo;
+			6.8. Número de Série;
+			6.9. Status de Sicronização;
+
+	* Responsável por armazenar as Preferências do Usuário:
+		1. Preferência de Configuração:
+			1.1. Preferências de Sicronização;
+			1.2. Aplicações Preferenciais;
+			1.3. Preferências de Aviso/Notificação;
+
+	* Responsável por armazenar as Políticas de Segurança do Usuário
+		1. Regras sobre Pacotes:
+			1.1. Filtragem;
+			1.2. Redirecionamento;
+			1.3. Bloqueio;
+			1.4. Aceitação;
+		2. Regras de Conectividade:
+			2.1. Portas de Entrada (Permissão/Negação);
+			2.2. Portas de Saída (Permissão/Negação);
+			2.3. Serviços Locais (Permissão/Negação);
+		3. Regras de Interfaces de Comunicação:
+			3.1. Ativação de Inteface;
+			3.2. Desativação de Interface;
+		
+
+************** Sistema Local (Dispositivo Móvel) **************
+
+# Monitor de Contexto
+	* Componente que é composto pelos módulos:
+		1. Monitor Inteligente e de Riscos;
+		2. Monitor de Localização;
+		3. Coletor de Contexto Computacional;
+		4. Coletor de Informações de Serviçõs;
+			4.1. Responsável por inferir a localização, quer seja por um recurso local, disponível no próprio dispositivo móvel (Ex.:GPS) ou de forma manual, definida pelo usuário.
+
+
+# Gerente de Preferências
+	* Consulta o Banco de Dados de Preferências local;
+	* Sincroniza os dados do Banco de Dados local com o remoto quanto solicitado;
+	* Carrega as preferências e converte os Meta-Dados (XML) de políticas para a linguagem do Componente Firewall, de acordo com o Sistema Operacional;
+
+
+# Coletor de Informações de Serviços
+	* Verifica os serviços e portas locais abertas no dispositivo móvel;
+	* Notifica o App Kernel quanto aos estados das conexões.
+
+
+# Firewall
+	* Sistema de proteção de rede, utilizado para bloquear/liberar, filtrar e redirecionar pacotes e conexões;
+	* Recebe as políticas do App Kernel e as implanta;
+	* Tem a capacidade de habilitar/desabilitar interfaces de comunicação (Ex.: Bluetooth, Serial, Wi-Fi etc).
+
+
+# Coletor de Contexto Computacional
+	* Componente que coleta utilizando API do Sistema Operacional as informações de fabricante, modelo, frequencia da CPU, carga da bateria, tempo de restante de utilização etc.
+
+
+# Notificador de Usuário
+	* Recebe as mensagens do App Kernel e criar uma interface amigável e interativa, afim de notificar ou solicitar alguma intervenções por parte do usuário.
+
+
+# Banco de Dados
+	* Atua como um espelho do Banco Distribuído.
+	* Mantem o sicronismo (Baseado no Status de Sincronismo ou de forma manual a pedido do usuário)
+	
+
+
+
+Bibliografia:
+[1] MoCA - Mobile Collaboration Architecture, http://www.lac.inf.puc-rio.br/moca/
+[2] Placelab - A privacy-observant location system, http://www.placelab.org/
+[3] CVSS - Common Vulnerability Scoring System, http://www.first.org/cvss/

@@ -1,0 +1,847 @@
+%% NOTE: \LaTeX's comment character `%' is not a comment character in
+%% the database files.  \BibTeX allows in the database files any
+%% comment that's not within an entry.
+%%
+%% Repositorio de arquivos .bib disponiveis on-line:
+%% http://liinwww.ira.uka.de/bibliography/index.html
+%% http://www.math.utah.edu/~beebe/bibliographies.html
+%%
+%% Se voc� tiver problemas com acentos nas entradas do BibTeX, coloque-os
+%% entre { e }, como em Jo{�}o ou ainda Jo{\~a}o.
+
+%---------------------------------------------------------
+% A A A
+%---------------------------------------------------------
+@MANUAL{abnt-classe-doc,
+ author       = {Santini Frasson, Miguel Vin\'{\i}cius},
+ organization = {Grupo abnTeX},
+ title        = {Classe {ABNT}},
+ subtitle     = {confec\c{c}\~ao de trabalhos acad\^emicos em {\LaTeX} segundo as normas {ABNT}},
+ year         = {2002},
+ url          = {http://abntex.codigolivre.org.br}}
+
+@BOOK{Arm1979,
+  key          = {Arm1979},
+  author       = {M. A. Armstrong},
+  year         = 1979,
+  title        = {Basic topology},
+  publisher    = {McGraw-Hill},
+  address      = {London}
+}
+
+@INCOLLECTION{AxeEde1998,
+  key          = {AxeEde1998},
+  author       = {Ulrich {\href{http://www.eecs.wsu.edu/~axen/}{Axen}} and
+                 Herbert {\href{http://www.cs.duke.edu/~edels/}{Edelsbrunner}}},
+  editor       = {Hans-Christian Hege and Konrad Polthier},
+  year         = 1998,
+  title        = {\href{http://www.eecs.wsu.edu/~axen/alpha/vismath.ps}
+                 {Auditory Morse analysis of triangulated manifolds}},
+  booktitle    = {Mathematical Visualization II},
+  pages        = {223--236},
+  publisher    = {Springer},
+  address      = {Heidelberg}
+}
+
+%---------------------------------------------------------
+% B B B
+%---------------------------------------------------------
+@UNPUBLISHED{BabHer2000,
+  key          = {BabHer2000},
+  author       = {Eric {\href{http://www.math.washington.edu/~babson/}{Babson}} and
+                 Patricia {\href{http://www.math.lsa.umich.edu/~plhersh/}{Hersh}}},
+  year         = 2001,
+  title        = {\href{http://www.math.lsa.umich.edu/~plhersh/lexmorse.ps}
+                 {Discrete Morse functions from lexicographic orders}},
+  note         = {preprint}
+}
+
+@BOOK{Ber1970,
+  key          = {Ber1970},
+  author       = {Claude Berge},
+  year         = 1970,
+  title        = {Graphes et hypergraphes},
+  publisher    = {Dunod},
+  address      = {Paris}
+}
+
+@MISC{BerEpp1999,
+  key          = {BerEpp1999},
+  author       = {Marshall Wayne {\href{http://www2.parc.com/csl/members/bern/}{Bern}}
+                  and David {\href{http://www.ics.uci.edu/~eppstein/}{Eppstein}} and others},
+  year         = 1999,
+  title        = {\href{http://arxiv.org/pdf/cs/9909001}
+                 {Emerging challenges in computational topology}},
+  howpublished = {ACM Computing Research Repository},
+  eprint       = {cs.CG/9909001}
+}
+
+@BOOK{BoiYvi1998,
+  key          = {BoiYvi1998},
+  author       = {Jean-Daniel
+                 {\href{http://www.inria.fr/prisme/personnel/boissonnat/boissonnat-eng.html}{Boissonnat}} and Mariette
+                 {\href{http://www.inria.fr/prisme/personnel/yvinec/yvinec-eng.html}{Yvinec}}},
+  year         = 1998,
+  title        = {Algorithmic Geometry},
+  publisher    = {Cambridge University Press}
+}
+
+@Book{Bue1990,
+  key          = {Bue1990},
+  author       = {David J. Buerger},
+  title        = {{\LaTeX} for Engineers and Scientists},
+  publisher    = {Mc{\-}Graw-Hill},
+  address      = {New York, NY, USA},
+  pages        = {xvi + 198},
+  year         = {1990},
+  ISBN         = {0-07-008845-4},
+  LCCN         = {Z253.4.L38 B84 1990},
+  bibdate      = {Tue Dec 14 22:43:21 1993},
+}
+
+%---------------------------------------------------------
+% C C C
+%---------------------------------------------------------
+@ARTICLE{Cha2000,
+  key          = {Cha2000},
+  author       = {Manoj K. {\href{http://www.math.lsu.edu/~chari/}{Chari}}},
+  year         = {2000},
+  title        = {\href{http://schutzenberger.liafa.jussieu.fr/FPSAC/FPSAC99/ARTICLES/chari.ps.gz}
+                 {On discrete Morse functions and combinatorial decompositions}},
+  journal      = {Discrete Math},
+  volume       = {217},
+  pages        = {101--113}
+}
+
+@UNPUBLISHED{ChaJos2001,
+  key          = {ChaJos2001},
+  author       = {Manoj K. {\href{http://www.math.lsu.edu/~chari/}{Chari}} and
+                 Michael {\href{http://www.math.tu-berlin.de/~joswig}{Joswig}}},
+  year         = {2001},
+  title        = {\href{ftp://ftp.math.tu-berlin.de/pub/combi/joswig/DMC.ps.gz}
+                 {Discrete Morse complexes}},
+  note         = {preprint}
+}
+
+@BOOK{Coh1973,
+  key          = {Coh1973},
+  author       = {Marshall M. Cohen},
+  year         = 1973,
+  title        = {A course in simple homotopy theory},
+  publisher    = {Springer},
+  address      = {New York}
+}
+
+@BOOK{Cro1978,
+  key          = {Cro1978},
+  author       = {F. H. Croom},
+  year         = 1978,
+  title        = {Basic concepts of algebraic topology},
+  publisher    = {Springer},
+  address      = {New York}
+}
+
+%---------------------------------------------------------
+% D D D
+%---------------------------------------------------------
+@INPROCEEDINGS{DelEde1993,
+  key          = {DelEde1993},
+  author       = {Cecil Jose A. Delfinado and
+                 {Herbert {\href{http://www.cs.duke.edu/~edels/}{Edelsbrunner}}}},
+  year         = 1993,
+  title        = {\href{http://www.cs.uiuc.edu/Dienst/Repository/2.0/Body/ncstrl.uiuc_cs/UIUCDCS-R-93-1787/postscript}{An Incremental Algorithm for Betti Numbers of Simplicial Complexes}},
+  booktitle    = {Proceedings of 9th Annual Symposium on Computer Geometry},
+  pages        = {232--239}
+}
+
+@ARTICLE{DeyGuh1996,
+  key          = {DeyGuh1996},
+  author       = {Tamal K. {\href{http://www.cis.ohio-state.edu/~tamaldey/}{Dey}} and
+                 Samanta {\href{http://www.cs.uwm.edu/faculty/guha/}{Guha}}},
+  year         = 1998,
+  title        = {\href{http://www.cis.ohio-state.edu/~tamaldey/paper/3dhom/paper.ps.gz}{Computing homology groups of simplicial complexes in $R^3$}},
+  journal      = {Journal of ACM},
+  volume       = 45,
+  number       = 2,
+  pages        = {266--287}
+}
+
+@INCOLLECTION{DeyEdeGuh1999,
+  key          = {DeyEdeGuh1999},
+  author       = {Tamal K. {\href{http://www.cis.ohio-state.edu/~tamaldey/}{Dey}} and
+                 Herbert {\href{http://www.cs.duke.edu/~edels/}{Edelsbrunner}} and
+                 Samanta {\href{http://www.cs.uwm.edu/faculty/guha/}{Guha}}},
+  editor       = {B. Chazelle and J.E. Goodman and R. Pollack},
+  year         = 1999,
+  title        = {\href{http://www.ics.uci.edu/~eppstein/gina/DeyEdelsbrunnerGuha.ps.Z}{Computational topology}},
+  booktitle    = {Advances in Discrete and Computational Geometry},
+  series       = {Contemporary mathematics},
+  volume       = 223,
+  pages        = {109--143},
+  publisher    = {American Mathematical Society},
+  address      = {Providence}
+}
+
+@UNPUBLISHED{DeyGuh2001,
+  key          = {DeyGuh2001},
+  author       = {Tamal K. {\href{http://www.cis.ohio-state.edu/~tamaldey/}{Dey}} and
+                 Samanta {\href{http://www.cs.uwm.edu/faculty/guha/}{Guha}}},
+  year         = 2001,
+  title        = {\href{http://www.cis.ohio-state.edu/~tamaldey/paper/3dhom/paper.ps.gz}
+                 {Algorithms for manifolds and simplicial complexes in euclidean 3-Space}},
+  note         = {preprint}
+}
+
+@TECHREPORT{Dra1994,
+  author        = {Nikos Drakos},
+  institution   = {Computer Based Learning Unit, University of Leeds},
+  title         = {The {\LaTeX} to {HTML} translator},
+  year          = {1994},
+  abstract-url  = {http://cbl.leeds.ac.uk/nikos/tex2html/doc/manual/manual.html},
+  document-size = {393.0 kbytes},
+  url           = {http://cbl.leeds.ac.uk/nikos/tex2html/doc/latex2html.ps},
+  month         = {jan},
+  type          = {Internal report},
+  scope         = {hypertext}
+}
+
+%---------------------------------------------------------
+% E E E
+%---------------------------------------------------------
+@INPROCEEDINGS{EdeLetZom2000,
+  key          = {EdeLetZom2000},
+  author       = {Herbert {\href{http://www.cs.duke.edu/~edels/}{Edelsbrunner}} and
+                 David {\href{http://www.math.okstate.edu/~letscher/}{Letscher}} and
+                 Afra {\href{http://graphics.stanford.edu/~afra/}{Zomorodian}}},
+  year         = 2000,
+  title        = {\href{http://www.cs.duke.edu/~edels/TriTop/PersTop.ps}
+                 {Topological persistence and simplification}},
+  booktitle    = {Proceedings of the 41st Annual IEEE Symposium on
+                 Foundations of Computer Science},
+  pages        = {454--463}
+}
+
+@INPROCEEDINGS{EdeHarZom2001,
+  key          = {EdeHarZom2001},
+  author       = {Herbert {\href{http://www.cs.duke.edu/~edels/}{Edelsbrunner}} and
+                 John L. {\href{http://www.math.duke.edu/~harer/}{Harer}} and
+                 Afra {\href{http://graphics.stanford.edu/~afra/}{Zomorodian}}},
+  year         = 2001,
+  title        = {\href{http://graphics.stanford.edu/~afra/papers/socg01/dcg.ps.gz}
+                 {Hierarchical Morse Complexes for Piecewise Linear 2-Manifolds}},
+  booktitle    = {Proceedings of the 17th Symposium of Computational Geometry},
+  pages        = {70--79}
+}
+
+@ARTICLE{Ege95,
+  key          = {Ege95},
+  author       = {Omer {\href{http://www.cs.ucsb.edu/~omer/}{E\u{g}ecio\u{g}lu}} and
+                 Teofilo F. {\href{http://www.cs.ucsb.edu/~teo/}{Gonzalez}}},
+  year         = 1996,
+  title        = {\href{http://www.cs.ucsb.edu/~omer/DOWNLOADABLE/simplicial96.pdf}
+                 {A computationally intractable problem on simplicial complexes}},
+  journal      = {Computational Geometry: Theory and Applications},
+  volume       = 6,
+  pages        = {85--98}
+}
+
+%---------------------------------------------------------
+% F F F
+%---------------------------------------------------------
+@INCOLLECTION{For1995,
+  key          = {For1995},
+  author       = {Robin {\href{http://math.rice.edu/~forman/}{Forman}}},
+  editor       = {S. T. Yau},
+  year         = 1995,
+  title        = {A discrete Morse theory for cell complexes},
+  booktitle    = {Geometry, Topology and Physics for Raoul Bott},
+  publisher    = {International Press}
+}
+
+@ARTICLE{For1998,
+  key          = {For1998},
+  author       = {Robin {\href{http://math.rice.edu/~forman/}{Forman}}},
+  year         = 1998,
+  title        = {Morse theory for cell complexes},
+  journal      = {Advances in Mathematics},
+  volume       = 134,
+  pages        = {90--145}
+}
+
+@UNPUBLISHED{For2000,
+  key          = {For2000},
+  author       = {Robin {\href{http://math.rice.edu/~forman/}{Forman}}},
+  year         = 2001,
+  title        = {\href{http://math.rice.edu/~forman/app.ps}
+                 {Some applications of combinatorial differential topology}},
+  note         = {preprint}
+}
+
+@UNPUBLISHED{For2001,
+  key          = {For2001},
+  author       = {Robin {\href{http://math.rice.edu/~forman/}{Forman}}},
+  year         = 2001,
+  title        = {\href{http://math.rice.edu/~forman/user.ps}
+                 {A user guide to discrete Morse theory}},
+  note         = {preprint}
+}
+
+%---------------------------------------------------------
+% G G G
+%---------------------------------------------------------
+@Book{GooMitSam1994,
+  key          = {GooMitSam1994},
+  author       = {Michel Goossens and Frank Mittelbach and Alexander
+                  Samarin},
+  title        = {The {\LaTeX} Companion},
+  publisher    = {Ad{\-d}i{\-s}on-Wes{\-l}ey},
+  address      = {Reading, MA, USA},
+  edition      = {Second},
+  pages        = {xxi + 530},
+  year         = {1994},
+  ISBN         = {0-201-54199-8},
+  LCCN         = {Z253.4.L38 G66 1994},
+  bibdate      = {Wed Nov 16 12:41:07 1994},
+  price        = {US\$34.25}
+}
+
+%---------------------------------------------------------
+% H H H
+%---------------------------------------------------------
+@MISC{Hachi,
+  key          = {Hachi},
+  author       = {Masahiro {\href{http://www.sk.tsukuba.ac.jp/~hachi/}{Hachimori}}},
+  title        = {Simplicial Complex Library},
+  howpublished = {\href{http://www.qci.jst.go.jp/~hachi/math/library/index_eng.html}
+                 {www.qci.jst.go.jp/\-\~{}hachi}}
+}
+
+@Book{Hah1991,
+  key          = {Hah1991},
+  author       = {Jane Hahn},
+  title        = {{\LaTeX} for Everyone},
+  publisher    = {Personal {\TeX} Inc.},
+  address      = {12 Madrona Street, Mill Valley, CA 94941, USA},
+  pages        = {xi + 346},
+  year         = {1991},
+  ISBN         = {0-9631044-0-3},
+  LCCN         = {Z253.4.L38 H34 1991},
+  price        = {US\$19.95},
+  bibdate      = {Tue Dec 14 22:54:48 1993},
+}
+
+@INCOLLECTION{Har1998,
+  key          = {Har1998},
+  author       = {John C. {\href{http://graphics.cs.uiuc.edu/~jch/}{Hart}}},
+  editor       = {Hans-Christian Hege and Konrad Polthier},
+  year         = 1998,
+  title        = {\href{http://graphics.cs.uiuc.edu/~jch/papers/morseism.pdf}{Morse theory for implicit surface modeling}},
+  booktitle    = {Mathematical Visualization},
+  pages        = {257--268},
+  publisher    = {Springer},
+  address      = {Berlin}
+}
+
+@INPROCEEDINGS{Har2000,
+  key          = {Har2000},
+  author       = {John C. {\href{http://graphics.cs.uiuc.edu/~jch/}{Hart}}},
+  year         = 1999,
+  title        = {\href{http://graphics.cs.uiuc.edu/~jch/papers/smi99.pdf}{Computational Topology for Shape Modeling}},
+  booktitle    = {Proceedings Shape Modeling International '99},
+  pages        = {36--45},
+  organization = {University Aizu},
+  address      = {Japan}
+}
+
+@ARTICLE{HopTar1973,
+  key          = {HopTar1973},
+  author       = {J. Hopcroft and Robert Endre Tarjan},
+  year         = 1973,
+  title        = {Efficient Algorithms for Graph Manipulation},
+  journal      = {Communications of the ACM},
+  volume       = 16,
+  pages        = {372--378}
+}
+
+%---------------------------------------------------------
+% I I I
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% J J J
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% K K K
+%---------------------------------------------------------
+@BOOK{Knu1989,
+  key          = {Knu1989},
+  author       = {Donald E. Knuth},
+  title        = {{The TeX Book}}, 
+  publisher    = {Addison-Wesley},
+  year         = {1989},
+  edition      = {15th}}
+
+@Book{KopDal1995,
+  key          = {KopDal1995},
+  author       = {Helmut Kopka and Patrick W. Daly},
+  title        = {A Guide to {\LaTeX}2e: Document Preparation for
+                  Beginners and Advanced Users},
+  publisher    = {Ad{\-d}i{\-s}on-Wes{\-l}ey},
+  year         = {1995},
+  ISBN         = {0-201-42777-X},
+  LCCN         = {Z253.4.L38 K66 1995},
+  address      = {Reading, MA, USA},
+  edition      = {Second},
+  pages        = {x + 554},
+  price        = {US\$37.61},
+  bibdate      = {Thu May 25 15:18:31 1995},
+}
+
+@TECHREPORT{KouNor1993,
+  key          = {KouNor1993},
+  author       = {Eleftherios {\href{http://www.research.att.com/info/ek}{Koutsofios}} and
+                 Stephen C. {\href{http://www.research.att.com/~north/graphviz/}{North}}},
+  title        = {\href{http://www.research.att.com/~north/graphviz/dotguide.pdf}
+                 {Drawing graphs with dot}},
+  institution  = {AT\&T Bell Laboratories},
+  year         = 1993,
+  address      = {Murray Hill, NJ}
+}
+
+%---------------------------------------------------------
+% L L L
+%---------------------------------------------------------
+@Book{Lam1996,
+  key          = {Lam1996},
+  author       = {Leslie Lamport},
+  title        = {{\LaTeX: A Document Preparation System}},
+  edition      = {Second},
+  publisher    = {Addison-Wesley},
+  address      = {Reading, MA, USA},
+  year         = {1996},
+  ISBN         = {0-201-52983-1},
+}
+
+@MISC{LeeSwi2002,
+  key          = {LeeSwi2002},
+  author       = {R. Berners-Lee and T. Swick},
+  title        = {{Semantic Web Development}},
+  year         = {2002},
+  URL          = {\url{http://www.w3.org/2002}, �ltimo acesso em Agosto de 2003}}
+
+@UNPUBLISHED{LewTavLop2001,
+  key          = {LewTavLop2001},
+  author       = {Thomas {\href{http://www.carva.org/thomas.lewiner}{Lewiner}} and Geovan Tavares and Helio {{\href{http://www.mat.puc-rio.br/~lopes}{Lopes}}}},
+  year         = 2001,
+  title        = {\href{http://www.mat.puc-rio.br/~tomlew/CGTA.pdf}{Optimal discrete Morse functions for 2-manifolds}},
+  note         = {preprint}
+}
+
+@TECHREPORT{Lew2002,
+  key          = {Lew2002},
+  author       = {Thomas Lewiner},
+  title        = {{Normas para apresenta\c{c}\~{a}o de teses e disserta\c{c}\~{o}es}}, 
+  institution  = {Departamento de Matem\'{a}tica - PUC-Rio},
+  year         = {2002}}
+
+@INCOLLECTION{LewLopTav2002,
+  key          = {LewLopTav2002},
+  author       = {Thomas {\href{http://www.carva.org/thomas.lewiner}{Lewiner}} and Helio {\href{http://www.mat.puc-rio.br/~lopes}{Lopes}} and Geovan Tavares},
+  editor       = {Hans-Christian Hege and Konrad Polthier},
+  year         = 2002,
+  title        = {\href{http://www.mat.puc-rio.br/~tomlew/VisMath.pdf}{Visualizing Forman's discrete vector field}},
+  booktitle    = {Mathematical Visualization III},
+  publisher    = {Springer},
+  address      = {Berlin}
+}
+
+@PHDTHESIS{Lop1996,
+  key          = {Lop1996},
+  author       = {Helio {\href{http://www.mat.puc-rio.br/~lopes}{Lopes}}},
+  year         = 1996,
+  title        = {Algorithm to build and unbuild 2 and 3 dimensional manifolds},
+  school       = {Department of Mathematics, PUC-Rio}
+}
+
+@INPROCEEDINGS{LopTav1997,
+  key          = {LopTav1997},
+  author       = {Helio {\href{http://www.mat.puc-rio.br/~lopes}{Lopes}} and
+                  Geovan Tavares},
+  title        = {Structure operators for modeling 3 dimensional manifolds},
+  editor       = {C. Hoffman and W. Bronsvort},
+  booktitle    = {ACM Siggraph Symposium on Solid Modeling and Applications},
+  year         = 1997,
+  pages        = {10--18}
+}
+
+@CONFERENCE{LopRosSafTav2002,
+  key          = {LopRosSafTav2002},
+  author       = {Helio {\href{http://www.mat.puc-rio.br/~lopes}{Lopes}} and Jarek {\href{http://www.gvu.gatech.edu/people/official/jarek.rossignac/}{Rossignac}} and A. Safanova and Andrzej {\href{http://www.cc.gatech.edu/fac/Andrzej.Szymczak/}{Szymczak}} and Geovan Tavares},
+  year         = 2002,
+  title        = {Edgebreaker: a simple compression for surfaces with handles},
+  booktitle    = {7th ACM Siggraph Symposium on Solid Modeling and Application}
+}
+
+@BOOK{Lovplu1986,
+  key          = {Lov86},
+  author       = {L. Lov\'{a}sz and M. D. Plummer},
+  year         = 1986,
+  title        = {Matching Theory},
+  publisher    = {Van Nostrand Reinhold},
+  address      = {Amsterdam}
+}  
+
+@BOOK{LunWei1969,
+  key          = {LunWei1969},
+  author       = {A. Lundell and S. Weingram},
+  year         = 1969,
+  title        = {The topology of CW complexes},
+  publisher    = {Van Nostrand Reinhold},
+  address      = {New York}
+}
+
+%---------------------------------------------------------
+% M M M
+%---------------------------------------------------------
+@MISC{Mar2004,
+  author       = {Library of Congress},
+  title        = {{MARC 21 Reference Materials}},
+  year         = {2004},
+  URL          = {\url{http://www.loc.gov/marc/umb/um11to12.html}, acessado em outubro de 2004}}
+
+@INPROCEEDINGS{Mar1958,
+  key          = {Mar1958},
+  author       = {A. Markov},
+  year         = 1958,
+  title        = {Insolvability of the problem of homeomorphy},
+  booktitle    = {Proceedings of the International Congress of Mathematics},
+  pages        = {300--306}
+}
+
+@INCOLLECTION{MeyDesSchBar2002,
+  key          = {MeyDesSchBar2002},
+  author       = {Mark {\href{http://www.cs.caltech.edu/~mmeyer/}{Meyer}} and
+                  Mathieu {\href{http://www.cs.caltech.edu/~mathieu/}{Desbrun}} and
+                  Peter {\href{http://www.multires.caltech.edu/~ps/}{Schr\"{o}der}} and
+                  Al {\href{http://www.gg.caltech.edu/~barr/}{Barr}}},
+  editor       = {Hans-Christian Hege and Konrad Polthier},
+  year         = 2002,
+  title        = {\href{http://www.multires.caltech.edu/pubs/diffGeoOps.pdf}
+                 {Discrete Differential--Geometry Operators for Triangulated 2--Manifolds}},
+  booktitle    = {Mathematical Visualization III},
+  publisher    = {Springer},
+  address      = {Berlin}
+}
+ 
+
+@BOOK{Mil1963,
+  key          = {Mil1963},
+  author       = {John Willard Milnor},
+  year         = 1963,
+  title        = {Morse theory},
+  publisher    = {Princeton University Press},
+  address      = {Princeton, NJ}
+}
+
+@ARTICLE{Moi1952,
+  key          = {Moi1952},
+  author       = {Edwin E. Mo\"{i}se},
+  year         = 1952,
+  title        = {Affine structures in 3--manifolds},
+  journal      = {Annals of Math},
+  volume       = 56,
+  number       = 2,
+  pages        = {96--114}
+}
+
+@INPROCEEDINGS{MorTak2000,
+  key          = {MorTak2000},
+  author       = {Sonoko {\href{http://naomi.is.s.u-tokyo.ac.jp/~moriso}{Moriyama}} and Fumihiko {{\href{http://www-imai.is.s.u-tokyo.ac.jp/~fumi/}{Takeuchi}}}},
+  year         = 2000,
+  title        = {\href{http://www-imai.is.s.u-tokyo.ac.jp/~fumi/PUBLICATIONS/MorTak00.a4.ps}{Incremental construction properties in dimension two---shellability, extendable shellability and vertex decomposability}},
+  booktitle    = {Proceedings of the 12th Canadian conference on computational geometry},
+  address      = {Fredericton},
+  pages        = {65--72}
+}
+
+
+%---------------------------------------------------------
+% N N N
+%---------------------------------------------------------
+@manual{NBR10520:2001,
+ organization  = {Associa{\c c}\~ao Brasileira de Normas T\'ecnicas},
+ org-short     = {ABNT},
+ title         = {{NBR} 10520},
+ subtitle      = {Informa{\c c}\~ao e documenta{\c c}\~ao --- Apresenta{\c c}\~ao de
+                  cita{\c c}\~oes em documentos},
+ address       = {Rio de Janeiro},
+ pages         = 4,
+ month         = jul,
+ year          = 2001}
+
+@manual{NBR14724:2001,
+ organization  = {Associa{\c c}\~ao Brasileira de Normas T\'ecnicas},
+                 org-short={ABNT},
+ title         = {{NBR} 14724},
+ subtitle      = {Informa{\c c}\~ao e documenta{\c c}\~ao ---
+                  trabalhos acad\^emicos --- apresenta{\c c}\~ao},
+ address       = {Rio de Janeiro},
+ month         = jul,
+ pages         = 6,
+ year          = 2001}
+
+@TECHREPORT{Nor1992,
+  key          = {Nor1992},
+  author       = {Stephen C. {\href{http://www.research.att.com/~north/graphviz/}{North}}},
+  title        = {\href{http://www.research.att.com/~north/graphviz/neatoguide.pdf}
+                 {Neato User's Guide}},
+  institution  = {AT\&T Bell Laboratories},
+  year         = 1992,
+  address      = {Murray Hill, NJ}
+}
+
+%---------------------------------------------------------
+% O O O
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% P P P
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% Q Q Q
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% R R R
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% S S S
+%---------------------------------------------------------
+@MISC{Scharein,
+  key          = {Scharein},
+  author       = {Rob {\href{http://www.cs.ubc.ca/spider/scharein/}{Scharein}}},
+  title        = {Knot-Plot},
+  howpublished = {\href{http://www.pims.math.ca/knotplot/}{www.pims.math.ca/knotplot/}}
+}
+
+@ARTICLE{ShiKer1991,
+  key          = {ShiKer1991},
+  author       = {Y. Shinagawa and T.L. Kunii and Y.L. Kergosien},
+  year         = 1991,
+  title        = {Surface coding based on Morse theory},
+  journal      = {IEEE Computer Graphics and Applications},
+  volume       = 11,
+  pages        = {66--78}
+}
+
+@INCOLLECTION{SmiJon1999,
+  key          = {SmiJon1999},
+  author       = {A. Smith and B. Jones},
+  title        = {{On the Complexity of Computing}},
+  booktitle    = {Advances in Computer Science},
+  pages        = {555-566},
+  publisher    = {Publishing Press},
+  year         = {1999},
+  editor       = {A. B. Smith-Jones}}
+
+@INPROCEEDINGS{SzyRos2000,
+  key          = {SzyRos00},
+  author       = {Andrzej {\href{http://www.cc.gatech.edu/fac/Andrzej.Szymczak/}{Szymczak}} and
+                  Jarek {\href{http://www.gvu.gatech.edu/people/official/jarek.rossignac/}
+                  {Rossignac}}},
+  title        = {\href{http://www.cc.gatech.edu/fac/Andrzej.Szymczak/papers/compress.pdf}
+                 {Grow \& Fold: Compression of Tetrahedral Meshes}},
+  booktitle    = {Solid Modelling '99},
+  year         = 1999,
+  note         = {to appear}
+}
+
+%---------------------------------------------------------
+% T T T
+%---------------------------------------------------------
+@ARTICLE{Tar1975,
+  key          = {Tar1975},
+  author       = {Robert Endre Tarjan},
+  year         = 1975,
+  title        = {Efficiency of a good but not linear set union algorithm},
+  journal      = {Journal of the ACM},
+  volume       = 22,
+  number       = 2,
+  pages        = {215--225}
+}
+
+@BOOK{Tar1983,
+  key          = {Tar1983},
+  author       = {R. E. Tarjan},
+  year         = 1983,
+  title        = {Data Structures and Network Algorithms},
+  publisher    = {Society for Industrial and Applied Mathematics},
+  address      = {Philadelphia}
+}
+
+@ARTICLE{TauRos1998,
+  key          = {TauRos98},
+  author       = {Gabriel {\href{http://www.research.ibm.com/people/t/taubin/}{Taubin}} and
+                 Jarek {\href{http://www.gvu.gatech.edu/people/official/jarek.rossignac/}
+                 {Rossignac}}},
+  year         = 1998,
+  title        = {\href{http://www.research.ibm.com/people/t/taubin/publications/taubin-etal-tog-1998-17-2-p84.pdf}
+                 {Geometric compression through topological surgery}},
+  journal      = {ACM Transactions on Graphics},
+  volume       = 17,
+  number       = 2,
+  pages        = {84--115}
+}
+
+%---------------------------------------------------------
+% U U U
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% V V V
+%---------------------------------------------------------
+@INCOLLECTION{Veg1997,
+  key          = {Veg1997},
+  author       = {Gert {\href{http://www.cs.rug.nl/~gert/}{Vegter}}},
+  editor       = {J. E. Goodman and J. O'Rourke},
+  year         = 1997,
+  title        = {\href{http://cs.smith.edu/~orourke/books/discrete.html}
+                 {Computational topology}},
+  booktitle    = {Handlebook of Discrete Computational Geometry},
+  pages        = {517--536},
+  publisher    = {CRC Press}
+}
+
+%---------------------------------------------------------
+% W W W
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% X X X
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% Y Y Y
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% Z Z Z
+%---------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Below is a description of all fields recognized by the standard
+%% bibliography styles.  An entry can also contain other fields, which
+%% are ignored by those styles.
+
+%% address
+%% Usually the address of the publisher or other type of institution.
+%% For major publishing houses, van Leunen recommends omitting the
+%% information entirely. For small publishers, on the other hand, you
+%% can help the reader by giving the complete address.
+
+%% annote
+%% An annotation.  It is not used by the standard bibliography styles,
+%% but may be used by others that produce an annotated bibliography.
+
+%% author
+%% The name(s) of the author(s),
+%% in the format described in the \LaTeX\ book.
+
+%% booktitle
+%% Title of a book, part of which is being cited.  See the \LaTeX\
+%% book for how to type titles.  For book entries, use the title field
+%% instead.
+
+%% chapter
+%% A chapter (or section or whatever) number.
+
+%% crossref
+%% The database key of the entry being cross referenced.
+
+%% edition
+%% The edition of a book---for example, ``Second''.  This should be an
+%% ordinal, and should have the first letter capitalized, as shown
+%% here; the standard styles convert to lower case when necessary.
+
+%% editor
+%% Name(s) of editor(s), typed as indicated in the \LaTeX\ book.  If
+%% there is also an author field, then the editor field gives the
+%% editor of the book or collection in which the reference appears.
+
+%% howpublished
+%% How something strange has been published.  The first word should be
+%% capitalized.
+
+%% institution
+%% The sponsoring institution of a technical report.
+
+%% journal
+%% A journal name.  Abbreviations are provided for many journals; see
+%% the Local Guide.
+
+%% key
+%% Used for alphabetizing, cross referencing, and creating a label
+%% when the ``author'' information (described in Section
+%% odds-and-ends) is missing.  This field should not be confused with
+%% the key that appears in the \cite command and at the beginning of
+%% the database entry.
+
+%% month
+%% The month in which the work was published or, for an unpublished
+%% work, in which it was written.  You should use the standard
+%% three-letter abbreviation, as described in Appendix B.1.3 of the
+%% \LaTeX\ book.
+
+%% note
+%% Any additional information that can help the reader.  The first
+%% word should be capitalized.
+
+%% number
+%% The number of a journal, magazine, technical report, or of a work
+%% in a series.  An issue of a journal or magazine is usually
+%% identified by its volume and number; the organization that issues a
+%% technical report usually gives it a number; and sometimes books are
+%% given numbers in a named series.
+
+%% organization
+%% The organization that sponsors a conference or that publishes a
+%% manual.
+
+%% pages
+%% One or more page numbers or range of numbers, such as 42--111 or
+%% 7,41,73--97 or 43+ (the `+' in this last example indicates pages
+%% following that don't form a simple range).  To make it easier to
+%% maintain Scribe-compatible databases, the standard styles convert a
+%% single dash (as in 7-33) to the double dash used in \TeX\ to denote
+%% number ranges (as in 7--33}).
+
+%% publisher
+%% The publisher's name.
+
+%% school
+%% The name of the school where a thesis was written.
+
+%% series
+%% The name of a series or set of books.  When citing an entire book,
+%% the the title field gives its title and an optional series field
+%% gives the name of a series or multi-volume set in which the book is
+%% published.
+
+%% title
+%% The work's title, typed as explained in the \LaTeX\ book.
+
+%% type
+%% The type of a technical report---for example, ``Research Note''.
+
+%% volume
+%% The volume of a journal or multivolume book.
+
+%% year
+%% The year of publication or, for an unpublished work, the year it
+%% was written.  Generally it should consist of four numerals, such as
+%% 1984, although the standard styles can handle any year whose last
+%% four nonpunctuation characters are numerals, such as about 1984.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

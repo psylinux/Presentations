@@ -1,0 +1,105 @@
+\section{Fênix Firewall System}
+
+\begin{frame}
+  \frametitle{Conhecendo a Fênix}
+  
+			\begin{figure}[htbp]
+				\centering
+					\includegraphics[width=0.40\textwidth]{../Pictures/Baixa/Fenix_Picture.png}				
+				\label{fig:Fenix_Picture}
+			\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{\alert{Próximos Slides}}
+			
+			\begin{center}
+					\huge \textbf{Visão Geral da Arquitetura}.
+			\end{center}
+			
+\end{frame}
+
+%_______________________________________________________________________
+\subsection{Visão Geral da Arquitetura}
+
+\begin{frame}
+  \frametitle{Visão Geral da Arquitetura}
+  \framesubtitle{Do que o Fênix é capaz?}
+
+			\begin{itemize}
+				\item \alert{Controlar} o acesso ao dispositivo.
+				\item \alert{Restringir} acessos entrantes e/ou saintes:
+				
+						\begin{enumerate}
+							\item Domínios (Ex.: www.hackers.org);
+							\item Redes  (Ex.: 10.0.0.0/8);	
+							\item Sub-redes (Ex.: 200.137.197.129/27);
+							\item Faixa de Endereços IP (Ex.: 172.13.0.1 - 172.13.0.10);
+							\item Endereço IP (Ex.: 192.168.1.1/24)
+						\end{enumerate}
+						
+				\item \alert{Notificar} quando conexões suspeitas surgirem.
+				\item \alert{Carregar} políticas de segurança e preferências de usuário segundo a \textbf{localização}.
+				\item \alert{Sincronizar} e receber \alert{notificações} de segurança com uma Plataforma Distribuída (\textbf{Opcional}).
+			\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Ataques detectados pelo Fênix}
+  
+			\begin{itemize}
+				\item Varreduras de portas.
+				\item Worms e Cavalos de Tróia.
+				\item Ataques DoS (tradicionais).
+				\item IP Spoofing.
+				\item Roteamento dirigido.
+				\item Ping O'Death.
+				\item SYN Flood.
+				\item Ataques contra o protocolo NETBIOS.
+				\item Ataques contra o X-Windows.				
+				\item Ataque de Fragmentação.
+				\item Varredura invisível.
+				\item Transparência dos dados na rede.				
+			\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Visão Geral da Arquitetura}
+
+		\begin{block}{Arquitetura do Fênix Firewall}		
+			\begin{enumerate}
+				\item \alert{\textbf{Arquitetura Embarcada}}.\\
+							Instalada no Dispositivo Móvel.
+											
+				\item \alert{\textbf{Arquitetura Distribuída}}.\\
+							Parte \textbf{Opcional}, que é instalada em computadores na WEB. Interessante para \textbf{Usuários Avançados} e \textbf{Terceiros}.
+							
+			\end{enumerate}
+		\end{block}
+
+\end{frame}
+
+
+%_______________________________________________________________________
+
+\input{./secoes/arq_embarcada.tex}
+
+
+%_______________________________________________________________________
+
+\input{./secoes/arq_distribuida.tex}
+
+
+%_______________________________________________________________________
+
+\input{./secoes/localizacao.tex}
+
+
+%_______________________________________________________________________
+
+\input{./secoes/cenarios.tex}

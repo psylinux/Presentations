@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+
+<!-- Aceita e registra os pacotes vindos do endereco IP '192.196.1.0/24',
+     na interface 'eth0' direcionados a porta TCP '80'-->
+
+<append>
+  <rule direction='in' source-ip='192.196.1.0/24' interface='eth0'>
+    <tcp destination-port='80' />
+    <accept />
+    <log />
+  </rule>
+</append>

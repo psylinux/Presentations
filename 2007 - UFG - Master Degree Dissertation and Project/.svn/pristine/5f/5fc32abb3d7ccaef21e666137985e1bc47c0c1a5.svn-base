@@ -1,0 +1,10 @@
+\chaves{Firewall, Segurança, Distribuído, Móvel, Smartphone, Celular, Contexto, Localização}
+
+\begin{resumo} 
+Tão importante quando proteger os dados de um laptop ou computador de mesa  a proteo dos dispositivos mveis.
+A segurana de dispositivos mveis est se tornando rapidamente parte integrante de uma estratgia completa de segurana corporativa.
+O uso de um firewall pessoal que oferea mecanismos de defesa em tempo real contra ameaas emergentes que atacam smartphones 
+e outros dispositivos mveis  imprescindvel contra vazamento de dados e perda de produtividade. A arquitetura de 
+Firewall aqui proposta vai alm dos sistemas tradicionais de firewall, por se utilizar da adaptatividade segundo ao contexto.
+Dessa forma a arquitetura se comporta dinamicamente tomando medidas de segurana baseado em polticas pr-definidas, gerenciando as preferncias de usurio segundo a localização e/ou alertando o usurio sobre potenciais perigos.
+\end{resumo}

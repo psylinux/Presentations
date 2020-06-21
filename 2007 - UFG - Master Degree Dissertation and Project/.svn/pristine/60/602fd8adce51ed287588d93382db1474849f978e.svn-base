@@ -1,0 +1,37 @@
+
+[filenumbers]
+0=6
+1=105
+2=23
+3=151
+
+[filemarkers]
+0=
+1=
+2=
+3=
+
+[executer]
+RunInTerminal=true
+
+[Project State]
+clean before build=false
+
+[filelist]
+0=/home/marcos/fenix-firewall-0.1/base/ChangeLog
+1=/home/fuchs/Projekte/gpe/gpe/base/gpe-shield/main.c
+2=/home/fuchs/Projekte/gpe/todo.txt
+3=/home/fuchs/Projekte/netbook/todo.txt
+
+[File View]
+filter.file.unmatch=*.so *.o *.a *.la
+filter.file.ignore.hidden=0
+filter.dir.ignore.hidden=0
+
+[Project Tree]
+0=0
+1=0:1
+2=0:3
+
+[File Tree]
+0=0

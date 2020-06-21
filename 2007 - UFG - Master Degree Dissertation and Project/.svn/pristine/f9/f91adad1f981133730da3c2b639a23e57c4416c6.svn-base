@@ -1,0 +1,29 @@
+## Requisitos de um Firewall Pessoal para Dispositivos Móveis:
+
+1.	O Firewall deve possuir seus componentes dispostos de uma forma fracamente acoplada;
+2.	Os módulos do Componente Firewall poderão ser carregados/descarregados dinamicamente sob a demanda;
+3.	O Firewall deve apresentar uma interface simples e eficiente, evitando terminologias incompreensivas pelo público alvo da aplicação (usuário final);
+4.	O Firewall deve ter como um de seus módulos um Agente Inteligente, cuja função é evitar interações excessiva com o usuário para tomada de decisões relacionadas a segurança;
+5.	O Firewall deve notificar o usuário sobre os programas que requisitam acesso ao ambiente externo (ex.: Internet) se isto for especificado pelo próprio usuário (descarregando o módulo do agente inteligente);
+6.	O Firewall deve registrar em um arquivo de log todas as anomalias de segurança ocorridas;
+7.	O usuário poderá definir 5 níveis de interação (DEBUG, INFO, WARNING ou ERROR); 
+	7.1.	DEBUG: Nível em que todas as operações do firewall são reportadas ao usuário;
+	7.2.	INFO: Nível em que apenas informações de alto nível, mensagens de alertas contra riscos e erros são reportados ao usuário;
+	7.3.	WARNING: Nível em que apenas mensagens de alertas contra riscos e erros são reportados ao usuário;
+	7.4.	ERROR: Nível em que apenas mensagens de erros são repassadas ao usuário;
+8.	O Firewall deve monitorar as conexões de entrada e saída da máquina;
+9. 	O Firewall deve atuar bloqueando/liberando portas a serviços;
+10. 	O Firewall deve atuar bloqueando/liberando interfaces (ex.: Bluetooth, Wi-Fi, USB e Serial);
+11.	O controle das conexões dever ocorrer no nível de aplicação (levando-se em consideração a pilha do protocolo TCP/IP);
+12.	O Firewall deve possuir uma Base de Risco a respeito de segurança que ajudará o Agente Inteligente de Risco a detectar e decidir se informa ou não o usuário;
+13.	O Firewall deve ser capaz de armazenar, na base de dados e também na base de conhecimento, as preferências de um determinado usuário; 
+14.	A base de conhecimento pode ser modificada sempre que o usuário achar necessário;
+15.	O Firewall deve possibilitar a construção de vários perfis de segurança que serão aplicáveis a diferentes contextos [1];
+16.	O Firewall deve apresentar uma base de dados (local e remota) para armazenar os perfis de segurança e as políticas de segurança;
+17.	As políticas de segurança serão armazenadas como meta-dados, independente de plataforma ou implementação de firewall;
+18.	Tanto os perfis de segurança quanto as políticas deverão ser editáveis;
+19.	As preferências do usuário deverão ser ativadas conforme alterações no contexto de forma automática [1];
+
+
+Bibliografia
+[1] Seng Loke. Context-Aware Pervasive Systems. Auerbach Publication;

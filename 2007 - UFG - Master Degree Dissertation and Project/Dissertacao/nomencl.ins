@@ -1,0 +1,84 @@
+% File nomencl.ins
+% Copyright 1996 Boris Veytsman
+% Copyright 1999-2001 Bernd Schandl
+% www   http://sarovar.org/projects/nomencl
+%
+%
+% Installation file for the nomencl package.
+%
+% See the README file for instructions.
+%
+% This file can be redistributed and/or modified under the terms
+% of the LaTeX Project Public License distributed from CTAN
+% archives in the directory macros/latex/base/lppl.txt; either
+% version 1.2 of the license, or (at your option) any later version.
+%
+\input docstrip
+\keepsilent
+
+% preamble for sty and drv file
+\preamble
+
+Copyright 1996 Boris Veytsman
+Copyright 1999-2001 Bernd Schandl
+www http://sarovar.org/projects/nomencl
+
+This file can be redistributed and/or modified under the terms
+of the LaTeX Project Public License distributed from CTAN
+archives in the directory macros/latex/base/lppl.txt; either
+version 1.2 of the license, or (at your option) any later version.
+
+\endpreamble
+
+% preamble for ist file
+\catcode`\%=12
+\declarepreamble\istpreamble
+
+Copyright 1996 Boris Veytsman
+Copyright 1999-2001 Bernd Schandl
+www http://sarovar.org/projects/nomencl
+
+This file can be redistributed and/or modified under the terms
+of the LaTeX Project Public License distributed from CTAN
+archives in the directory macros/latex/base/lppl.txt; either
+version 1.2 of the license, or (at your option) any later version.
+
+
+Nomenclature style file for MAKEINDEX.
+For nomencl v2.5 (and later)
+
+Formats glossary entries to show, e.g. nomenclature of equations.
+
+Written by Boris Veytsman boris@plmsc.psu.edu
+Changed by Bernd Schandl schandl@gmx.net (starting 1999/02/20)
+Changed by Lee Netherton ltn100@users.sourceforge.net
+(starting 2005/03/31)
+
+Changes:
+ 2005/04/27. Updates to the documentation, including support for hyperref (LN)
+ 2005/04/20. Improvements to Italian option, and minor documentation
+             changes (LN)
+ 2005/03/31. Made more compatible with other glossary packages. (LN)
+             Added option to include nomenclature in TOC. (LN)
+ 1996/11/25. Change quote character to % (BV)
+ 1999/02/20. Removed setting of actual to its default value
+             Removed setting of quote to '%' to get its default '"' instead
+             Changed group_skip to do nothing; user should use \string\nomgroup
+             Changed spacing in gls file
+
+\endpreamble
+\catcode`\%=14
+
+
+\generate{%
+  \file{nomencl.sty}{\from{nomencl.dtx}{package}}%
+  \file{sample01.cfg}{\from{nomencl.dtx}{sample01}}%
+  \file{sample02.cfg}{\from{nomencl.dtx}{sample02}}%
+  \file{sample04.cfg}{\from{nomencl.dtx}{sample04}}%
+  \file{sample05.cfg}{\from{nomencl.dtx}{sample05}}%
+  \usepostamble\empty
+  \file{nomencl.drv}{\from{nomencl.dtx}{driver}}%
+  \usepreamble\istpreamble
+  \file{nomencl.ist}{\from{nomencl.dtx}{idxstyle}}}
+
+\endbatchfile

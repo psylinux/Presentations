@@ -1,0 +1,173 @@
+\subsection{Política de Segurança Baseada em Localização}
+
+\begin{frame}
+\frametitle{\alert{Próximos Slides}}
+  
+  \textbf{Implementação da Política de Segurança Baseada em Localização}.
+	
+	\beamerdefaultoverlayspecification{<+->}
+	\begin{itemize}
+		\item Identificar a Localização do Usuário.
+		\item Mapear Áreas.
+		\item Carregar Políticas de Segurança Baseada na Localização do Usuário.
+	\end{itemize}
+	\beamerdefaultoverlayspecification{<*>}
+	
+\end{frame}
+
+
+\begin{frame}
+		\begin{center}
+			\huge \textbf{Identificar uma Localização}.
+		\end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Identificar uma Localização}
+  \framesubtitle{Seleção Manual}
+  
+				\begin{itemize}
+						\item \textbf{Forma Padrão:}
+								\begin{enumerate}
+									\item Selecionar manualmente a Localização.
+								\end{enumerate}
+				\end{itemize}
+								
+				\begin{figure}[htbp]
+						\centering
+						\includegraphics[width=0.60\textwidth]{../Pictures/Baixa/SelecaoManual.png}
+						\label{fig:SelecaoManual}
+				\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Identificar uma Localização}
+  \framesubtitle{Seleção Automática \alert{(Opcional)}}								
+			
+	\begin{block}{Modos de Operação}
+		\begin{enumerate}
+				\item \alert{\textbf{Ambientes Outdoor:}}
+						\begin{itemize}
+								\item Usando o recurso \textbf{GPS} presente no dispositivo, caso exista.
+						\end{itemize}	
+		
+				\item \alert{\textbf{Ambientes Indoor:}}
+						\begin{itemize}
+								\item Usando os recursos de \textbf{Localização} oferecido pela \textbf{Arquitetura Distribuída}.
+						\end{itemize}
+		\end{enumerate}
+	\end{block}
+								
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{\alert{GPS:} Identificar uma Localização.}
+
+			\begin{algorithm}[H]
+				\SetLine	
+				\textbf{Consulta} GPS \\
+				$Local \longleftarrow raiz[ (x2{}-x1)\textsuperscript{\d 2} + (y2{}-y1)\textsuperscript{\d 2} ]$\;	
+				\SetLine
+				\Se	{$Local \subseteq banco.mapeamentos$}{
+							\textbf{Selecione} $banco.mapeamento$\;
+							\textbf{Carregue} $banco.politicas[Local]$\;
+							\textbf{Carregue} $banco.preferencias[Local]$;				
+				}
+			\end{algorithm}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{\alert{Próximos Slides}}
+
+		\begin{center}
+			\huge \textbf{Mapear uma Área}.
+		\end{center}
+		
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Mapear uma Área (Introdução)}  
+	
+		\textbf{Discutiremos agora as abordagens de mapeamento relacionada aos tópicos abaixo:}
+	
+		\beamerdefaultoverlayspecification{<+->}
+		\begin{itemize}
+			\item Tipos de Mapeamento:
+					\begin{enumerate}
+						\item Indoor.
+						\item Outdoor.
+					\end{enumerate}
+			\item O que é um mapeamento.
+			\item Formas de mapeamento.
+		\end{itemize}
+		\beamerdefaultoverlayspecification{<*>} 
+		 
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Mapear uma Área}
+			
+			\begin{itemize}
+					\item Com a plataforma distribuída o grupo \alert{Administrador} é capaz de mapear áreas comuns aos usuários.	
+			\end{itemize}
+
+			\begin{block}{Tipos de Mapeamento}					
+					\begin{enumerate}
+							\item As áreas comuns são definidas \textbf{exclusivamente} pelos administradores, e poderão ser utilizadas por todos os usuários, \textit{ex.: Laboratório de Redes, Secretaria, Almoxarifado.}
+				
+							\item As áreas pessoais serão mapeadas pelo próprio usuário, e as mesmas não são visíveis ou compartilhadas para os outros usuários  da plataforma.
+					\end{enumerate}
+  		\end{block}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Política de Segurança Baseada em Localização}
+
+  			\begin{figure}
+					\centering
+						\includegraphics[width=0.90\textwidth]{../Pictures/Baixa/AlgoritmoGPS.png}
+					\label{fig:AlgoritmoGPS}
+				\end{figure}
+				  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{\alert{GPS:} Mapear uma Área}
+
+			\begin{algorithm}[H]
+				\SetLine	
+				\textbf{Consulta} GPS \\
+				$Local \longleftarrow raiz[ (x2{}-x1)\textsuperscript{\d 2} + (y2{}-y1)\textsuperscript{\d 2} ]$\;	
+				\SetLine
+				\Se	{\textbf{não} ($Local \subseteq banco.mapeamentos$)}{			
+						$distancia \longleftarrow raiz[(x1 {}- x2)2 + (y1 {}- y2)2]$\;
+						$centro \longleftarrow distancia / 2$\;
+						$area \longleftarrow 2 x Pi x (centro)2$\; 
+						\textbf{Escreve} Entre com a Identificação para esta localização\;
+						\textbf{Salva} $Local$;
+				}
+			\end{algorithm}
+
+\end{frame}
+
+ 
+\begin{frame}
+  \frametitle{Política de Segurança Baseada em Localização}
+
+   \begin{figure}[htb]
+       \centering  % figura centralizada
+       \includegraphics[width=0.90\textwidth]{../Pictures/Baixa/Fluxograma.png}
+       \label{fig:Fluxograma}
+   \end{figure}
+
+\end{frame}

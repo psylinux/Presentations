@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-06-11 16:09+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.c:63
+msgid "Unable to fork"
+msgstr ""
+
+#: interface.c:77
+msgid "Displaying help failed."
+msgstr ""
+
+#: interface.c:116
+msgid "/_File"
+msgstr ""
+
+#: interface.c:117
+msgid "/File/_Open"
+msgstr ""
+
+#: interface.c:118
+msgid "/File/_Save"
+msgstr ""
+
+#: interface.c:119
+msgid "/_File/s1"
+msgstr ""
+
+#: interface.c:120
+msgid "/File/_Close"
+msgstr ""
+
+#: interface.c:121
+msgid "/_Rules"
+msgstr ""
+
+#: interface.c:122
+msgid "/Rules/_Add"
+msgstr ""
+
+#: interface.c:123
+msgid "/Rules/_Edit"
+msgstr ""
+
+#: interface.c:124
+msgid "/Rules/_Delete"
+msgstr ""
+
+#: interface.c:125
+msgid "/Rules/_Info"
+msgstr ""
+
+#: interface.c:126
+msgid "/Rules/s2"
+msgstr ""
+
+#: interface.c:127
+msgid "/Rules/_Apply"
+msgstr ""
+
+#: interface.c:128
+msgid "/_Help"
+msgstr ""
+
+#: interface.c:129
+msgid "/_Help/Index"
+msgstr ""
+
+#: interface.c:130
+msgid "/_Help/About"
+msgstr ""
+
+#: interface.c:279
+msgid "Drop all incoming traffic"
+msgstr ""
+
+#: interface.c:292
+msgid "Allow SSH"
+msgstr ""
+
+#: interface.c:306
+msgid "Allow established connections"
+msgstr ""
+
+#: interface.c:321
+msgid "Allow outgoing traffic"
+msgstr ""
+
+#: interface.c:344
+msgid ""
+"Configuration was changed.\n"
+"Really restore last saved state?"
+msgstr ""
+
+#: interface.c:373
+msgid "Saved current settings."
+msgstr ""
+
+#: interface.c:563
+msgid ""
+"Configuration was changed.\n"
+"Really exit?"
+msgstr ""
+
+#: interface.c:591
+msgid "Backend failure, cannot continue."
+msgstr ""
+
+#: interface.c:599
+msgid "Communication error, cannot continue."
+msgstr ""
+
+#: interface.c:792
+msgid "Fenix Firewall"
+msgstr ""
+
+#: interface.c:812
+msgid "Apply rules"
+msgstr ""
+
+#: interface.c:816
+msgid "Add rule"
+msgstr ""
+
+#: interface.c:820
+msgid "Remove rule"
+msgstr ""
+
+#: interface.c:820
+msgid "Remove Rule"
+msgstr ""
+
+#: interface.c:824 editrule.c:101
+msgid "Edit rule"
+msgstr ""
+
+#: interface.c:824
+msgid "Edit Rule"
+msgstr ""
+
+#: interface.c:830
+msgid "Exit"
+msgstr ""
+
+#: interface.c:831
+msgid "Close application"
+msgstr ""
+
+#: interface.c:846
+msgid "Rules"
+msgstr ""
+
+#: interface.c:851
+msgid "Filter rules"
+msgstr ""
+
+#: interface.c:875
+msgid "Active"
+msgstr ""
+
+#: interface.c:885 editrule.c:122
+msgid "Name"
+msgstr ""
+
+#: interface.c:899
+msgid "Configuration"
+msgstr ""
+
+#: interface.c:902
+msgid "Network Security Configuration"
+msgstr ""
+
+#: interface.c:908
+msgid "Start network control on login"
+msgstr ""
+
+#: editrule.c:117
+msgid "Edit rule parameters"
+msgstr ""
+
+#: editrule.c:129
+msgid "Direction"
+msgstr ""
+
+#: editrule.c:138
+msgid "Action"
+msgstr ""
+
+#: editrule.c:147
+msgid "Protocol"
+msgstr ""
+
+#: editrule.c:158
+msgid "Source port"
+msgstr ""
+
+#: editrule.c:165
+msgid "Destination port"
+msgstr ""
+
+#: editrule.c:188
+msgid "New rule"
+msgstr ""
+
+#: fenix-firewall.desktop.in.h:1
+msgid "Change security settings and access control"
+msgstr ""
+
+#: fenix-firewall.desktop.in.h:2
+msgid "Desktop Firewall"
+msgstr ""

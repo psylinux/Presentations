@@ -1,0 +1,123 @@
+\chapter{Visão Geral da Proposta}
+\label{cap:visao_geral_proposta}
+
+Neste capitulo será apresentada uma visão geral do Fênix Firewall
+
+\section{Visão Geral da Arquitetura Distribuída}\label{sec:visao_geral_arquitetura}
+
+Embora o Fênix Firewall System seja uma plataforma distribuída, o Fênix funciona também independente dos recursos computacionais externos. Dessa forma o usuário pode criar de manualmente suas localizações e depois seleciona-las sempre que necessário.
+Naturalmente os recursos de uma arquitetura distribuída, detalhados na seção [], adiciona uma certa comodidade ao usuário e lhe confere uma segurança maior uma vez que os recursos de notificação ao usuário por \textbf{SMS\footnote{Short message service (SMS) é um protocolo de comunicação definido pela recomendação GSM 03.40.}\cite{sms:2003}} e/ou \textbf{E-MAIL} estarão disponíveis, mantendo-o informado quanto a potenciais perigos e atualizações necessárias.
+
+O uso de um \textit{Agente de Risco} (Ex.: CVSS\cite{cvss:2008}) externo também aumenta o nível de segurança, já que as aplicações recém instaladas e conexões instanciadas pela primeira vez são submetidas a uma análise antes da liberação do uso. O usuário no entanto tem a possibilidade de ignorar a análise de segurança, sendo prontamente notificado quanto ao risco que está atitude insere, e iniciar o uso do aplicativo ou conexão imediatamente, por sua própria conta e risco.
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.9\textwidth]{./fig/Arquitetura_Distribuida.png}
+\caption{Visão macro da Arquitetura Distribuída do Fênix Firewall System}
+\label{fig:arquitetura_distribuida}
+\end{figure}
+
+
+\subsection{Componentes e funcionalidades}\label{sub:componentes_funcionalidades}
+
+Nesta seção apresentaremos os componentes do Fênix Firewall System descrevendo suas funcionalidades.
+As interações entre os componentes aqui apresentados será melhor entendida na Seção \ref{sec:cenarios} onde os cenário são ilustrados e uma visão gráfica da interação pode ser observada na figura \ref{fig:visao_componentes}.
+
+Para facilitar a compreensão, definimos a seguinte nomenclatura que se segue:
+
+\begin{itemize}
+ \item \textbf{Monitor} = Cliente leve implementado para ser executado dentro do dispositivo móvel;
+ \item \textbf{Agente} = Sistema computacional distribuído que processa as informações que são solicitadas e/ou providas dos Monitores;
+\end{itemize}
+
+
+\subsubsection{Sistema Distribuído}\label{sub:sistema_distribuido}
+Aqui apresentaremos de forma descritiva os Agentes que compõem o Sistema Externo (Remoto) do Fênix Firewall System. Como mencionado na Sub-seção \ref{sec:visao_geral_arquitetura}, o Fênix Firewall System funciona também sem a infra-estrutura distribuída, podendo lançar mão do recurso GPS, quando presente no próprio dispositivo para inferir a localidade de forma automática e quando esse recurso não se encontra disponível no dispositivo o usuário tem a flexibilidade de criar, editar, modificar e selecionar suas localidades de forma manual.
+
+\begin{itemize}
+ \item \textbf{Agente de Notificação}:
+ \\Sistema externo, que faz uso de SMS, que permite a troca de mensagens curtas entre telefones móveis e E-MAIL para notificar os usuários quanto um dado evento. Por exemplo, notificar o usuário quando uma atualização de segurança está disponível, em outra situação, notificar o usuário sobre riscos de segurança associados a um serviço que ele esteja executando ou tentando acessar ou ainda sobre os riscos que uma determinada aplicação que está em execução.
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Agente Inteligente}:
+\\Sistema externo, que processa (Consulta e Grava) as informações na Base de Conhecimento presente no Banco de Dados;
+\\Responsável por gerar árvore de decisões e armazená-las no Banco de Dados;
+\\Notifica o usuário, através do Agente de Notificação, quanto a atualizações de:
+	\begin{enumerate}
+	   \item Novas resoluções geradas por mudanças na árvore de decisão, dado novas respostas fornecidas pelo usuário;
+	   \item Estatísticas de Uso;
+	   \item Atualizações de Políticas;
+	   \item Atualizações de Preferências;
+	\end{enumerate}
+\end{itemize}
+
+
+
+\begin{itemize}
+\item \textbf{Agente de Riscos}:
+\\Sistema externo, responsável por analisar os riscos dos softwares instalados e assinatura de ataques;
+\\Notifica o Usuário, através do Agente de Notificação, quanto a Atualizações de Softwares;
+\\O Monitor de Risco consulta o Agente de Riscos quanto ao nível de risco de uma aplicação;
+\\O Monitor de Risco consulta o Agente de Riscos quanto ao nível de risco de um conexão envolvida.
+\end{itemize}
+
+
+		
+\begin{itemize}
+\item \textbf{Banco de Dados}:
+\\Responsável por armazenar a Base de Conhecimento:
+	\begin{enumerate}
+	\item Estatísticas de uso:
+		\begin{enumerate}
+		\item Softwares preferenciais, comumente usados;
+		\item Interfaces de comunicação comumente ativadas;
+		\item Horários em que o usuário comumente faz uso da conectividade com a internet;
+		\end{enumerate}
+	\item Decisões do usuário;
+	\item Informações de Contexto Computacional:
+		\begin{enumerate}
+		\item Fabricante;
+		\item Modelo;
+		\item Processador;
+		\item Quantidade de memória (RAM e ROM);
+		\item Softwares instalados;
+		\item Sistema Operacional;
+		\item Usuários que possuem tal dispositivo;
+		\item Número de Série;
+		\item Status de Sincronização, ou seja quando foi realizada a última sincronização do Banco de Dados remoto com o Banco de Dados embarcado no dispositivo móvel;
+		\end{enumerate}
+	\end{enumerate}
+
+Responsável por armazenar as Preferências do Usuário:
+		\begin{enumerate}
+		\item Preferência de Configuração:
+		\item Preferências de Sincronização;
+		\item Aplicações Preferenciais;
+		\item Preferências de Aviso/Notificação;
+		\end{enumerate}
+
+Responsável por armazenar as Políticas de Segurança do Usuário:
+		\begin{enumerate}
+		\item Regras sobre Pacotes:
+			\begin{enumerate}
+			\item Filtragem;
+			\item Redirecionamento;
+			\item Bloqueio;
+			\item Aceitação.
+			\end{enumerate}
+		\item Regras de Conectividade:
+			\begin{enumerate}
+			\item Portas de Entrada (Permissão/Negação);
+			\item Portas de Saída (Permissão/Negação);
+			\item Serviços Locais (Permissão/Negação).	
+			\end{enumerate}
+		\item Regras de Interfaces de Comunicação:
+			\begin{enumerate}
+			 \item Ativação de Interfaces de Comunicação (Ex.: Bluetooth, Serial, Wi-Fi);
+			\item Desativação de Interface de Comunicação.
+			\end{enumerate}
+		\end{enumerate}
+\end{itemize}

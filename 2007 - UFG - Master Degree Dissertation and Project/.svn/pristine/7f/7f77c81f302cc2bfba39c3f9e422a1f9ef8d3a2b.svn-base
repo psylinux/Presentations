@@ -1,0 +1,14 @@
+Fênix Firewall System
+
+Escopo 
+
+	O objetivo do Fênix Firewall System é conferir aos dispositivos móveis atuais uma maior segurança, controlando o acesso aos seus recursos e informações, tentando suprir a atual falta deste tipo de ferramenta para os profissionais de segurança. 
+
+	O Fênix trás consigo um conceito não muito comum aos firewall's de um modo geral que é a sensibilidade ao contexto em que o dispositivo móvel está inserido. A necessidade de uma aplicação como esta fica muito evidente quando nos atentamos ao detalhe de que um dispositivo móvel, ao contrário de um desktop, não está fixo em um único ambiente e sim em movimento durante todo o dia e, por conseqüência, sendo exposto a diversas situações distintas com diferentes tipos de vulnerabilidades de segurança.
+
+	O Fênix ainda trabalha com o conceito de Preferências e Políticas de Segurança, onde o usuário pode definir diferentes esquemas de segurança para serem utilizados conforme o ambiente de uso do dispositivo (uma idéia ligada a sensibilidade ao contexto que este sistema possui). O contexto pode ser definido de três formas:
+		* Utilizando um Sistema de Inferência externo;
+		* Utilizando o recurso GPS do dispositivo, casa haja um;
+		* Manualmente, com o usuário selecionando sua localização
+
+	Por final, porém não menos importante, o sistema Fênix ainda trás ao usuário a opção de vários níveis de interação. Assim um usuário que esteja interessado em ter o conhecimento de todas as ações do firewall poderá solicitar um nível de interação mais detalhado, enquanto que um outro que não esteja interessado nos detalhes de segurança poderá solicitar uma interação de mais alto nível, onde apenas atividades críticas serão mostradas.

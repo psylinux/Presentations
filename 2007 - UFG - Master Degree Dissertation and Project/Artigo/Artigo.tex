@@ -1,0 +1,132 @@
+
+\documentclass[10pt]{article}
+\usepackage{sbc-template}
+\usepackage{graphicx,url,amsmath,algorithm2e,float,fancyvrb}
+
+%==== Meus pacotes ====
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+
+%===== Cdigos Fonte =====
+\newenvironment{codeverbatim}{\VerbatimEnvironment \small
+   \begin{Verbatim}[xleftmargin=20mm]}
+   {\end{Verbatim}}
+
+%=======
+\floatstyle{plain}  % tipos: plain, boxed, ruled
+\newfloat{codigo}{tbp}{lop}[section]  % numera os captions com  nmero de seo.
+\floatname{codigo}{Código}
+
+% nome para ser usado no sumário
+%\newcommand{\listofcodename}{Lista de Cdigos}
+%=========================
+
+%
+% Palavras soletradas corretamente
+%
+\hyphenation{pre-fe-rên-cias}
+\hyphenation{si-gi-lo-sas}
+\hyphenation{re-pre-sen-ta-do}
+\hyphenation{pro-ble-ma}
+\hyphenation{exo-ker-nel}
+\hyphenation{ins-ta-la-do}
+\hyphenation{lo-ca-li-za-ção}
+\hyphenation{ve-ri-fi-car}
+\hyphenation{dis-po-si-ti-vo}
+\hyphenation{o-fe-re-ci-das}
+\hyphenation{Mo-ni-tor}
+
+%=========================
+\sloppy
+
+\title{Fênix Firewall System \\ Um Firewall Pessoal Sensível ao Contexto para Dispositivos Móveis}
+
+\author{Marcos Alves Trindade de Azevedo, Vagner José do Sacramento Rodrigues}
+
+\address{
+  Instituto de Informática -- Universidade Federal de Goiás \\
+  Caixa Postal 131 - CEP 74001-970 - Goiânia - GO
+  \email{marcos@digitalsec.com.br, vagner@inf.ufg.br}
+}
+
+\begin{document} 
+
+\maketitle
+
+%
+%\begin{abstract}
+%
+%\end{abstract}
+%
+
+%----------------------------------------------------------------
+
+
+\begin{resumo}
+
+A segurança de dispositivos móveis está se tornando rapidamente 
+parte integrante de uma estratégia completa de segurança. O uso de um firewall 
+pessoal que ofereça mecanismos de defesa em tempo real contra ameaças emergentes 
+que atingem smartphones e outros dispositivos móveis imprescindível contra invasões, 
+vazamento de dados e perda de produtividade. Este artigo descreve a  arquitetura de 
+de um firewall sensível ao contexto para dispositivos móveis, codinome Fênix Firewall, que vai 
+além dos sistemas tradicionais de firewall, por se utilizar da 
+localização do usuário para carregar as políticas de segurança de acordo 
+com suas preferências. Para isso, o Fênix Firewall toma medidas de segurança 
+baseado em políticas predefinidas, gerenciando as preferências do usuário segundo 
+a sua localização corrente e o alertando quanto a potenciais perigos.
+\end{resumo}
+
+
+%----------------------------------------------------------------
+\section{Introdução}\label{sec:introducao}
+
+Os últimos anos têm presenciado um movimento de mudança do paradigma de computação \textit{desktop}, tradicionalmente estático, para um novo paradigma, altamente dinâmico, caracterizado pelo emprego de novos dispositivos portáteis multifuncionais -- que substituem as agendas, telefones, pagers ou um computador pessoal -- e pela constante mudança no ambiente, como conseqüência da mobilidade do usuário. Esse novo paradigma, o da \textbf{Computação Ubíqua} (\textit{Ubiquitous Computing}), traz consigo a possibilidade de se explorar uma nova geração de aplicações, sensíveis ao contexto (\textit{Context-Aware Applications}), em que a interação usuário-aplicação é enriquecida pela percepção e uso de informações contextuais. Essas aplicações levam em consideração na sua tomada de decisão e em seus processamentos não apenas as entradas explícitas, mas também entradas implícitas, provenientes do contexto físico e computacional do ambiente e de seus usuários.  O termo \textit{Computação Ubíqua} foi introduzido por Mark Weiser \cite{weiser:1993}, quando vislumbrou ambientes acrescidos de recursos computacionais capazes de prover serviços e informações quando e onde sejam desejadas. De acordo com Weiser, deve haver integração contínua entre tecnologia e ambiente de modo a auxiliar os usuários em atividades cotidianas; portanto, computadores devem ser embutidos de forma implícita ao ambiente do usuário. 
+
+Contudo, a facilidade de mobilidade proporcionada pelos dispositivos móveis os tornam cada vez mais vulneráveis a ataques, pois não há uma fronteira bem definida do perímetro que representa uma ameaça para o usuário final. O dispositivo móvel de um usuário pode ser alvo de ataques em diferentes ambientes e circunstâncias, por exemplo, no seu trabalho, no shopping, em uma festa, etc. Isto ocorre, principalmente, porque muitos dos dispositivos móveis tais como Smartphones tem suas interfaces de rede sem fio (\textit{e.g., Bluetooth, WiFi}) habilitadas por padrão, e nem sempre os usuários sabem desabilitar tais interfaces ou restringir o acesso a um serviço executando em seu dispositivo. Tudo isto representa ameaças a privacidade dos usuários e a confidencialidade das informações armazenadas em seu dispositivo móvel.
+
+Para auxiliar os usuários a configurar suas políticas de segurança em função de sua localização corrente, é proposto neste trabalho um firewall pessoal chamado 
+\textit{Fênix Firewall System}. Este firewall pode impedir o acesso de pessoas não autorizadas e evitar que informações sejam extraídas através da exploração de serviços que estão em execução. O \textbf{Fênix Firewall System} foi projetado como um firewall pessoal que, quando instalado e configurado no dispositivo móvel, aumenta o nível de segurança e o controle do usuário, bloqueando ou permitindo as conexões (entrantes/saintes) e notificando o usuário sobre conexões, portas abertas ou serviços suspeitos que estejam em execução no dispositivo móvel.
+
+O restante deste artigo está organizado da seguinte forma: a Seção \ref{sec:Arquitetura} apresenta uma visão geral da arquitetura do Fênix Firewall; a Seção \ref{sec:PlataformaEmbarcada} apresenta a plataforma embarcada e seus componentes internos; a Seção \ref{sec:Implementacao} descreve a implementação realizada; a Seção \ref{sec:EstudoCaso} mostra um estudo de caso em um ambiente universitário; a Seção \ref{sec:Projetos_Relacionados} descreve brevemente alguns trabalhos relacionados e a Seção \ref{sec:Conclusao} conclui o artigo, apresentando considerações finais e perspectivas de trabalhos futuros.
+
+%----------------------------------------------------------------
+\section{A Arquitetura do Fênix Firewall}\label{sec:Arquitetura}
+
+
+
+%----------------------------------------------------------------
+\section{O Projeto da Plataforma Embarcada}\label{sec:PlataformaEmbarcada}
+
+
+
+%----------------------------------------------------------------
+\section{Implementação}\label{sec:Implementacao}
+
+
+
+%----------------------------------------------------------------
+\section{Estudo de Caso}\label{sec:EstudoCaso}
+
+
+
+%----------------------------------------------------------------
+\section{Projetos Relacionados}\label{sec:Projetos_Relacionados}
+
+
+
+%----------------------------------------------------------------
+\section{Conclusões e Trabalhos Futuros}\label{sec:Conclusao}
+
+
+
+
+%----------------------------------------------------------------
+
+\nocite{*}
+\bibliographystyle{sbc}
+\bibliography{bibliografia}
+
+%----------------------------------------------------------------
+\end{document}
+%----------------------------------------------------------------

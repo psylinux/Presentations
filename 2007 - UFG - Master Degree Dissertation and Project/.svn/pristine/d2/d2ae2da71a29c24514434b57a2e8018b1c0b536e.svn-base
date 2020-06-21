@@ -1,0 +1,55 @@
+2009-05-11 Marcos Azevedo <marcos@digitalsec.com.br>
+	* Released V 1.0
+	* Makefile: Install new stuff.
+	* postinst: Creates default links for script now.
+	* ipshield: New init script that restores rules.
+	* interface.c, backend.*: Made load rules setting system wide.
+	* main.c: Moved stupdly misplaced kill() call. 
+	          
+2009-04-20 Marcos Azevedo <marcos@digitalsec.com.br>
+	* Released V 0.9
+	* backend.c: Fixed missing unlink of socket endpoint.
+	* interface.c: Fixed handling of config flag. Fixed small memory leak.
+
+2009-04-18 Marcos Azevedo <marcos@digitalsec.com.br>
+	* Released V 0.8
+	* editrule.c: Gui updates to look better on small displays.
+	* backend.c, Makefile: Use different iptables commands on different 
+		platforms.
+	* backend.c: send_message() Add check for connection is active.
+	* backend.h: Export some more functions.
+	* main.c: Added command line switch "--active" that triggers activating 
+		stored rules.
+	
+2009-04-15 Marcos Azevedo <marcos@digitalsec.com.br>
+	* Released V 0.5
+	* Makefile: Another fix: Install binary suid root.
+	* Makefile: Some improvements to be oe-compatible.
+	* control: Added iptables to dependencies.
+	* Makefile: New version number.
+	
+2009-04-14 Marcos Azevedo <marcos@digitalsec.com.br>
+	* Released V 0.4
+	* interface.c: Set config flag to make network app restore rules.
+
+2009-04-11 Marcos Azevedo <marcos@digitalsec.com.br>
+	* Released V 0.3
+	* interface.c: some simplification.
+	* interface.c: Added default rule.
+	* backend.c: Added connection states support.
+	* interface.c, backend.c: Implemented shutdown.
+	* New file: TODO
+
+2009-04-05 Marcos Azevedo <marcos@digitalsec.com.br>
+	* Released V 0.2
+	* interface.c: Fixed icon declaration bug.
+	* editrule.c: Added much stuff.
+	* interface.c: Implemented several checks, removing, active change...
+	* backend.c: Simplified stuff, implemented applying and several other commands.
+
+2009-03-27 Marcos Azevedo <marcos@digitalsec.com.br>
+	* Released V 0.1
+	* Introduced this file
+	* backend.c: Make backend honor active flag.
+	* editrule*: Added rule editor.
+	* interface.c: New button: Edit rule.

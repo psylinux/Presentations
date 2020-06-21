@@ -1,0 +1,75 @@
+% All of the following is optional and typically not needed. 
+\appendix
+\section<presentation>*{Bibliografia}
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{Leituras Recomendadas}
+    
+  \begin{thebibliography}{10}
+    
+			  \beamertemplatebookbibitems
+			  % Livros de Referência.
+			
+			  		 
+			  \beamertemplatearticlebibitems
+			  % Artigos de Referência.
+			  	\bibitem{bellovin:1994}
+			  			W.R. Bellovin, S.M.and Cheswick
+			  			\newblock \emph{Network firewalls.}
+							\newblock IEEE Communications Magazine, Vol. 32
+			
+			  	\bibitem{cvss:2008}
+			  			FIRST (Forum of Incident Response and Security Teams)
+			  			\newblock \emph{CVSS (Common Vulnerability Scoring System).}
+							\newblock \url{http://www.first.org/cvss/}
+			
+					\bibitem{sage:2008}
+							McAfee
+							\newblock \emph{SAGE (Relatório Semestral de Segurança da McAfee). 2008.}
+							\newblock \url{http://www.mcafee.com/us/local_content/reports/sage_2008.pdf}
+							
+					\bibitem{idc:2007}
+							Instituto de Pesquisa IDC
+							\newblock \emph{Brazil IT Investment Trends Insurance. 2007}
+							\newblock \url{http://www.idclatin.com/}
+			
+			
+				\beamertemplatearrowbibitems
+
+					\bibitem{sms:2003}
+							GSM 03.40
+							\newblock \emph{Technical realization of the Short Message Service (SMS)}							
+							\newblock \url{http://www.3gpp.org/ftp/Specs/html-info/0340.htm}
+
+					\bibitem{durlacher:1999}
+							Durlacher Researchs Ltd
+							\newblock \emph{Mobile Commerce Report}
+							\newblock \url{www.durlacher.com/research/res-reports.asp}
+
+			
+				\beamertemplatetextbibitems
+				% Outras Referências
+
+					\bibitem{snort:2008}
+							Snort
+							\newblock \emph{Open Source Network Intrusion Detector}
+							\newblock \url{http://www.snort.org/}
+					
+					\bibitem{placelab:2008}
+							Placelab
+							\newblock \emph{A privacy-observant location system.}							
+							\newblock \url{http://www.placelab.org/}
+
+					\bibitem{moca:2008}
+							Pontifícia Universidade do Rio De Janeiro
+							\newblock \emph{MoCA (Mobile Collaboration Architecture)}							
+							\newblock \url{http://www.lac.inf.puc-rio.br/moca/}
+						
+					\bibitem{iPhone:2008}
+							iPhone
+							\newblock \emph{The iPhone}. Apple Inc.,2008.
+							\newblock \url{http://en.wikipedia.org/wiki/IPhone}
+											    
+ 
+   \end{thebibliography}
+\end{frame}

@@ -1,0 +1,12 @@
+TODO and ideas for fenix-firewall
+
+- do better checks on rules
+- Add a toolbar app that loads and controles preset rules. (gpe-mininet!)
+- Configure system network security settings.
+- Create rules for both directions.
+- Show network connections/activity.
+- Set conntrack flags for rules.
+- Enable IP/host related rules.
+- manage ssh keys
+- manage certificates
+- add esp/ah protocols

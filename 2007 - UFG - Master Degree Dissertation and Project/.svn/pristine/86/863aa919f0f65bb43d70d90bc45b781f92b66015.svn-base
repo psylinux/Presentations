@@ -1,0 +1,1303 @@
+% \iffalse
+% File nomencl.dtx
+% Copyright 1996 Boris Veytsman
+% Copyright 1999-2001 Bernd Schandl
+% www   http://sarovar.org/projects/nomencl
+%
+% Documentation and documented source code for the nomencl package.
+%
+% See the README file for instructions.
+%
+% This file can be redistributed and/or modified under the terms
+% of the LaTeX Project Public License distributed from CTAN
+% archives in the directory macros/latex/base/lppl.txt; either
+% version 1.2 of the license, or (at your option) any later version.
+%
+% \fi
+% \CheckSum{0}
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+%%
+% \iffalse
+%<*dtx>
+          \ProvidesFile{nomencl.dtx}%
+%</dtx>
+%<package>\ProvidesPackage{nomencl}%
+%<driver>\ProvidesFile{nomencl.drv}%
+%<*package|driver>
+% \fi
+%         \ProvidesFile{nomencl.dtx}%
+          [2005/09/22 v4.2 Nomenclature package (LN)]
+%
+% \iffalse
+%</package|driver>
+%<*driver>
+\documentclass[11pt]{ltxdoc}%
+\RequirePackage{url}%
+\RequirePackage[dvips]{hyperref}%
+\RequirePackage[nocfg]{nomencl}%
+
+\hypersetup{%
+    hyperindex=true,
+    colorlinks=true,
+    linkcolor=blue,
+    anchorcolor=blue,
+    citecolor=blue,
+    filecolor=blue,
+    menucolor=blue,
+    pagecolor=blue,
+    urlcolor=blue,
+    bookmarksnumbered=true,
+    pdftitle={Documentation for the nomencl Package},
+    pdfauthor={Boris Veytsman, Bernd Schandl, Lee Netherton, CV
+    Radhakrishnan},
+    pdfsubject={Provides nomenclature automation in LaTeX},
+    pdfkeywords={nomenclature latex generation symbol list}
+}%
+
+%% Comment out the next line if you want the documentation for the source code.
+%%\OnlyDescription
+
+%% Uncomment the next two lines for a change history.
+%% See also the instructions above (in nomencl.drv).
+%% \AtBeginDocument{\RecordChanges}
+%% \AtEndDocument{\addcontentsline{toc}{section}{Change Log}\PrintChanges}
+
+%% Uncomment the next two lines for a command index.
+%% See also the instructions above (in nomencl.drv).
+\AtBeginDocument{\CodelineIndex}
+\AtEndDocument{\setcounter{IndexColumns}{2}\addcontentsline{toc}{section}{Index}\PrintIndex}
+
+\begin{document}
+  \DocInput{nomencl.dtx}
+\end{document}
+%</driver>
+% \fi
+%
+%
+% \changes{v2.2 (1996/11/25)}{1996/11/25}{Last version released by
+%   Boris Veytsman}
+% \changes{v2.5 (1999/03/13)}{1999/03/02}{Complete rewrite of the
+%   package and the documentation}
+% \changes{v2.6 (1999/04/02)}{1999/04/01}{Use \cs{GetFileInfo}}
+% \changes{v2.7a (1999/07/07)}{1999/07/07}{Merged \texttt{licence.txt}
+%   into \texttt{README}}
+% \changes{v2.8 (1999/09/09)}{1999/09/09}{Email changed}
+% \changes{v3.0 (2000/03/05)}{2000/03/05}{WWW address changed}
+% \changes{v3.1 (2000/09/15)}{2000/09/15}{Do not read cfg file in
+%   documentation}
+% \changes{v3.1 (2000/09/15)}{2000/09/15}{WWW address changed (again)}
+% \changes{v3.1b (2001/09/30)}{2001/09/30}{WWW address changed (again)}
+% \changes{v3.1c (2001/10/02)}{2001/10/02}{Minor documentation changes}
+% \changes{v4.0 (2005/03/31)}{2005/03/31}{Improved compatibility with other
+% Glossary/MakeIndex packages. Added option to insert Nomenclature into toc.
+% Amended documentation accordingly.}
+% \changes{v4.1 (2005/04/27)}{2005/04/27}{Improvements to the documentation,
+% including hyperref support}
+%
+% \GetFileInfo{nomencl.dtx}
+%
+%
+% \MakeShortVerb{\|}
+% \setlength{\hfuzz}{8pt}
+% \newcommand{\MakeIndex}{\textsl{MakeIndex}}
+% \newcommand{\xindy}{\mbox{\normalfont\textbf{\textsf{x\kern-0.7pt%
+%         \shortstack{{\scriptsize$\circ$}\\[-2pt]\i}\kern-1pt ndy}}}}
+% \let\package\textsf
+% \let\tab\indent
+% \newenvironment{example}
+%   {\begin{figure}[htbp]\rule[2pt]{\linewidth}{1pt}}
+%   {\rule[2pt]{\linewidth}{1pt}\end{figure}}
+%
+% \title{\package{nomencl}\thanks{Package version \fileversion\ of \filedate.}
+%   \\ A Package to Create a Nomenclature}
+% \author{Boris Veytsman\thanks{Up to version v2.2 (1996/11/25)}\\
+%       Bernd Schandl\thanks{Up to version v3.1c (2001/10/02)}\\
+%       Lee Netherton \& CV Radhakrishnan\thanks{Up to version v4.0 (2005/03/31)}\\\\
+%    {\small \href{http://sarovar.org/projects/nomencl}{http://sarovar.org/projects/nomencl}}}
+% \date{Printed on \today}
+% \maketitle
+%
+%
+% \section{Introduction}
+% How often did you try to understand a theorem in a book, but just
+% couldn't figure out what all those strange symbols were all about? The
+% \package{nomencl} package should help authors format a nomenclature.
+% It uses the powerful capabilities of the \MakeIndex\ program to generate
+% such a list automatically using information provided by the author
+% throughout the text.
+%
+% \subsection{Important Notes for Users of Previous Versions}
+% The latest update to the \package{nomencl} package has included some major changes
+% to some of the more important commands. In particular, the |\makeglossary| and
+% |\printglossary| commands have now been renamed to |\makenomenclature| and
+% |\printnomenclature| respectively. The reason for this change is to increase the
+% package's compatibility with other MakeIndex using packages. With this increased
+% compatibility, users will be able to have nomenclatures, glossaries and indexes all
+% in one document.\\
+%
+% There is a compatibility option that will allow you to still use
+% your |\makeglossary| and |\printglossary| commands (see section \ref{sec:options}),
+% but it is advised that you change your |\|\ldots|glossary| commands to the new
+% |\|\ldots|nomenclature| commands in your \LaTeX\ files. For more information
+% on the compatibility mode see section \ref{sec:compatibility}.\\
+%
+% \section{Usage}
+%
+% \subsection{The Basics}
+%
+% The creation of the nomenclature list is very similar to the creation of
+% an index~\cite[App.~A]{lamp:late:1994}. You need to:
+% \begin{itemize}
+% \item Put |\usepackage[|\meta{options}|]{nomencl}| in the preamble of
+%   your document.
+% \item \DescribeMacro{\makenomenclature}
+%   Put |\makenomenclature| in the preamble of your document.
+% \item \DescribeMacro{\nomenclature}
+%   Issue the |\nomenclature| command (see Section~\ref{sec:Main-Command})
+%   for each symbol you want to have included in the nomenclature list.
+%   The best place for this command is immediately after you introduce
+%   the symbol for the first time.
+% \item \DescribeMacro{\printnomenclature}
+%   Put |\printnomenclature| at the place you want to have your
+%   nomenclature list.
+% \end{itemize}
+%
+% Now put your file through \LaTeX. The command |\makenomenclature| will
+% instruct \LaTeX\ to open the nomenclature file \meta{filename}|.nlo|
+% corresponding to your \LaTeX\ file \meta{filename}|.tex| and to
+% write the information from your |\nomenclature| commands to this file.
+%
+% \changes{v2.7 (1999/05/14)}{1999/05/11}{Mention need to change quote
+%   character for German users}
+% The next step is to invoke \MakeIndex. You should instruct
+% \MakeIndex\ to use \meta{filename}|.nlo| as your input file,
+% use |nomencl.ist| as your style
+% \DeleteShortVerb{\|}\MakeShortVerb{\?}%
+% file\footnote{%
+%  German users who want to use the shortcut notation ?"a? instead
+%  of \cs{"a} have to redefine the quote character in ?nomencl.ist?
+%  to something other than ?"? (and ?|?, ?@?, ?!?), maybe ?+? or ?\&?; see the
+%  comment in the source code section and in the file ?nomencl.ist?.
+%  Furthermore, they should consider using the ?-g? switch of \MakeIndex.},
+% \DeleteShortVerb{\?}\MakeShortVerb{\|}%
+% and write output to the file \meta{filename}|.nls|.
+% How to do this depends on your implementation of \MakeIndex. For
+% most UNIX implementations you should write something like\\
+% \tab|makeindex| \meta{filename}|.nlo -s nomencl.ist -o|
+%   \meta{filename}|.nls|
+%
+% Now you have the file \meta{filename}|.nls| that contains your
+% nomenclature list properly ordered. The last step is to invoke
+% \LaTeX\ on your master file \meta{filename}|.tex| once more. It will
+% input your |.nls| file and process it accordingly to the current
+% options. That's all!
+%
+%
+% \subsection{The Main Command}
+% \label{sec:Main-Command}
+%
+% \DescribeMacro{\nomenclature}
+% The main command of the \package{nomencl} package has the following
+% syntax:\\
+% \tab|\nomenclature[|\meta{prefix}|]{|\meta{symbol}|}{|\meta{description}|}|\\
+% where \meta{prefix} is used for fine tuning the sort order,
+% \meta{symbol} is the symbol you want to describe and \meta{description}
+% is the actual description. The sortkey will be \meta{prefix}\meta{symbol},
+% where \meta{prefix} is either the one from the optional argument or, if no
+% optional argument was given, the default \meta{prefix} which may be empty.
+% See Section~\ref{sec:sort} to make sense of this.
+%
+% Put this command immediately after the equation or text that
+% introduces \meta{symbol}. Usually it is a good idea to avoid a space
+% or an unquoted newline just in front of the |\nomenclature| command.
+% Put a |%| at the end of the preceding line if necessary.
+% Don't forget to enclose math in \meta{symbol} in |$| signs.
+%
+% Let's have a look at a simple example. If your input file looks like the
+% one in Figure~\ref{fig:simple} then your nomenclature\footnote{Note that
+% all the examples are somewhat faked in this document, but they give a good
+% impression of the ``real'' result.} should look like
+% Figure~\ref{fig:simple.out}.
+%
+% \begin{example}
+%\begin{verbatim}
+% \documentclass{article}
+% \usepackage{nomencl}
+% \makenomenclature
+% \begin{document}
+% \section*{Main equations}
+% \begin{equation}
+%   a=\frac{N}{A}
+% \end{equation}%
+% \nomenclature{$a$}{The number of angels per unit area}%
+% \nomenclature{$N$}{The number of angels per needle point}%
+% \nomenclature{$A$}{The area of the needle point}%
+% The equation $\sigma = m a$%
+% \nomenclature{$\sigma$}{The total mass of angels per unit area}%
+% \nomenclature{$m$}{The mass of one angel}
+% follows easily.
+% \printnomenclature
+% \end{document}
+%\end{verbatim}
+% \caption{Input of a simple example}
+% \label{fig:simple}
+% \end{example}
+% \begin{example}
+% \begin{thenomenclature}
+% \nomgroup{A}
+%  \item[$\sigma$]\begingroup The total mass of angels per unit area\nomeqref {1}
+%                \nompageref{1}
+%  \item[$A$]\begingroup The area of the needle point\nomeqref {1}
+%                \nompageref{1}
+%  \item[$a$]\begingroup The number of angels per unit area\nomeqref {1}
+%                \nompageref{1}
+%  \item[$m$]\begingroup The mass of one angel\nomeqref {1}
+%                \nompageref{1}
+%  \item[$N$]\begingroup The number of angels per needle point\nomeqref {1}
+%                \nompageref{1}
+% \end{thenomenclature}
+% \caption{Output of a simple example}
+% \label{fig:simple.out}
+% \end{example}
+%
+% Note the necessary quoting of newlines. When the |\nomenclature|
+% macros appear directly after the |equation| environment, quote \emph{all}
+% newlines; when they appear in the middle of a sentence, quote \emph{all but
+% the last} newlines.\footnote{I'm not sure how to resolve this more
+%   elegantly, but suggestions are welcome.}
+%
+% \changes{v2.6b (1999/04/10)}{1999/04/08}{Documentation change concerning line
+%   breaks between arguments}
+% Due to the way \cs{nomenclature} scans its arguments you don't need to
+% \cs{protect} any macros, but you also must not have any character in front
+% of the first or between the
+% first and the second argument, especially no line break (even with a |%|). So
+%\begin{verbatim}
+%   \nomenclature{$x$}%
+%     {Description}
+%\end{verbatim}
+% does \emph{not} work. You can have have line breaks in the argument, but
+% also no |%|.
+%
+%
+% \subsection{Package Options}
+% \label{sec:options}
+%
+% The \package{nomencl} package has the following options:
+% \begin{description}
+% \item[refeq] The phrase ``, see equation (\meta{eq})'' is appended to
+%   every entry in the nomenclature where \meta{eq} is the number of the
+%   last equation in front of the corresponding command |\nomenclature|.
+% \item[norefeq] No equation reference is printed. (default)
+% \item[refpage] The phrase ``, page \meta{page}'' is appended to
+%   every entry in the nomenclature where \meta{page} is the number of the
+%   page on which the corresponding command |\nomenclature| appeared.
+% \item[norefpage] No page reference is printed. (default)
+% \item[prefix] Every sort key is preceded by the letter ``a'' (changeable);
+%   see Section~\ref{sec:sort} to learn why this might make sense. (default)
+% \item[noprefix] No prefix is used.
+% \changes{v3.0 (2000/03/05)}{2000/03/05}{New options
+%   \texttt{cfg}/\texttt{nocfg}}
+% \item[cfg] A configuration file |nomencl.cfg| is loaded, if it exists.
+%   (default)
+% \item[nocfg] The configuration file is not loaded.
+% \item[intoc] Inserts the nomenclature in the Table of Contents.
+% \item[notintoc] No entry for the nomenclature in the Table of Contents. (default)
+% \item[compatible] Run in compatibility mode. Older tex files may need this option
+%   selected to be able to compile. In the latest version of \package{nomencl} the commands |\makeglossary|
+%   and |\printglossary| were replaced with |\makenomenclature| and |\printnomenclature|.
+%   Selecting this option will redefine the old commands, but will loose the compatibility
+%   with other glossary packages.
+% \item[noncompatible] Do not run in compatibility mode. (default)
+% \item[\hspace{-\labelsep}]
+%   \textbf{croatian, danish, english, french, german, italian, polish,
+%     portuguese, russian, spanish, ukrainian}
+%   The reference texts and the nomenclature title will appear in the
+%   corresponding language. Note that in order to use Russian or Ukrainian,
+%   you have to have Cyrillic fonts installed and you might need a replacement
+%   for \MakeIndex, e.\,g.~\xindy. Please help me out with other
+%   languages. (default: english)
+% \end{description}
+%
+%
+% \subsection{Referencing}
+%
+% \DescribeMacro{\nomrefeq}\DescribeMacro{\nomrefpage}\DescribeMacro{\nomrefeqpage}
+% \DescribeMacro{\nomnorefeq}\DescribeMacro{\nomnorefpage}
+% \DescribeMacro{\nomnorefeqpage}
+% As explained in Section~\ref{sec:options}, you can turn referencing to
+% equations and pages on/off globally using the package options. But sometimes
+% you might want to change the referencing behavior for single entries. The
+% following six macros can be used inside a |\nomenclature| macro:
+% |\nomrefeq|, |\nomnorefeq|, |\nomrefpage|, |\nomnorefpage|, |\nomrefeqpage|,
+% |\nomnorefeqpage|.
+% The first four work similarly to the package options, only local to the
+% entry; the last two are shortcuts, so saying |\nomrefeqpage| is equivalent
+% to |\nomrefeq\nomrefpage|.
+%
+% If we changed the relevant parts of the last example as shown in
+% Figure~\ref{fig:reference} then the nomenclature should look like
+% Figure~\ref{fig:reference.out}.
+%
+% \begin{example}
+%\begin{verbatim}
+% \begin{equation}
+%   a=\frac{N}{A}
+% \end{equation}%
+% \nomenclature{$a$}{The number of angels per unit area\nomrefeqpage}%
+% \nomenclature{$N$}{The number of angels per needle point\nomrefeq}%
+% \nomenclature{$A$}{The area of the needle point\nomrefeq\nomrefpage}%
+% The equation $\sigma = m a$%
+% \nomenclature{$\sigma$}{The total mass of angels per unit area}%
+% \nomenclature{$m$}{The mass of one angel\nomrefpage}
+% follows easily.
+% \printnomenclature
+% \end{document}
+%\end{verbatim}
+% \caption{Input with references}
+% \label{fig:reference}
+% \end{example}
+% \begin{example}
+% \begin{thenomenclature}
+% \nomgroup{A}
+%  \item [$\sigma$]\begingroup The total mass of angels per unit area\nomeqref {1}
+%                \nompageref{1}
+%  \item [$A$]\begingroup The area of the needle point\nomrefeq\nomrefpage\nomeqref {1}
+%                \nompageref{1}
+%  \item [$a$]\begingroup The number of angels per unit area\nomrefeqpage\nomeqref {1}
+%                \nompageref{1}
+%  \item [$m$]\begingroup The mass of one angel\nomrefpage\nomeqref {1}
+%                \nompageref{1}
+%  \item [$N$]\begingroup The number of angels per needle point\nomrefeq\nomeqref {1}
+%                \nompageref{1}
+% \end{thenomenclature}
+% \caption{Output with references}
+% \label{fig:reference.out}
+% \end{example}
+%
+% While these macros do not have to be at the end of the entries, it's
+% probably the most sensible place to put them. Note that such local request
+% always supersede the package options.
+%
+%
+% \section{Sort Order of the Entries}
+% \label{sec:sort}
+%
+% The Greek letter $\sigma$ turned out to be first in the nomenclature
+% list in the examples above because the backslash in |\sigma|
+% precedes any alphabetical character. Sometimes this is not what you
+% want.  Then you can use \meta{prefix} to fine tune the sort order.
+%
+% Before we describe the usage of \meta{prefix}, we have to explain how
+% \MakeIndex\ sorts entries, see~\cite{chen:auto:1987}. \MakeIndex\
+% distinguishes three kinds of sort keys:
+% \begin{description}
+% \item[Strings] Everything that starts with a alphabetic letter (A\dots Z,
+%   a\dots z).
+% \item[Numbers] Everything that starts and only contains digits (0\dots 9).
+% \item[Symbols] Everything else.
+% \end{description}
+% Each group is sorted separately (and differently), then the groups are
+% sorted in the order symbols, numbers, strings\footnote{With the |-g| switch
+% of \MakeIndex, they are sorted in the order symbols, strings, numbers.}. For
+% the groups the following algorithm\footnote{This is only vaguely described
+% in~\cite{chen:auto:1987}, so I had to figure out special cases by
+% myself. Please correct me if I am wrong} is used:
+% \begin{description}
+% \item[Strings] If two letters are compared, the usual ordering is used
+%   (|a|\textless|C|\textless|q|), but if two words are the
+%   same except for the capitalization, then an upper case letter
+%   precedes the lower case letter (|Tea|\textless|tea|).
+%   If a letter is compared with a non-letter (digit,
+%   symbol), ASCII code is used (|1|\textless |A|\textless |~|).\footnote{An
+%   exception seems to be that the non-letters between upper and lower case
+%   letters (code 91--96) are put just before the capital letters (between
+%   code 64 and 65) while the non-letters after the lower case letters (code
+%   123--127) are left there. Can someone please enlighten me why?} If two
+%   non-letters are compared (which can not happen at the first position of a
+%   string), ASCII code is used (|+|\textless |1|\textless |:|\textless
+%   |\|). Additionally there is the issue of word ordering (treat spaces as
+%   letters with ASCII code smaller than every printable symbol) and letter
+%   ordering (ignore spaces). \MakeIndex\ uses word ordering by default, but
+%   you can change it with some command line option (|-l| on my UNIX).
+% \item[Numbers] The natural ordering is used
+%   (|8|\textless |34|\textless |111|).
+% \item[Symbols] ASCII code is used
+%   (|+|\textless|1|\textless|:|\textless|A|\textless|\|\textless|a|).
+% \end{description}
+%
+% Why did you have to read all this?\footnote{I hope you did read it
+%   \texttt{;-)}} Let's consider the following eight nomenclature entries
+% (without the optional argument): |$~Ab$|, |$~aa$|, |$\Ab$|, |$\aa$|, |$Ab$|,
+% |$aa$|, |Ab|, |aa|. Try to understand the following example with the help
+% of the explanation above and an ASCII table.
+%
+% If you use \package{nomencl} with its default settings (i.\,e.~``a'' is
+% added to every sort key, so every sort key is considered as a string), you
+% will get the sort order |$\aa$|, |$\Ab$|, |$aa$|, |$Ab$|, |$~aa$|, |$~Ab$|,
+% |aa|, |Ab|. Note that |aa| is in front of |Ab| in all four pairs; note
+% also the order |$\Ab$|, |$Ab$|, |$~Ab$| which does not agree with the
+% ASCII code.
+%
+% If you specify the option \package{noprefix}, then you will get |$Ab$|,
+% |$\Ab$|, |$\aa$|, |$aa$|, |$~Ab$|, |$~aa$|, |aa|, |Ab|. The first six
+% entries are considered as symbols and sorted according to the ASCII code
+% (this time correctly). Note that |$\Ab$| is in front of |$\aa$| because
+% |A| has the smaller ASCII code. The two strings follow at the end.
+%
+% Decide for yourself what you prefer. Personally, I like to specify the
+% \package{noprefix} option and use the optional argument to get exactly the
+% sort order I want. See Section~\ref{sec:tips} for some special effects.
+%
+%
+% \section{Customization}
+% \label{sec:custom}
+%
+% Besides the things you can customize by using the package options, there are
+% a few more commands that you might want to redefine. If you make the same
+% changes in every file, it's probably easier to put all those in a file
+% |nomencl.cfg| which is automatically read by the \package{nomencl} package
+% whenever it exists in the search path (unless you specified the |nocfg|
+% option).
+%
+%
+% \subsection{Formatting the Nomenclature}
+% \label{sec:format}
+%
+% \DescribeMacro{\printnomenclature}
+% \DescribeMacro{\nomlabelwidth}
+% Probably the most common change to the nomenclature is a different amount
+% of space for the symbols. By default, the nomenclature is formatted as a
+% list with the label width equal to |\nomlabelwidth| which is initialized
+% to 1\,cm. You can change this dimension in the |cfg| file or you can use
+% the optional argument of |\printnomenclature|. If you want to have a little
+% more space for the labels (and you don't live in a metric world) you can
+% use\\
+% \tab|\printnomenclature[0.5in]|\\
+% instead of the simple\\
+% \tab|\printnomenclature|
+%
+% \DescribeEnv{thenomenclature}
+% If you don't like the format of the nomenclature at all, you will have
+% to redefine the |thenomenclature| environment. Maybe a look at the
+% documented code of \package{nomencl} will help.
+%
+% \DescribeMacro{\nomname}
+% In case you don't like the name of the nomenclature, just redefine
+% the |\nomname| macro, e.\,g.\\
+% \tab|\renewcommand{\nomname}{List of Symbols}|\\
+% If you are using e.\,g.~the documentclass |book| with page style
+% headings you should also take care of correct headings:
+%\begin{verbatim}
+%   \cleardoublepage% or \clearpage
+%   \markboth{\nomname}{\nomname}% maybe with \MakeUppercase
+%   \printnomenclature
+%\end{verbatim}
+% I thought about putting this in the definition of |\printnomenclature|
+% but decided that it is much easier for the user to add it if he wants
+% than to remove it if he doesn't want it. In case you always need this
+% just define a macro in |nomencl.cfg| that executes these three lines
+% all at once and can be used instead of |\printnomenclature|.
+%
+% \changes{v3.1b (2001/09/30)}{2001/03/12}{Explain how to get toc entry}
+% \changes{v4.0 (2005/03/31)}{2005/03/31}{TOC entries now added with package option}
+% Putting an entry for the nomenclature in the table of contents can
+% be done by adding an \textbf{intoc} to the package options.
+%
+% \DescribeMacro{\nomgroup}
+% Usually, \MakeIndex\ inserts the macro |\indexspace| between every
+% character group, i.\,e.~between symbols and numbers, numbers and
+% letters and between every two letter groups. The \package{nomencl}
+% package inserts the macro |\nomgroup{|\meta{arg}|}| \emph{instead},
+% where \meta{arg} is either the string ``Symbols'' or the string
+% ``Numbers'' or the capital letter of the group that is about to
+% start. You can redefine |\nomgroup| to insert some white space\\
+% \tab|\renewcommand{\nomgroup}[1]{\medskip}|\\
+% or to print a fancy divider
+%\begin{verbatim}
+%   \renewcommand{\nomgroup}[1]{%
+%     \item[]\hspace*{-\leftmargin}%
+%     \rule[2pt]{0.45\linewidth}{1pt}%
+%     \hfill #1\hfill
+%     \rule[2pt]{0.45\linewidth}{1pt}}
+%\end{verbatim}
+% Note that |\nomgroup| is executed in a list environment, so you need
+% to have an |\item| first and then jump back to the beginning of the
+% line with the |\hspace| command.
+%
+% \DescribeMacro{\nompreamble}\DescribeMacro{\nompostamble}
+% Maybe you want to explain something just between the title of the
+% nomenclature and the start of the list or at the very end of the
+% list. Just redefine the macros |\nompreamble| and |\nompostamble|
+% which do nothing by default. Note that they are executed \emph{outside}
+% of the list environment.
+%
+% \DescribeMacro{\nomitemsep}
+% The skip between two entries in the nomenclature can be adjusted using
+% \cs{nomitemsep}. This should be done in the preamble or the file
+% |nomencl.cfg|. Note that if you want no extra skip between entries
+% you have to use\\
+% \tab|\setlength{\nomitemsep}{-\parsep}|
+%
+% \DescribeMacro{\nomprefix}
+% If you want, you can redefine the default prefix that is used for the
+% sortkeys. By default, |\nomprefix| is set to ``a''; redefining it
+% supersedes the package options \package{prefix} and \package{noprefix}.
+%
+%
+% \subsection{Formatting the Entries}
+%
+% \DescribeMacro{\nomlabel}
+% By default, the labels are just shifted to the left within their
+% allocated box. If you want to change this, redefine |\nomlabel|
+% which should get one argument, e.\,g.\\
+% \tab|\renewcommand{\nomlabel}[1]{\hfil #1\hfil}|\\
+% to center the symbols.
+%
+% \DescribeMacro{\nomentryend}
+% Maybe you would like to have a period at the end of every entry.
+% Just say\\
+% \tab|\renewcommand{\nomentryend}{.}|\\
+% and there it is. Section~\ref{sec:tips:units} explains another nice
+% application of this macro.
+%
+% \DescribeMacro{\eqdeclaration}\DescribeMacro{\pagedeclaration}
+% If you don't like the text that is used for the references to  equations
+% and pages, you can define |\eqdeclaration| and |\pagedeclaration|. Both
+% should accept one argument, namely the equation and page number,
+% respectively. An example is\\
+% \tab|\renewcommand{\eqdeclaration}[1]{, first used in eq.~(#1)}|\\
+% If you are redefining these macros for a particular language, let me
+% know and I will add that language to the next release of the
+% \package{nomencl} package.
+%
+%
+% \section{Tips and Tricks}
+% \label{sec:tips}
+%
+% \changes{v3.1 (2000/09/15)}{2000/09/15}{Sample cfg files for most examples}
+% In this section, I will gather fancy stuff that people did or might
+% want to do with the \package{nomencl} package. Please email any ideas
+% you have.
+%
+% For most examples, sample configuration files will be generated if you run
+% \LaTeX\ on the file |nomencl.ins|. There will for example be a file
+% |sample01.cfg| for the subgroups example in
+% Section~\ref{sec:tips:subgroups}. Rename it to |nomencl.cfg|, then it will
+% automatically be used by your document. There is no sample file for the
+% longtable example in Section~\ref{sec:tips:longtable}. I am just too lazy
+% right now, maybe I will add it later\dots
+%
+%
+% \subsection{Subgroups}
+% \label{sec:tips:subgroups}
+%
+% If you have distinct groups among the identifiers in your nomenclature
+% (e.\,g.~Greek letters for physical constants, Roman letters for
+% variables), you can use the optional argument of |\nomenclature|
+% together with the |\nomgroup| macro to get two groups with separate
+% headings in the nomenclature.
+%
+% Use something like the following throughout your text\\
+% \tab|\nomenclature[ga ]{$\alpha$}{Constant}|\\
+% \tab|\nomenclature[rx ]{$x$}{Variable}|\\
+% where ``g'' and ``r'' indicate Greek and Roman letters, respectively.
+% Then you include the \package{ifthen} package and redefine |\nomgroup|
+% e.\,g.~like this.
+%    \begin{macrocode}
+%<*sample01>
+\RequirePackage{ifthen}
+\renewcommand{\nomgroup}[1]{%
+  \ifthenelse{\equal{#1}{R}}{\item[\textbf{Variables}]}{%
+    \ifthenelse{\equal{#1}{G}}{\item[\textbf{Constants}]}{}}}
+%</sample01>
+%    \end{macrocode}
+% Note that we have to check for capital letters. All your symbols should
+% have some kind of prefix; maybe you can also use the default prefix ``a''.
+% Note that for symbols and numbers you have to check for the strings
+% ``Symbols'' and ``Numbers''.
+%
+%
+% \subsection{Units}
+% \label{sec:tips:units}
+%
+% Besides the obvious possibility of adding units for symbols in the
+% description string, you can also use |\nomentryend| to shift the unit
+% to the right margin. Something along the lines of a macro
+%    \begin{macrocode}
+%<*sample02>
+\newcommand{\nomunit}[1]{%
+  \renewcommand{\nomentryend}{\hspace*{\fill}#1}}
+%</sample02>
+%    \end{macrocode}
+% should do the job.
+% You can use this macro like this\\
+% \tab|\nomenclature{$l$}{Length\nomunit{m}}|\\
+% Note that the nomenclature will not be a tabular with three columns,
+% but it is pretty close as long as you only have one-line descriptions.
+% Any suggestions for improvements are welcome.
+%
+%
+% \subsection{Using a Long Table instead of a List}
+% \label{sec:tips:longtable}
+%
+% \changes{v2.6 (1999/04/02)}{1999/04/01}{Longtable example added}
+% The following idea was sent to me by Brian Elmegaard. I have modified it a
+% little bit to make it work with the current version of \package{nomencl}.
+% Only the basic idea is given, so you have to do some extra thinking
+% (and coding) to get it to work the way you want it.
+%
+% After loading the \package{longtable} package in the preamble we first
+% have to modify the macro that writes the entries to the |glo|
+% file (do this is an style file).
+%\begin{verbatim}
+%    \def\@@@nomenclature[#1]#2#3{%
+%     \def\@tempa{#2}\def\@tempb{#3}%
+%     \protected@write\@nomenclaturefile{}%
+%      {\string\nomenclatureentry{#1\nom@verb\@tempa @{\nom@verb\@tempa}&%
+%          \begingroup\nom@verb\@tempb\protect\nomeqref{\theequation}%
+%            |nompageref}{\thepage}}%
+%     \endgroup
+%     \@esphack}
+%\end{verbatim}
+% Then the nomenclature itself must be changed to start a longtable instead
+% of a list. Maybe we could add something for a repeating header on every page.
+%\begin{verbatim}
+%    \def\thenomenclature{%
+%      \@ifundefined{chapter}{\section*}{\chapter*}{\nomname}%
+%      \nompreamble
+%      \begin{longtable}[l]{@{}ll@{}}}
+%    \def\endthenomenclature{%
+%      \end{longtable}%
+%      \nompostamble}
+%\end{verbatim}
+% Finally we add the following two lines at the end of |nomencl.ist|\footnote{%
+%   Don't forget to rename the file and delete my email address if you want to
+%   distribute the file, see the pointer to the LPPL in
+%   Section~\ref{sec:legal}.}.
+%\begin{verbatim}
+%    item_0  ""
+%    delim_t " \\\\\n"
+%\end{verbatim}
+%
+% As I said, this is only the basic idea. An advantage might be the repeating
+% headers on every page, a disadvantage is that there won't be any line breaks
+% in the second column.
+%
+%
+% \subsection{I want it expanded!}
+%
+% \changes{v3.1 (2000/09/15)}{2000/09/01}{Expansion example added}
+% The \package{nomencl} package tries hard to write the arguments of the
+% |\nomenclature| macro verbatim to the glossary file. This is usually the
+% right thing to do because some macros do not like to be expanded at the
+% wrong moment or give weird results if they are. On the other hand, there are
+% occasions where it is good to have the meaning (or expansion) of a macro in
+% the glossary file instead of its name. There are quite some occasions
+% where you will get in trouble with this expansion, for example, if the
+% expansion of a macro contains~|@| (|\mathcal| expands to |\@mathcal|)
+% because |@| is a special character for \MakeIndex\ and thus \MakeIndex\ will
+% either fail or give unexpected results. You can avoid the expansion on a
+% case by case basis by using |\protect| in front of the macro that should
+% not be expanded.
+%
+% In order to get macro expansion, the redefinition of the |\@nomenclature|
+% macro within the |\makenomenclature| macro has to be changed.
+%    \begin{macrocode}
+%<*sample04>
+\def\makenomenclature{%
+  \newwrite\@nomenclaturefile
+  \immediate\openout\@nomenclaturefile=\jobname\@outputfileextension
+  \def\@nomenclature{%
+    \@ifnextchar[%
+      {\@@@@nomenclature}{\@@@@nomenclature[\nomprefix]}}%
+  \typeout{Writing nomenclature file \jobname\@outputfileextension}%
+  \let\makenomenclature\@empty}
+%    \end{macrocode}
+% The new macro to be called by |\@nomenclature| just writes its arguments to
+% the glossary file without further ado, so they will be expanded.
+%    \begin{macrocode}
+\def\@@@@nomenclature[#1]#2#3{%
+ \protected@write\@nomenclaturefile{}%
+  {\string\nomenclatureentry{#1#2@[{#2}]%
+      \begingroup#3\protect\nomeqref{\theequation}%
+        |nompageref}{\thepage}}}%
+%</sample04>
+%    \end{macrocode}
+% As I said above, use these macros with care and look for warnings and errors
+% issued by \MakeIndex.
+%
+%
+% \subsection{Glossary in ``Kopka Style''}
+%
+% \changes{v3.1 (2000/09/15)}{2000/09/16}{Kopka example added}
+% I was told that the glossary in the \LaTeX\ book by Kopka looks roughly like
+% in Figure~\ref{fig:kopka}. In order to get a glossary like this, there are
+% quite some configurations to do.
+%
+% \begin{example}
+% \textbf{Symbol}\dotfill\nopagebreak page number \\
+% \hspace*{5mm}Explanation.
+% \caption{Glossary entry in ``Kopka Style''}
+% \label{fig:kopka}
+% \end{example}
+%
+% First we have to change the macro |\@@@nomenclature| which takes care of
+% writing the glossary entry to the glossary file. The only difference to the
+% original definition is that we hand over the explanation of a symbol (\#3)
+% and the equation number to |\nompageref| instead of writing it directly
+% after the symbol (\#2). This is necessary because the explanation should
+% appear after (actually below) the page number.
+%    \begin{macrocode}
+%<*sample05>
+\def\@@@nomenclature[#1]#2#3{%
+ \def\@tempa{#2}\def\@tempb{#3}%
+ \protected@write\@nomenclaturefile{}%
+  {\string\nomenclatureentry{#1\nom@verb\@tempa @[{\nom@verb\@tempa}]%
+    |nompageref{\begingroup\nom@verb\@tempb\protect\nomeqref{\theequation}}}%
+    {\thepage}}%
+ \endgroup
+ \@esphack}
+%    \end{macrocode}
+% Now we change the definition of |\nompageref| so that it accepts two
+% arguments, the explanation (\#1) and the page number (\#2). The page number
+% is only printed if required, otherwise  |\null| is used to avoid an error
+% because of the following |\linebreak|. Note that it is \emph{not} possible
+% to turn off the page number locally, because the explanation appears after
+% the page number. Does anyone have an idea how to fix this?
+%    \begin{macrocode}
+\def\nompageref#1#2{%
+  \if@printpageref\pagedeclaration{#2}\else\null\fi
+  \linebreak#1\nomentryend\endgroup}
+%    \end{macrocode}
+% And a few little things. We want dots and a space before the page number
+% appears at the right margin; the explanation should end with a period; and
+% the symbol should be printed in bold face (this only works for regular text,
+% not for formulas).
+%    \begin{macrocode}
+\def\pagedeclaration#1{\dotfill\nobreakspace#1}
+\def\nomentryend{.}
+\def\nomlabel#1{\textbf{#1}\hfil}
+%</sample05>
+%    \end{macrocode}
+%
+%
+% \section{Compatibility Mode}
+% \label{sec:compatibility}
+%
+% With previous versions of the \package{nomencl}, the commands |\makeglossary|
+% and |\pringlossary| were used to generate and display the nomenclature.
+% These commands have now been depreciated, and replaced with the |\makenomenclature|
+% and |\printnomenclature| commands. The new commands do exactly the same
+% as the old commands, but because of the name changes, the package is
+% now compatible with other packages which use the |\makeglossary| commands.
+% The previous versions of \package{nomencl} also used the file extensions
+% |.glo| and |.gls| for the generated output and input files. These extensions
+% have now been changed to |.nlo| and |.nls| respectively---again, for increased
+% compatibility.
+%
+% For all of the legacy \LaTeX\ files out there which use the old commands
+% there is a compatibility option available so that the old commands will still
+% work without having to change any of the existing code. To enable the
+% compatibility mode simply supply the \textbf{compatible} option
+% when using the package. For example:
+% \begin{verbatim}
+%   \usepackage[compatible]{nomencl}
+% \end{verbatim}
+% Under compatibility mode, the package will generate and use files
+% with the old-style file extensions (i.e. |.glo| and |.gls|).
+%
+% It is worth noting that even though the compatibility mode is available,
+% it is highly recommended to update your \LaTeX\ files to use the new
+% nomenclature commands.
+%
+%
+% \section{Acknowledgements}
+%
+% First and foremost I want to thank Boris Veytsman, who had the idea
+% for the package, maintained it until v2.2 and provided some
+% helpful advice for the new version. I also want to thank Stefan
+% B\"ohm and Karl Heinz Marbaise who helped testing this package.
+%
+% For helping out with translations I thank Branka Lon\v{c}arevi\'{c}
+% (Croatian), Brian Elmegaard (Danish), Denis B.~Roegel (French),
+% Sani Egisto (Italian), Artur Gorka (Polish), Pedro Areal (Portuguese),
+% Alejandro Lopez-Valencia (Spanish) and Boris Veytsman
+% (Russian and Ukrainian).
+%
+%
+% \section{Releases and Legal Issues}
+% \label{sec:legal}
+%
+% This package can be redistributed and/or modified under the terms
+% of the \LaTeX\ Project Public License distributed from CTAN
+% archives in the directory \url{macros/latex/base/lppl.txt}, see
+% e.\,g.~\cite{ctan}; either
+% version 1.2 of the license, or (at your option) any later version.
+%
+% The most recent release of the \package{nomencl} package can always
+% be found at \url{http://sarovar.org/projects/nomencl}.
+% Usually, the same version is also available at
+% \url{CTAN/macros/latex/contrib/supported/nomencl/}.
+%
+% \StopEventually{%
+% \begin{thebibliography}{5}
+% \bibitem[1]{braa:ltid:1996}
+% Braams, Johannes; Carlisle, David; Jeffrey, Alan; Lamport, Leslie;
+% Mittelbach, Frank; Rowley, Chris; Sch\"opf, Rainer (1996).
+% \newblock\texttt{ltidxglo.dtx} -- 1996/01/20 v1.1e LaTeX Kernel
+% (Index and Glossary).
+% \newblock \href{http://www.ctan.org/tex-archive/macros/latex/base/ltidxglo.dtx}{CTAN/macros/latex/base/ltidxglo.dtx}.
+% \bibitem[2]{chen:auto:1987}
+% Chen, Pehong; Harrison, Michael~A. (1987).
+% \newblock Automating Index Preparation.
+% \newblock Report UCB/CSD 87/347, Computer Science Division, University of
+%   California, Berkeley, CA.
+% \bibitem[3]{ctan}
+% Comprehensive {\TeX} Archive Network CTAN.
+% \newblock \url{ftp://ctan.tug.org/tex-archive/}.
+% \bibitem[4]{jone:anew:1995}
+% Jones, David M. (1995).
+% \newblock A new implementation of \LaTeX's indexing commands,
+%   Version v4.1beta of 1995/09/28.
+% \newblock \href{http://www.ctan.org/tex-archive/macros/latex/contrib/camel/index.dtx}{CTAN/macros/latex/contrib/supported/camel/index.dtx}.
+% \bibitem[5]{knut:thet:1984}
+% Knuth, Donald E. (1984).
+% \newblock \emph{The \TeX book}.
+% \newblock Addison-Wesley Publishing Company, Reading, MA.
+% \bibitem[6]{lamp:late:1994}
+% Lamport, Leslie (1994).
+% \newblock \emph{{\LaTeX}: A Document Preparation System}.
+% \newblock Addison-Wesley Publishing Company, Reading, MA.
+% \bibitem[7]{veyt:pack:1996}
+% Veytsman, Boris (1996).
+% \newblock Package nomencl, Version 4.0.
+% \newblock \url{http://sarovar.org/projects/nomencl} (2000/09/15).
+% \end{thebibliography}}
+%
+%
+% \section{Implementation}
+%
+% \subsection{The \LaTeX\ Package File}
+%
+% At the beginning of this file, the |\ProvidesPackage| macro was executed. So
+% we only need to to state that we need \LaTeXe.
+%    \begin{macrocode}
+%<*package>
+\NeedsTeXFormat{LaTeX2e}
+%    \end{macrocode}
+% \begin{macro}{\if@printeqref}
+% \begin{macro}{\if@printpageref}
+% We need two switches to decide whether references to equations and pages
+% should be printed.
+%    \begin{macrocode}
+\newif\if@printeqref
+\newif\if@printpageref
+%    \end{macrocode}
+% \end{macro} \end{macro}
+% \begin{macro}{\if@intoc}
+% Another switch to decide whether to add an entry to the TOC.
+%    \begin{macrocode}
+\newif\if@intoc
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\if@compatibilitymode}
+% Another switch to decide whether to run in compatibility mode.
+%    \begin{macrocode}
+\newif\if@compatibilitymode
+%    \end{macrocode}
+% \end{macro}
+% And the options to set these switches globally.
+%    \begin{macrocode}
+\DeclareOption{refeq}{\@printeqreftrue}
+\DeclareOption{norefeq}{\@printeqreffalse}
+\DeclareOption{refpage}{\@printpagereftrue}
+\DeclareOption{norefpage}{\@printpagereffalse}
+\DeclareOption{intoc}{\@intoctrue}
+\DeclareOption{notintoc}{\@intocfalse}
+\DeclareOption{compatible}{\@compatibilitymodetrue}
+\DeclareOption{noncompatible}{\@compatibilitymodefalse}
+%    \end{macrocode}
+% \begin{macro}{\nomprefix}
+% It might make sense to add the prefix ``a'' to every sortkey, see
+% Section~\ref{sec:sort}.
+%    \begin{macrocode}
+\DeclareOption{prefix}{\def\nomprefix{a}}
+\DeclareOption{noprefix}{\def\nomprefix{}}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\if@loadcfg}
+% Another switch and the corresponding options to decide whether we
+% should look for a configuration file.
+%    \begin{macrocode}
+\newif\if@loadcfg
+\DeclareOption{cfg}{\@loadcfgtrue}
+\DeclareOption{nocfg}{\@loadcfgfalse}
+%    \end{macrocode}
+% \end{macro}
+% \changes{v2.5a (1999/03/22)}{1999/03/17}{Added Danish}
+% \changes{v2.6 (1999/04/02)}{1999/03/23}{Added French}
+% \changes{v2.6 (1999/04/02)}{1999/04/01}{Use \cs{nobreakspace} instead of
+%   \texttt{\textasciitilde} in package options}
+% \changes{v2.6a (1999/04/06)}{1999/04/02}{Added Russian, Spanish, Ukrainian}
+% \changes{v2.6b (1999/04/10)}{1999/04/06}{Added Polish}
+% \changes{v2.7a (1999/07/07)}{1999/07/07}{Added Italian}
+% \changes{v4.0 (2005/04/07)}{2005/04/07}{Updated Italian option (thanks to Lapo Mori)}
+% \changes{v3.1 (2000/09/15)}{2000/08/30}{Added Croatian}
+% \changes{v3.1a (2000/12/03)}{2000/12/03}{Added Portuguese}
+% \begin{macro}{\eqdeclaration}
+% \begin{macro}{\pagedeclaration}
+% \begin{macro}{\nomname}
+% If you can help out with translations for some other languages, let me know.
+%    \begin{macrocode}
+\DeclareOption{croatian}{%
+  \def\eqdeclaration#1{, vidi jednad\v{z}bu\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, stranica\nobreakspace#1}%
+  \def\nomname{Popis simbola}}
+\DeclareOption{danish}{%
+  \def\eqdeclaration#1{, se ligning\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, side\nobreakspace#1}%
+  \def\nomname{Symbolliste}}
+\DeclareOption{english}{%
+  \def\eqdeclaration#1{, see equation\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, page\nobreakspace#1}%
+  \def\nomname{Nomenclatura}}
+\DeclareOption{french}{%
+  \def\eqdeclaration#1{, voir \'equation\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, page\nobreakspace#1}%
+  \def\nomname{Liste des symboles}}
+\DeclareOption{german}{%
+  \def\eqdeclaration#1{, siehe Gleichung\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, Seite\nobreakspace#1}%
+  \def\nomname{Symbolverzeichnis}}
+\DeclareOption{italian}{%
+\def\eqdeclaration#1{, vedi equazione\nobreakspace(#1)}%
+\def\pagedeclaration#1{, pagina\nobreakspace#1}%
+\def\nomname{Elenco dei simboli}}
+\DeclareOption{polish}{%
+  \def\eqdeclaration#1{, porownaj rownanie\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, strona\nobreakspace#1}%
+  \def\nomname{Lista symboli}}
+\DeclareOption{portuguese}{%
+  \def\eqdeclaration#1{, veja equa\c{c}\~ao\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, p\'agina\nobreakspace#1}%
+  \def\nomname{Nomenclatura}}
+\DeclareOption{russian}{%
+  \def\eqdeclaration#1{, \cyrs\cyrm.\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, \cyrs\cyrt\cyrr.\nobreakspace#1}%
+  \def\nomname{\CYRS\cyrp\cyri\cyrs\cyro\cyrk%
+    \ \cyro\cyrb\cyro\cyrz\cyrn\cyra\cyrch\cyre\cyrn\cyri%
+    \cyrishrt}}
+\DeclareOption{spanish}{%
+  \def\eqdeclaration#1{, v\'ease la ecuaci\'on\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, p\'agina\nobreakspace#1}%
+  \def\nomname{Nomenclatura}}
+\DeclareOption{ukrainian}{%
+  \def\eqdeclaration#1{, \cyrd\cyri\cyrv.\nobreakspace(#1)}%
+  \def\pagedeclaration#1{, \cyrs\cyrt\cyro\cyrr.\nobreakspace#1}%
+  \def\nomname{\CYRP\cyre\cyrr\cyre\cyrl\cyrii\cyrk%
+         \ \cyrp\cyro\cyrz\cyrn\cyra\cyrch\cyre\cyrn\cyrsftsn}}
+%    \end{macrocode}
+% \end{macro}\end{macro}\end{macro}
+% Finally set the default options and process everything.
+%    \begin{macrocode}
+\ExecuteOptions{noncompatible,notintoc,norefeq,norefpage,prefix,cfg,english}
+\ProcessOptions\relax
+%    \end{macrocode}
+% \begin{macro}{\@outputfileextension}
+% \begin{macro}{\@inputfileextension}
+% The default file extension for the output and input nomenclature files are
+% |.nlo| and |.nls| respectively. In compatibility mode, these are changes to |.glo|
+% and |.gls|.
+%    \begin{macrocode}
+\if@compatibilitymode%
+    \def\@outputfileextension{.glo}%
+    \def\@inputfileextension{.gls}%
+\else%
+    \def\@outputfileextension{.nlo}%
+    \def\@inputfileextension{.nls}%
+\fi%
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% \begin{macro}{\makenomenclature}
+% The definition of \cs{makenomenclature} is pretty much the same as in the \LaTeX\
+% kernel for \cs{makeglossary}, we only use \cs{@nomenclature} instead of \cs{glossary}.
+%    \begin{macrocode}
+\def\makenomenclature{%
+  \newwrite\@nomenclaturefile
+  \immediate\openout\@nomenclaturefile=\jobname\@outputfileextension
+  \def\@nomenclature{%
+    \@bsphack
+    \begingroup
+    \@sanitize
+    \@ifnextchar[%
+      {\@@@nomenclature}{\@@@nomenclature[\nomprefix]}}%
+  \typeout{Writing nomenclature file \jobname\@outputfileextension}%
+  \let\makenomenclature\@empty}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\makeglossary}
+% The |\makeglossary| command has been depreciated, and is only available in compatibility mode.
+%    \begin{macrocode}
+\if@compatibilitymode\let\makeglossary\makenomenclature\fi%
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\nom@verb}
+% \changes{v2.7 (1999/05/14)}{1999/05/11}{Added}
+% The macro \cs{nom@verb}, which is copied from~\cite{jone:anew:1995}
+% and~\cite[p.~382]{knut:thet:1984}, makes it possible to use
+% \cs{nomenclature} in another macro.
+%    \begin{macrocode}
+\def\nom@verb{\expandafter\strip@prefix\meaning}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\nomenclature}
+% \changes{v2.7 (1999/05/14)}{1999/05/11}{Protected}
+% This macro just protects the ``real'' \cs{@nomenclature} macro. I am not
+% sure whether this makes sense because you shouldn't use \cs{nomenclature}
+% in something like \cs{section} anyway, but it doesn't hurt.
+%    \begin{macrocode}
+\def\nomenclature{\protect\@nomenclature}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\@nomenclature}
+% \begin{macro}{\@@nomenclature}
+% Without an executed \cs{makenomenclature}, \cs{@nomenclature} will only
+% change some catcodes and call the macro \cs{@@nomenclature}
+% to gobble its arguments.
+%    \begin{macrocode}
+\def\@nomenclature{%
+  \@bsphack
+  \begingroup
+  \@sanitize
+  \@ifnextchar[%
+    {\@@nomenclature}{\@@nomenclature[\nomprefix]}}
+\def\@@nomenclature[#1]#2#3{\endgroup\@esphack}
+%    \end{macrocode}
+% \end{macro} \end{macro}
+% \begin{macro}{\@@@nomenclature}
+% \changes{v2.7 (1999/05/14)}{1999/05/11}{More robust by using \cs{nom@verb}}
+% If \cs{makenomenclature} was already executed, then \cs{@nomenclature}
+% calls the macro \cs{@@@nomenclature} which writes to the nomenclature file.
+% It puts the prefix in front of the entry, adds brackets |[]| around the
+% entry (because it will be the argument of an \cs{item}) and adds
+% possible references at the end of the entry description. A group
+% is started to keep changes to the reference switches local.
+% The arguments are written using \cs{nom@verb} so they will not be
+% expanded, even when \cs{nomenclature} is used within another macro.
+% By the way, \cs{@bsphack} and \cs{@esphack} makes \cs{nomenclature}
+% disappear between two spaces; unfortunately this doesn't work if
+% \cs{nomenclature} is the first thing in a line.
+%    \begin{macrocode}
+\def\@@@nomenclature[#1]#2#3{%
+ \def\@tempa{#2}\def\@tempb{#3}%
+ \protected@write\@nomenclaturefile{}%
+  {\string\nomenclatureentry{#1\nom@verb\@tempa @[{\nom@verb\@tempa}]%
+      \begingroup\nom@verb\@tempb\protect\nomeqref{\theequation}%
+        |nompageref}{\thepage}}%
+ \endgroup
+ \@esphack}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\nomgroup}
+% The next macro is executed between each character group in the
+% nomenclature. By default it just gobbles its argument, but
+% the user can redefine it to add white space or some fancy divider
+% including the starting character of the new group.
+%    \begin{macrocode}
+\def\nomgroup#1{}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\nomlabelwidth}
+% This is the default label width for the nomenclature. It can be changed
+% e.\,g.~in the |cfg| file.
+%    \begin{macrocode}
+\newdimen\nomlabelwidth
+\nomlabelwidth1cm\relax
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\nom@tempdim}
+% \changes{v2.9 (1999/11/23)}{1999/11/23}{New temporary dimension}
+% \begin{macro}{\printnomenclature}
+% \begin{macro}{\@printnomenclature}
+% The optional argument is read and assigned to \cs{nom@tempdim}. Then
+% the |gls| file is read.
+%    \begin{macrocode}
+\newdimen\nom@tempdim
+\def\printnomenclature{%
+  \@ifnextchar[%
+    {\@printnomenclature}{\@printnomenclature[\nomlabelwidth]}}
+\def\@printnomenclature[#1]{%
+  \nom@tempdim#1\relax
+  \@input@{\jobname\@inputfileextension}}
+%    \end{macrocode}
+% \end{macro} \end{macro} \end{macro}
+% \begin{macro}{\printglossary}
+% The |\printglossary| command has been depreciated, and is only available in compatibility mode.
+%    \begin{macrocode}
+\if@compatibilitymode\let\printglossary\printnomenclature\fi%
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\nomlabel}
+% \begin{macro}{\nompreamble}
+% \begin{macro}{\nompostamble}
+% \begin{macro}{\nomentryend}
+% Now some bells and whistles to format the nomenclature:
+% the definition of the label, the preamble, the postamble and the
+% symbol that is added at the end of an entry. The last three are
+% defined to do nothing by default.
+%    \begin{macrocode}
+\def\nomlabel#1{#1\hfil}
+\def\nompreamble{}
+\def\nompostamble{}
+\def\nomentryend{}
+%    \end{macrocode}
+% \end{macro} \end{macro} \end{macro} \end{macro}
+% \begin{macro}{\nomitemsep}
+% \changes{v2.8 (1999/09/09)}{1999/09/09}{New skip \cs{nomitemsep}}
+% The skip between two items is adjustable by changing \cs{nomitemsep}.
+% It defaults to \cs{itemsep}.
+%    \begin{macrocode}
+\newskip\nomitemsep
+\nomitemsep\itemsep
+%    \end{macrocode}
+% \end{macro}
+% \begin{environment}{thenomenclature}
+% The |thenomenclature| environment formats its title and optionally
+% inserts an item in the TOC, both are dependant on
+% whether the \cs{chapter} command is available or not. After
+% printing the preamble, a list is started with the \cs{labelwidth}
+% being set to the value defined in the optional argument of
+% \cs{printnomenclature}.
+%    \begin{macrocode}
+\def\thenomenclature{%
+  \@ifundefined{chapter}%
+  {
+    \section*{\nomname}
+    \if@intoc\addcontentsline{toc}{section}{\nomname}\fi%
+  }%
+  {
+    \chapter*{\nomname}
+    \if@intoc\addcontentsline{toc}{chapter}{\nomname}\fi%
+  }%
+
+  \nompreamble
+  \list{}{%
+    \labelwidth\nom@tempdim
+    \leftmargin\labelwidth
+    \advance\leftmargin\labelsep
+    \itemsep\nomitemsep
+    \let\makelabel\nomlabel}}
+\def\endthenomenclature{%
+  \endlist
+  \nompostamble}
+%    \end{macrocode}
+% \end{environment}
+% \begin{macro}{\nomrefeq}
+% \begin{macro}{\refpage}
+% \begin{macro}{\refeqpage}
+% \begin{macro}{\norefeq}
+% \begin{macro}{\norefpage}
+% \begin{macro}{\norefeqpage}
+% These are the switches to turn referencing on or off locally for a
+% single entry.
+%    \begin{macrocode}
+\def\nomrefeq{\@printeqreftrue}
+\def\nomrefpage{\@printpagereftrue}
+\def\nomrefeqpage{\@printeqreftrue\@printpagereftrue}
+\def\nomnorefeq{\@printeqreffalse}
+\def\nomnorefpage{\@printpagereffalse}
+\def\nomnorefeqpage{\@printeqreffalse\@printpagereffalse}
+%    \end{macrocode}
+% \end{macro} \end{macro} \end{macro} \end{macro} \end{macro} \end{macro}
+% \begin{macro}{\nomeqref}
+% The equation is only referenced if the corresponding switch is
+% true. Since \MakeIndex\ tends to insert a line break just before
+% the page number, we have to add \cs{ignorespaces} at the end.
+%    \begin{macrocode}
+\def\nomeqref#1{\if@printeqref\eqdeclaration{#1}\fi\ignorespaces}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\nompageref}
+% The page is also only referenced if requested. Then the end symbol is
+% added and finally the group started in \cs{@@@nomenclature} is closed.
+%    \begin{macrocode}
+\def\nompageref#1{\if@printpageref\pagedeclaration{#1}\fi%
+  \nomentryend\endgroup}
+%    \end{macrocode}
+% \end{macro}
+% Read the config file if it exists and the corresponding option was given.
+%    \begin{macrocode}
+\if@loadcfg
+  \InputIfFileExists{nomencl.cfg}{%
+    \typeout{Using the configuration file nomencl.cfg}}{}
+\fi
+%    \end{macrocode}
+% The end.
+%    \begin{macrocode}
+%</package>
+%    \end{macrocode}
+%
+%
+% \subsection{The \MakeIndex\ Style File}
+% \label{sec:ist}
+%
+% The ``magic word'' for \MakeIndex\ in the input file is \cs{nomenclatureentry}.
+% German user might need to redefine the quote character if they want to use
+% |"a| instead of |\"a|. Choose whatever character you see fit except \verb+|+,
+% |@| and |!|.
+%    \begin{macrocode}
+%<*idxstyle>
+%% ---- for input file ----
+keyword    "\\nomenclatureentry"
+%% Germans might want to change this and delete the two %%
+%% quote '"'
+%    \end{macrocode}
+% Define what is printed at the beginning and the end of the file and
+% the skip between groups. Since we already write \cs{nomgroup} between
+% groups, we define |group_skip| to just input an empty line.
+%    \begin{macrocode}
+%% ---- for output file ----
+preamble   "\\begin{thenomenclature} \n"%
+postamble  "\n\n\\end{thenomenclature}\n" group_skip "\n"
+%    \end{macrocode}
+% Since we can't handle multiple pages for an entry anyway, we also
+% don't need any delimiters.
+%    \begin{macrocode}
+delim_0    ""
+delim_1    ""
+delim_2    ""
+%    \end{macrocode}
+% Now the macro between the groups. Since the flag is positive, the
+% character will be inserted as a capital letter. As the comment
+% states, this will cause some warnings. If someone has a better
+% solution, let me know.
+%    \begin{macrocode}
+%% The next lines will produce some warnings when
+%% running Makeindex as they try to cover two different
+%% versions of the program:
+lethead_prefix "\n \\nomgroup{"
+lethead_suffix "}\n"
+lethead_flag   1
+heading_prefix "\n \\nomgroup{"
+heading_suffix "}\n"
+headings_flag  1
+%</idxstyle>
+%    \end{macrocode}
+%
+% \Finale

@@ -1,0 +1,141 @@
+\chapter{Arquitetura do Fênix Firewall (Localmente Instalado no Dispositivo Móvel)}\label{sistema_local}
+
+Nesta subseção são apresentados os componentes internos do Fênix Firewall System, ou seja aqueles que são instalados e instanciados no próprio dispositivo móvel.
+
+Para visualizar os componentes do Sistema Local observe a figura \ref{fig:visao_componentes}.
+
+\begin{itemize}
+\item \textbf{Monitor de Contexto}:
+\\Este componente é composto pelos seguintes módulos:
+	\begin{enumerate}
+	\item Monitor Inteligente e de Riscos;
+	\item Monitor de Localização;
+	\item Coletor de Contexto Computacional;
+	\item Coletor de Informações de Serviços:
+		\begin{enumerate}
+		\item Responsável por inferir a localização, quer seja por um recurso local, disponível no próprio dispositivo móvel (Ex.:GPS) ou de forma manual, definida pelo usuário.
+		\end{enumerate}
+	\end{enumerate}
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Gerente de Preferências}:
+\\Consulta o Banco de Dados de Preferências local;
+\\Sincroniza os dados do Banco de Dados local com o remoto quando:
+	\begin{enumerate}
+	\item O campo Status de Sincronia no Banco de Dados é mais antigo que o tempo máximo definido pelo usuário. A definição pode ser em minutos, horas e dias;
+	\item Ao ser solicitado pelo usuário de forma manual (Ex.: Quando o usuário recebe uma notificação via E-MAIL ou SMS do Agente de Notificação informando para que a sincronia seja feita;
+	\item \textit{O usuário tem ainda a opção de desabilitar a sincronização. É uma atitude desaconselhável, mas permitida por questões de usabilidade. Por ser um fator crítico e que insere um certo grau de risco ao uso do dispositivo móvel, o usuário é prontamente informado sobre o fato, independênte de suas preferências de notificação.}
+	\end{enumerate}
+Carrega as preferências e converte os Meta-Dados (XML) de políticas para a linguagem do Gerente de Regras de Firewall, de acordo com o Sistema Operacional;
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Coletor de Informações de Serviços}:
+\\Verifica os serviços e portas locais abertas no dispositivo móvel;
+\\Notifica o App Kernel quanto aos estados das conexões.
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Gerente de Regras de Firewall}:
+\\Sistema de proteção de rede, utilizado para bloquear/liberar, filtrar e redirecionar pacotes e conexões;
+\\Recebe as políticas do App Kernel e as implanta;
+\\Tem a capacidade de habilitar/desabilitar interfaces de comunicação (Ex.: Bluetooth, Serial, Wi-Fi etc).
+\end{itemize}
+
+
+
+\begin{itemize}
+\item \textbf{Coletor de Contexto Computacional}:
+\\Componente que coleta utilizando API do Sistema Operacional as informações de fabricante, modelo, freqüência da CPU, carga da bateria, tempo de restante de utilização etc.
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Interface com o Usuário}:
+\\Recebe as mensagens do App Kernel e criar uma interface amigável e interativa, utilizando os recursos gráficos do Sistema Operacional (API) afim de notificar ou solicitar alguma intervenções por parte do usuário.
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{Banco de Dados}:
+\\Atua como um espelho do Banco de Dados Distribuído;
+\\O Sincronismo é mantido pelo Gerente de Preferências, como descrito acima ou de forma manual a pedido do usuário.
+\end{itemize}
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.0\textwidth]{./fig/Visao_Componentes.png}
+\caption{Interação entre os Componentes da Arquitetura do Fênix}
+\label{fig:visao_componentes}
+\end{figure}
+
+%-------------------------------------------------------
+\subsection{Padrão de interação entre os componentes}\label{sub:interacao_componentes}
+
+\begin{itemize}
+\item Mostrar através de figuras a comunicação entre os componente.
+\end{itemize}
+
+
+%-------------------------------------------------------
+\subsection{Riscos e Desafios}\label{sub:riscos_desafios}
+
+\begin{itemize}
+\item Conscientizar o leitor dos possíveis problemas e falhas de segurança que poderão ocorrer com os serviços externos: 
+	\begin{enumerate}
+	\item Autenticidade; 
+	\item (in)Disponibilidade;
+	\item Inferência da Localização (acurácia);
+	\item Consulta ao Banco de Dados externo;
+	\item etc.
+	\end{enumerate}
+\end{itemize}
+
+
+%----------------------------------------------------------------
+\section{Cenários de Uso}\label{sec:cenarios}
+
+Nesta seção alguns cenários explicitam o funcionamento do Fênix Firewall System.
+Usaremos como exemplo um usuário que possui um celular \textit{iPhone}\footnote{iPhone é um telefone celular revolucionário, habilitado para internet, com recursos multimedia e tela sensível ao toque, projetado e vendido pela Apple Inc.} \cite{iphone:2008} e chega ao seu escritório para um dia normal de trabalho.
+Como mencionado na Seção \ref{sub:visao_geral_arquitetura}, outros dispositivos móveis são suportados pelo Fênix Firewall System, já que seus componentes são projetados para serem independente de plataforma operacional.
+
+Para ilustrarmos um cenário hipotético, imagine agora um usuário que possua um dispositivo móvel, por exemplo um \textit{iPhone}, e que em tal dispositivo já se encontra instalado o Fênix Firewall System.
+Esse usuário chega em seu escritório, portando seu \textit{iPhone} ligado, e automaticamente baseado na localização onde o usuários se encontra, suas preferências e políticas de segurança são ativadas.
+
+O usuário pode armazenar em suas preferências se deseja ou não ser notificado que tal operação dinâmica foi executada, tenha ela sucesso ou não. 
+Então ele passa a interagir com seu dispositivo móvel, agora, com as suas preferências para o escritório, com as interfaces de comunicação e aplicações preferenciais liberadas para o uso.
+
+Veja melhor como isso é possível:
+
+\begin{enumerate}
+\item O \textit{Monitor de Contexto}, componente este que faz parte da arquitetura interna do Fênix e que já se encontra instalado no \textit{iPhone} (dispositivo móvel usado neste exemplo), identifica a localização baseando-se no dados coletados pelo \textit{Monitor de Localização} (Módulo integrado ao Monitor de Contexto) e envia a informação ao \textit{App Kernel};
+
+\item O \textit{Monitor de Localização} utiliza o recurso GPS do \textit{iPhone} para inferir a localização, mas também é possível que o usuário forneça sua localização de forma manual, quando necessário ou quando o dispositivo móvel não possuir o recurso GPS;
+
+\item O \textit{App Kernel}, componente núcleo do Fênix Firewall System, de posse da informação da localização onde o usuário se encontra, consulta o \textit{Gerente de Preferências};
+
+\item O \textit{Gerente de Preferências}, informado da localização do usuário pelo \textit{App Kernel}, recupera as informações de \textit{Preferências e Políticas de Segurança} necessárias para aquela localidade;
+
+\item O \textit{App Kernel} por sua vez, carrega tais Preferências e Políticas de Segurança fornecidas pelo \textit{Gerente de Preferências} em um formato de \textit{Meta-Dados}, indepentente de arquitetura, e as converte em regras que o componente \textit{Gerente de Regras de Firewall}, escrito especialmente para o Sistema Operacional do \textit{iPhone} o compreenda;
+
+\item Ao final na operação o \textit{App Kernel} recebe uma resposta do componente \textit{Gerente de Regras de Firewall}, se tudo correu bem ou se houve algum erro durante o processo;
+
+\item O \textit{App Kernel}, conhecendo as preferências do usuário, identifica se o mesmo deve ser notificado ou não quanto ao sucesso ou falha do procedimento acima.
+
+\item Se o usuário optou por ser notificado, a \textit{Interface com o Usuário} entra em cena. Essa interface recebe as mensagens de notificação, no formato XML, que devem ser repassadas ao usuário e gera uma interface amigável, utilizando os recursos visuais disponibilizados pelo Sistema Operacional do \textit{iPhone}, notificando assim o usuário quanto à sua nova localização e o resultado da operação;
+
+\item No caso das preferências e políticas serem carregadas com sucesso, o usuário passa agora a interagir com o \textit{iPhone} totalmente adaptado para aquela localização (escritório).
+\end{enumerate}
+
+%----------------------------------------------------------------
+
+\section{Trabalhos Correlatos}\label{sec:trabalhos_correlatos}
+
+\begin{itemize}
+\item Apresentar os trabalhos correlacionados, descrevendo-os de forma crítica, ressaltando o diferencial adotado no Fênix Firewall System.
+\end{itemize}

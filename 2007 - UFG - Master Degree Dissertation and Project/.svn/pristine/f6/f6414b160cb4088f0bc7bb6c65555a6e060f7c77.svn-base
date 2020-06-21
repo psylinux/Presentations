@@ -1,0 +1,93 @@
+% This file was created with JabRef 2.3.1.
+% Encoding: MacRoman
+
+@ARTICLE{bellovin:1994,
+  author = {W.R. Bellovin, S.M.and Cheswick},
+  title = {Network firewalls.},
+  journal = {IEEE Communications Magazine},
+  year = {1994},
+  volume = {32},
+  key = {Bellovin}
+}
+
+@TECHREPORT{cvss:2008,
+  title = {CVSS (Common Vulnerability Scoring System)},
+  institution = {FIRST (Forum of Incident Response and Security Teams)},
+  year = {2008},
+  key = {cvss:2008},
+  url = {http://www.first.org/cvss/}
+}
+
+@TECHREPORT{iphone:2008,
+  title = {iPhone},
+  institution = {Apple Inc},
+  year = {2008},
+  key = {iphone:2008},
+  url = {http://en.wikipedia.org/wiki/IPhone}
+}
+
+@TECHREPORT{mcafee:2008,
+  title = {McAfee},
+  institution = {McAfee Inc},
+  year = {2008},
+  key = {mcafee:2008},
+  url = {www.mcafee.com.br}
+}
+
+@TECHREPORT{moca:2008,
+  title = {Mobile Collaboration Architecture},
+  institution = {Pontifícia Universidade do Rio De Janeiro},
+  year = {2008},
+  key = {moca:2008},
+  url = {http://www.lac.inf.puc-rio.br/moca/}
+}
+
+@TECHREPORT{placelab:2008,
+  title = {A privacy-observant location system},
+  institution = {Placelab},
+  year = {2008},
+  key = {placelab:2008},
+  url = {http://www.placelab.org/}
+}
+
+@TECHREPORT{sage:2008,
+  title = {Relatório Semestral de Segurança da McAfee},
+  institution = {McAfee Inc},
+  year = {2008},
+  key = {sage:2008},
+  url = {http://www.mcafee.com/us/local_content/reports/sage_2008.pdf}
+}
+
+@TECHREPORT{snort:2008,
+  title = {Open Source Network Intrusion Detector},
+  institution = {Snort},
+  year = {2008},
+  key = {snort},
+  url = {http://www.snort.org/}
+}
+
+@TECHREPORT{idc:2007,
+  title = {Brazil IT Investment Trends Insurance 2007},
+  institution = {Instituto de Pesquisa IDC},
+  year = {2007},
+  key = {idc:2007},
+  url = {http://www.idclatin.com/}
+}
+
+@TECHREPORT{sms:2003,
+  title = {Technical realization of the Short Message Service (SMS)},
+  institution = {GSM 03.40},
+  year = {2003},
+  key = {sms:2003},
+  url = {http://www.3gpp.org/ftp/Specs/html-info/0340.htm}
+}
+
+@TECHREPORT{durlacher:1999,
+  title = {Mobile Commerce Report},
+  institution = {Durlacher Researchs Ltd},
+  year = {2001},
+  key = {durlacher:99},
+  url = {www.durlacher.com/research/res-reports.asp},
+  version = {6.2.2001}
+}
+

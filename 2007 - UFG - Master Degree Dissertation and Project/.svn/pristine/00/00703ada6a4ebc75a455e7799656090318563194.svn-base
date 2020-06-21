@@ -1,0 +1,12 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{$EDGE$}]\begingroup Enhanced Data rates for GSM Evolution ou Enhanced GPRS (EGPRS) é uma tecnologia digital para telefonia celular que permite melhorar a transmissão de dados e aumentar a confiabilidade da transmissão de dados. Foi desenvolvida para capacitar a transmissão de uma grande quantidade de dados a altas taxas de velocidade (384 kbit/s).\nomeqref {1-0}
+		\nompageref{2}
+  \item [{$GPRS$}]\begingroup General Packet Radio Service é um serviço de dados orientado a pacotes para dispositivos móveis disponível para usuários do Global System for Mobile Communications (GSM).\nomeqref {1-0}
+		\nompageref{2}
+  \item [{$GPS$}]\begingroup Sistema de Posicionamento Global.\nomeqref {1-0}
+		\nompageref{4}
+
+\end{thenomenclature}

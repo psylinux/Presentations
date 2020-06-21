@@ -1,0 +1,6 @@
+#!/bin/sh
+
+chmod +s /usr/bin/fenix-firewall
+chown -R root:$(USER) /etc/fenix
+
+update-rc.d fenix-daemon defaults

@@ -1,0 +1,187 @@
+\subsection{Arquitetura Distribuída}
+
+\begin{frame}
+  \frametitle{\alert{Próximos Slides}}
+			
+			\begin{center}
+					\huge \textbf{Arquitetura Distribuída}.
+			\end{center}
+			
+\end{frame}
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Visão Geral}
+  
+			\begin{figure}[htbp]
+				\centering \includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/Arquitetura_Distribuida.png}
+				\label{fig:Arquitetura_Distribuida}
+			\end{figure}
+
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]
+		\frametitle{Plataforma Distribuída (Uma \alert{\textbf{Opção}} Inteligente)}
+		
+		
+		\begin{block}{Controle de acesso gerenciado por grupos}
+				\begin{enumerate}
+						\item \alert{\textbf{Administradores}}
+						\\ Grupo de usuários com acesso privilegiado responsável pela gerência e manutenção da plataforma distribuída.
+						\item \alert{\textbf{Usuários}}
+						\\ Grupo de usuários ordinários com acesso restrito á plataforma distribuída.
+				\end{enumerate}			
+		\end{block}
+		
+		\newpage		
+		\begin{itemize}
+			\item Facilita \alert{gerência} dos dispositivos móveis por \textbf{terceiros}.
+			\item Permite maior \alert{integração} entre os dispositivos móveis.
+			\item Permite que o \alert{Administrador} envie notificações importantes aos usuários.
+			\item Permite que o \alert{Administrador} insira uma nova política de segurança de forma autoritária, evitando ataques do tipo \textbf{0-day (Zero Day)}.								
+			\item Permite que o usuário \textbf{troque de dispositivo} e mantenha as mesmas preferências e políticas de segurança.			
+		\end{itemize}
+		
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Dispositivo Móvel}
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/DispositivoMovel.png}
+	\label{fig:DispositivoMovel}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Conexão com a Internet}
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/Internet.png}
+	\label{fig:Internet}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Servidor WebService}
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/WebService.png}
+	\label{fig:WebService}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Conexão Disp. Móvel com Serv. WebService}
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/Conexao_Movel_WebService.png}
+	\label{fig:ConexaoWebService}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Servidor de Repositório}
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/ServidorRepositorio.png}
+	\label{fig:ServidorRepositorio}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Servidor de Notificações}
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/ServidorNotificacao.png}
+	\label{fig:ServidorNotificacao}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Comunicação \alert{entre os Servidores}}
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/Conexao_Servidores.png}
+	\label{fig:Conexao_Servidores}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Comunicação entre \alert{Servidor WebService} e \alert{Servidor Repositório}}
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/Conexao_WebService_BancoDados.png}
+	\label{fig:Conexao_WebService_BancoDados}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Comunicação entre \alert{Servidor WebService} e \alert{Servidor Notificação}}
+  
+\begin{figure}[htbp]
+	\centering		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/Conexao_WebService_Notificacao.png}
+	\label{fig:Conexao_WebService_Notificacao}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Comunicação entre \alert{Servidor Notificação} e \alert{Dispositivo Móvel}}
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/Conexao_Notificacao_Movel.png}
+	\label{fig:Conexao_Notificacao_Movel}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Arquitetura Distribuída}
+  \framesubtitle{Visão Geral}
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.80\textwidth]{../Pictures/Sequencias/Arquitetura_Distribuida/Arquitetura_Distribuida.png}
+	\label{fig:Arquitetura_Distribuida}
+\end{figure}
+
+\end{frame}

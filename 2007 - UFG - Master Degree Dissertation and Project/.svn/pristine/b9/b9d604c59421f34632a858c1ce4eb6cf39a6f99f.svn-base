@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Fenix Firewall
+_Name=Fenix Firewall
+_Comment=A Personal Context-aware Firewall
+Exec=fenix-firewall
+Terminal=false
+Type=Application
+Icon=fenix-firewall.png
+Categories=Application;SystemSettings;FENIX
+StartupNotify=True
+SingleInstance=True
+Name[en_US]=Fenix Firewall

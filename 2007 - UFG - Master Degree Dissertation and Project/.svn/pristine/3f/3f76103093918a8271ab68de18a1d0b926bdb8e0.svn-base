@@ -1,0 +1,61 @@
+\section{Desafios e Requisitos no Desenvolvimento e Uso}
+
+\begin{frame}
+	\frametitle{Desafios e Requisitos no Desenvolvimento e Uso}
+			\begin{figure}[htbp]
+				\centering
+					\includegraphics[width=1.00\textwidth]{../Pictures/Baixa/Dispositivos.PNG}
+				\label{fig:Dispositivos}
+	\end{figure}
+\end{frame}
+
+\subsection{Recursos de Hardware}
+\begin{frame}
+  \frametitle{Desafios e Requisitos no Desenvolvimento e Uso}
+  \framesubtitle{Recursos de Hardware}
+				\begin{itemize}
+					\item Tela reduzida.
+					\item Entrada de dados limitada.
+					\item Energia limitada.
+				\end{itemize}
+\end{frame}
+
+%_______________________________________________________________________
+
+\subsection{Recursos de Software}
+
+\begin{frame}
+
+  \frametitle{Desafios e Requisitos no Desenvolvimento e Uso}
+  \framesubtitle{Recursos de Software}
+				\begin{itemize}
+					\item Sistemas Operacionais minimalistas.
+					\item API´s limitadas.
+					\item Pouca documentação para desenvolvimento de médio a baixo nível.					
+				\end{itemize}
+\end{frame}
+
+%_______________________________________________________________________
+\subsection{Interatividade com o usuário}
+\begin{frame}
+	\frametitle{Desafios e Requisitos no Desenvolvimento e Uso}
+  \framesubtitle{Interatividade com o usuário.}
+				\begin{itemize}
+						\item Causa consumo de energia.
+		  			\item Telas bem sucintas e informativas.
+		  			\item Avisos e solicitações intuitivas.
+				\end{itemize}
+\end{frame}
+
+%_______________________________________________________________________
+\subsection{Conectividade (Intermitência)}
+\begin{frame}
+	\frametitle{Desafios e Requisitos no Desenvolvimento e Uso}
+  \framesubtitle{Conectividade \textit{(Intermitência)}.}
+				\begin{itemize}
+					\item Mobilidade.
+					\item Largura de banda menor.
+					\item Maior taxa de bits errados.
+					\item Pagamento pelos serviços.
+				\end{itemize}
+\end{frame}
