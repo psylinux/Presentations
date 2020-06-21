@@ -1,2 +1,2 @@
 # Presentations
-Presentations in different conferences
+Some of my presentations and published articles in different conferences
