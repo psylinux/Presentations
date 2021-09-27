@@ -1,3 +1,6 @@
+2018_MarcosAzevedo_Web_Hacking_Training.pdf
+
+
 [+] GoBuster (https://github.com/OJ/gobuster)
 	Very lightweight, fast directory and subdomain bruteforce tool
 	gobuster -u http://chat:3000 -w /opt/SecLists/Discovery/Web-Content/raft-small-
